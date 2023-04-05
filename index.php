@@ -35,6 +35,22 @@
         <meta name="twitter:image" content="" />
         <meta name="robots" content="index, follow">
         <!-- PAGE-SPECIFIC META end -->
+
+
+    <script>
+        function copyClipboard(target) {
+            var copyText = document.getElementById(target).innerHTML;
+            
+            var input = document.createElement("input");
+            input.value = copyText;
+            document.body.appendChild(input);
+            input.select();
+            document.execCommand("copy");
+            document.body.removeChild(input); 
+        } 
+
+    </script>
+
     </head>
     <body class="light-mode">
 
@@ -49,8 +65,10 @@
         <section id="diacritics">
             <h2>Diacritics</h2>
             <div class="key-section">
-                <div id="grave-capital-a" class="key" title="Grave Capital A">&Agrave;</div>
-                <div id="grave-a" class="key" title="Grave a">&agrave;</div>
+                <button onclick="copyClipboard()" id="grave-capital-a" class="key" title="Grave Capital A">&Agrave;</button>
+                <button onclick="copyClipboard()" id="grave-a" class="key" title="Grave a">&agrave;</button>
+                <button onclick="copyClipboard(this.getAttribute('data-target'))" data-target="grave-capital-a2" id="grave-capital-a2" class="key" title="Grave Capital A">&Agrave;</button>
+                <button onclick="copyClipboard(this.getAttribute('data-target'))" data-target="grave-a2" id="grave-a2" class="key" title="Grave a">&agrave;</button>
                 <div id="acute-capital-a" class="key" title="Acute Capital A">&Aacute;</div>
                 <div id="circumflex-capital-a" class="key" title="Circumflex Capital A">&Acirc;</div>
                 <div id="circumflex-a" class="key" title="Circumflex a">&acirc;</div>
@@ -58,7 +76,9 @@
 
                 
             </div>
-
+            <p id="p1">Hello, I'm TEXT 1</p>
         </section>
     </body>
 </html>
+
+(this.getAttribute('data-target'))

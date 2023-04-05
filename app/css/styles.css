@@ -1,7 +1,8 @@
-.key{
-width: 66px;    
-height: 66px;
-background: #000000;
-color:#ffffff;
+.key {
+    width: 66px;
+    height: 66px;
+    background: #000000;
+    color: #ffffff;
+    cursor: pointer;
 
 }
