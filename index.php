@@ -55,7 +55,7 @@
     <body class="light-mode">
 
         <header>
-            <img alt="Poly Qwerty" src="imgs/polyqwerty.svg" height="46px" width="auto">
+            <img alt="Poly Qwerty" src="imgs/polyqwerty.svg" height="46px" width="auto" target="_black">
             <a href="https://github.com/The-Poly-Group/polyqwerty"><img alt="Github" src="imgs/github.svg">open-source</a>
         </header>
 
@@ -65,14 +65,14 @@
         <section id="diacritics">
             <h2>Diacritics</h2>
             <div class="key-section">
-                <button onclick="copyClipboard()" id="grave-capital-a" class="key" title="Grave Capital A">&Agrave;</button>
-                <button onclick="copyClipboard()" id="grave-a" class="key" title="Grave a">&agrave;</button>
+                <button onclick="copyClipboard(this.getAttribute('data-target'))" data-target="grave-a2" id="grave-capital-a" class="key" title="Grave Capital A">&Agrave;</button>
+                <button onclick="copyClipboard(this.getAttribute('data-target'))" data-target="grave-a2" id="grave-a" class="key" title="Grave a">&agrave;</button>
                 <button onclick="copyClipboard(this.getAttribute('data-target'))" data-target="grave-capital-a2" id="grave-capital-a2" class="key" title="Grave Capital A">&Agrave;</button>
                 <button onclick="copyClipboard(this.getAttribute('data-target'))" data-target="grave-a2" id="grave-a2" class="key" title="Grave a">&agrave;</button>
-                <div id="acute-capital-a" class="key" title="Acute Capital A">&Aacute;</div>
-                <div id="circumflex-capital-a" class="key" title="Circumflex Capital A">&Acirc;</div>
-                <div id="circumflex-a" class="key" title="Circumflex a">&acirc;</div>
-                <div id="diaeresis-capital-a" class="key" title="Diaeresis Capital A">&Auml;</div>
+                <button onclick="copyClipboard(this.getAttribute('data-target'))" data-target="grave-a2"id="acute-capital-a" class="key" title="Acute Capital A">&Aacute;</div>
+                <button onclick="copyClipboard(this.getAttribute('data-target'))" data-target="grave-a2"id="circumflex-capital-a" class="key" title="Circumflex Capital A">&Acirc;</button>
+                <button onclick="copyClipboard(this.getAttribute('data-target'))" data-target="grave-a2"id="circumflex-a" class="key" title="Circumflex a">&acirc;</div>
+                <button onclick="copyClipboard(this.getAttribute('data-target'))" data-target="grave-a2"id="diaeresis-capital-a" class="key" title="Diaeresis Capital A">&Auml;</button>
 
                 
             </div>
