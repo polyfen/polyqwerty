@@ -1,0 +1,20 @@
+{
+    "name": "Poly Qwerty",
+    "short_name": "Poly Qwerty",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#fe30b8",
+    "background_color": "#fe30b8",
+    "start_url": "https://polyqwerty.com",
+    "display": "standalone"
+}
