@@ -40,12 +40,13 @@
         <script>
             function copyClipboard(target) {
                 var copyText = document.getElementById(target).innerHTML;
-                var input = document.createElement("input");
-                input.value = copyText;
-                document.body.appendChild(input);
-                input.select();
-                document.execCommand("copy");
-                document.body.removeChild(input); 
+                //var input = document.createElement("input");
+                //input.value = copyText;
+                //document.body.appendChild(input);
+                //input.select();
+                //document.execCommand("copy"); --> is obsolet
+                navigator.clipboard.writeText(copyText);
+                //document.body.removeChild(input); 
             } 
         </script>
     </head>
