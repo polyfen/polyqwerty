@@ -43,19 +43,6 @@
         <meta name="robots" content="index, follow">
         <!-- PAGE-SPECIFIC META end -->
 
-
-        <script>
-            function copyClipboard(target) {
-                var copyText = document.getElementById(target).innerHTML;
-                //var input = document.createElement("input");
-                //input.value = copyText;
-                //document.body.appendChild(input);
-                //input.select();
-                //document.execCommand("copy"); --> is obsolet
-                navigator.clipboard.writeText(copyText);
-                //document.body.removeChild(input); 
-            } 
-        </script>
     </head>
     <body class="light-mode">
 
@@ -71,24 +58,24 @@
                 <h2>Diacritics</h2>
                 <div class="key-section">
                 <h3>a</h3>
-<button id="grave-capital-a" class="key" title="Grave A">&Agrave;</button>
-<button id="grave-a" class="key" title="Grave a">&agrave;</button>
-<button id="acute-capital-a" class="key" title="Acute A">&Aacute;</button>
-<button id="acute-a" class="key" title="Acute a">&aacute;</button>
-<button id="circumflex-capital-a" class="key" title="Circumflex A">&Acirc;</button>
-<button id="circumflex-a" class="key" title="Circumflex a">&acirc;</button>
-<button id="umlaut-capital-a" class="key" title="Umlaut A">&Auml;</button>
-<button id="umlaut-a" class="key" title="Umlaut a">&auml;</button>
-<button id="capital-ae" class="key" title="AE">&#198;</button>
-<button id="ae" class="key" title="ae">&aelig;</button>
-<button id="acute-capital-ae" class="key" title="Acute AE">&AElig;</button>
-<button id="acute-ae" class="key" title="Acute ae">&#509;</button>
-<button id="tilde-capital-a" class="key" title="Tilde A">&Atilde;</button>
-<button id="tilde-a" class="key" title="Tilde a">&atilde;</button>
-<button id="ring-capital-a" class="key" title="Ring A">&Aring;</button>
-<button id="ring-a" class="key" title="Ring a">&aring;</button>
-<button id="macron-capital-a" class="key" title="Macron A">&Amacr;</button>
-<button id="macron-a" class="key" title="Macron a">&amacr;</button>
+                <button id="grave-capital-a" class="key" title="Grave A">&Agrave;</button>
+                <button id="grave-a" class="key" title="Grave a">&agrave;</button>
+                <button id="acute-capital-a" class="key" title="Acute A">&Aacute;</button>
+                <button id="acute-a" class="key" title="Acute a">&aacute;</button>
+                <button id="circumflex-capital-a" class="key" title="Circumflex A">&Acirc;</button>
+                <button id="circumflex-a" class="key" title="Circumflex a">&acirc;</button>
+                <button id="umlaut-capital-a" class="key" title="Umlaut A">&Auml;</button>
+                <button id="umlaut-a" class="key" title="Umlaut a">&auml;</button>
+                <button id="capital-ae" class="key" title="AE">&#198;</button>
+                <button id="ae" class="key" title="ae">&aelig;</button>
+                <button id="acute-capital-ae" class="key" title="Acute AE">&AElig;</button>
+                <button id="acute-ae" class="key" title="Acute ae">&#509;</button>
+                <button id="tilde-capital-a" class="key" title="Tilde A">&Atilde;</button>
+                <button id="tilde-a" class="key" title="Tilde a">&atilde;</button>
+                <button id="ring-capital-a" class="key" title="Ring A">&Aring;</button>
+                <button id="ring-a" class="key" title="Ring a">&aring;</button>
+                <button id="macron-capital-a" class="key" title="Macron A">&Amacr;</button>
+                <button id="macron-a" class="key" title="Macron a">&amacr;</button>
                 
                 <h3>e</h3>
 
@@ -188,10 +175,32 @@
 <button id="tilde-d" class="key" title="Tilde d">&dtilde;</button>
 <button id="ring-capital-D" class="key" title="Ring D">&Dring;</button>
 <button id="ring-d" class="key" title="Ring d">&dring;</button>
-                </div>
+
+
+<h3>f</h3>
+<h3>g</h3>
+<h3>h</h3>
+<h3j</h3>
+<h3>k</h3>
+<h3>d</h3>
+&#7698; &#x1E12;
+<h3>d</h3>
+            
                 <p id="p1">Hello, I'm TEXT 1</p>
                 <input type="text">
             </section>
         </div>
+
+        <script>
+            const buttons = document.getElementsByClassName('key-section')[0].querySelectorAll('button');
+
+
+            buttons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                navigator.clipboard.writeText(button.innerText);
+            });
+            });
+        </script>
     </body>
 </html>
