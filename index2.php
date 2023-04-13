@@ -57,130 +57,180 @@
             <section id="diacritics">
                 <h2>Diacritics</h2>
                 <div class="key-section">
+
                 <h3>a</h3>
-                <button id="grave-capital-a" class="key" title="Grave A">&Agrave;</button>
-                <button id="grave-a" class="key" title="Grave a">&agrave;</button>
-                <button id="acute-capital-a" class="key" title="Acute A">&Aacute;</button>
-                <button id="acute-a" class="key" title="Acute a">&aacute;</button>
-                <button id="circumflex-capital-a" class="key" title="Circumflex A">&Acirc;</button>
-                <button id="circumflex-a" class="key" title="Circumflex a">&acirc;</button>
-                <button id="umlaut-capital-a" class="key" title="Umlaut A">&Auml;</button>
-                <button id="umlaut-a" class="key" title="Umlaut a">&auml;</button>
-                <button id="capital-ae" class="key" title="AE">&#198;</button>
-                <button id="ae" class="key" title="ae">&aelig;</button>
-                <button id="acute-capital-ae" class="key" title="Acute AE">&AElig;</button>
-                <button id="acute-ae" class="key" title="Acute ae">&#509;</button>
-                <button id="tilde-capital-a" class="key" title="Tilde A">&Atilde;</button>
-                <button id="tilde-a" class="key" title="Tilde a">&atilde;</button>
-                <button id="ring-capital-a" class="key" title="Ring A">&Aring;</button>
-                <button id="ring-a" class="key" title="Ring a">&aring;</button>
-                <button id="macron-capital-a" class="key" title="Macron A">&Amacr;</button>
-                <button id="macron-a" class="key" title="Macron a">&amacr;</button>
-                
+                <h4>Á á Â â Ä	ä Ã	ã	Å	å	Ā	ā</h4>
+                <button id="grave-capital-a" class="key" title="Grave A">&#192;</button>
+                <button id="grave-a" class="key" title="Grave a">&#224;</button>
+                <button id="acute-capital-a" class="key" title="Acute A">&#193;</button>
+                <button id="acute-a" class="key" title="Acute a">&#225;</button>
+                <button id="circ-capital-a" class="key" title="Circumflex A">&#194;</button>
+                <button id="circ-a" class="key" title="Circumflex a">&#226;</button>
+                <button id="diaeresis-capital-a" class="key" title="Diaeresis A">&#196;</button>
+                <button id="diaeresis-a" class="key" title="Diaeresis a">&#228;</button>
+                <button id="tilde-capital-a" class="key" title="Tilde A">&#195;</button>
+                <button id="tilde-a" class="key" title="Tilde a">&#227;</button>
+                <button id="ring-capital-a" class="key" title="Ring A">&#197;</button>
+                <button id="ring-a" class="key" title="Ring a">&#229;</button>
+                <button id="macron-capital-a" class="key" title="Macron A">&#256;</button>
+                <button id="macron-a" class="key" title="Macron a">&#257;</button>
+
                 <h3>e</h3>
+                <h4>È	è	É	é	Ê	ê	Ë	ë	Ē	ē	Ė	ė	Ę	ę</h4>
+                <button id="grave-capital-e" class="key" title="Grave E">&#200;</button>
+                <button id="grave-e" class="key" title="Grave e">&#232;</button>
+                <button id="acute-capital-e" class="key" title="Acute E">&#201;</button>
+                <button id="acute-e" class="key" title="Acute e">&#233;</button>
+                <button id="circumflex-capital-e" class="key" title="Circumflex E">&#202;</button>
+                <button id="circumflex-e" class="key" title="Circumflex e">&#234;</button>
+                <button id="diaeresis-capital-e" class="key" title="Diaeresis E">&#203;</button>
+                <button id="diaeresis-e" class="key" title="Diaeresis e">&#235;</button>
+                <button id="macron-capital-e" class="key" title="Macron E">&#274;</button>
+                <button id="macron-e" class="key" title="Macron e">&#275;</button>
+                <button id="dot-above-capital-e" class="key" title="Dot Above E">&#278;</button>
+                <button id="dot-above-e" class="key" title="Dot Above e">&#279;</button>
+                <button id="ogonek-capital-e" class="key" title="Ogonek E">&#280;</button>
+                <button id="ogonek-e" class="key" title="Ogonek e">&#281;</button>
 
-                <button id="grave-capital-e" class="key" title="Grave E">&Egrave;</button>
-<button id="grave-e" class="key" title="Grave e">&egrave;</button>
-<button id="acute-capital-e" class="key" title="Acute E">&Eacute;</button>
-<button id="acute-e" class="key" title="Acute e">&eacute;</button>
-<button id="circumflex-capital-e" class="key" title="Circumflex E">&Ecirc;</button>
-<button id="circumflex-e" class="key" title="Circumflex e">&ecirc;</button>
-<button id="umlaut-capital-e" class="key" title="Umlaut E">&Euml;</button>
-<button id="umlaut-e" class="key" title="Umlaut e">&euml;</button>
-<button id="macron-capital-e" class="key" title="Macron E">&Emacr;</button>
-<button id="macron-e" class="key" title="Macron e">&emacr;</button>
-<button id="dot-capital-e" class="key" title="Dot E">&#274;</button>
-<button id="dot-e" class="key" title="Dot e">&#275;</button>
-<button id="ogonek-capital-e" class="key" title="Ogonek E">&#280;</button>
-<button id="ogonek-e" class="key" title="Ogonek e">&#281;</button>
+                <h3>i</h3>
+                <h4>Î	î	Ï	ï	Í	í	Ī	ī	Į	į	Ì	ì</h4>
+                <button id="circ-capital-i" class="key" title="Circumflex I">&#206;</button>
+                <button id="circ-i" class="key" title="Circumflex i">&#238;</button>
+                <button id="diaeresis-capital-i" class="key" title="Diaeresis I">&#207;</button>
+                <button id="diaeresis-i" class="key" title="Diaeresis i">&#239;</button>
+                <button id="acute-capital-i" class="key" title="Acute I">&#205;</button>
+                <button id="acute-i" class="key" title="Acute i">&#237;</button>
+                <button id="macron-capital-i" class="key" title="Macron I">&#298;</button>
+                <button id="macron-i" class="key" title="Macron i">&#299;</button>
+                <button id="ogon-capital-i" class="key" title="Ogon I">&#302;</button>
+                <button id="ogon-i" class="key" title="Ogon i">&#303;</button>
+                <button id="grave-capital-i" class="key" title="Grave I">&#204;</button>
+                <button id="grave-i" class="key" title="Grave i">&#236;</button>
 
-<h3>i</h3>
-<button id="capital-i-circumflex" class="key" title="Circumflex I">&#206;</button>
-<button id="i-circumflex" class="key" title="Circumflex i">&#238;</button>
-<button id="umlaut-capital-i" class="key" title="Umlaut I">&Iuml;</button>
-<button id="umlaut-i" class="key" title="Umlaut i">&iuml;</button>
-<button id="acute-capital-i" class="key" title="Acute I">&Iacute;</button>
-<button id="acute-i" class="key" title="Acute i">&iacute;</button>
-<button id="macron-capital-i" class="key" title="Macron I">&Imacr;</button>
-<button id="macron-i" class="key" title="Macron i">&imacr;</button>
-<button id="capital-i-dot-above" class="key" title="Dot Above I">&#304;</button>
-<button id="i-dot-above" class="key" title="Dot Above i">&#305;</button>
-<button id="grave-capital-i" class="key" title="Grave I">&Igrave;</button>
-<button id="grave-i" class="key" title="Grave i">&igrave;</button>
+                <h3>o</h3>
+                <h4>Ô	ô	Ö	ö	Ò	ò	Ó	ó	Ø	ø	Ō	ō	Õ	õ</h4>
+                <button id="circum-capital-o" class="key" title="Circumflex O">&#212;</button>
+                <button id="circum-o" class="key" title="Circumflex o">&#244;</button>
+                <button id="diaeresis-capital-o" class="key" title="Diaeresis O">&#214;</button>
+                <button id="diaeresis-o" class="key" title="Diaeresis o">&#246;</button>
+                <button id="grave-capital-o" class="key" title="Grave O">&#210;</button>
+                <button id="grave-o" class="key" title="Grave o">&#242;</button>
+                <button id="acute-capital-o" class="key" title="Acute O">&#211;</button>
+                <button id="acute-o" class="key" title="Acute o">&#243;</button>
+                <button id="slash-capital-o" class="key" title="slash O">&#216;</button>
+                <button id="slash-o" class="key" title="slash o">&#248;</button>
+                <button id="macron-capital-o" class="key" title="Macron O">&#332;</button>
+                <button id="macron-o" class="key" title="Macron o">&#333;</button>
+                <button id="tilde-capital-o" class="key" title="Tilde O">&#213;</button>
+                <button id="tilde-o" class="key" title="Tilde o">&#245;</button>
 
-<h3>o</h3>
-<button id="capital-o-circumflex" class="key" title="Circumflex O">&Ocirc;</button>
-<button id="o-circumflex" class="key" title="Circumflex o">&ocirc;</button>
-<button id="umlaut-capital-o" class="key" title="Umlaut O">&Ouml;</button>
-<button id="umlaut-o" class="key" title="Umlaut o">&ouml;</button>
-<button id="capital-o-grave" class="key" title="Grave O">&Ograve;</button>
-<button id="o-grave" class="key" title="Grave o">&ograve;</button>
-<button id="acute-capital-o" class="key" title="Acute O">&Oacute;</button>
-<button id="acute-o" class="key" title="Acute o">&oacute;</button>
-<button id="ligature-oe" class="key" title="OE">&#338;</button>
-<button id="oe" class="key" title="oe">&oelig;</button>
-<button id="slash-o" class="key" title="Slash o">&#216;</button>
-<button id="o-slash" class="key" title="o slash">&#248;</button>
-<button id="macron-capital-o" class="key" title="Macron O">&Omacr;</button>
-<button id="macron-o" class="key" title="Macron o">&omacr;</button>
-<button id="tilde-capital-o" class="key" title="Tilde O">&Otilde;</button>
-<button id="tilde-o" class="key" title="Tilde o">&otilde;</button>
+                <h3>u</h3>
+                <h4>Û	û	Ü	ü	Ù	ù	Ú	ú	Ū	ū</h4>
+                <button id="circum-capital-u" class="key" title="Circumflex U">&#219;</button>
+                <button id="circum-u" class="key" title="Circumflex u">&#251;</button>
+                <button id="diaeresis-capital-u" class="key" title="Diaeresis U">&#220;</button>
+                <button id="diaeresis-u" class="key" title="Diaeresis u">&#252;</button>
+                <button id="grave-capital-u" class="key" title="Grave U">&#217;</button>
+                <button id="grave-u" class="key" title="Grave u">&#249;</button>
+                <button id="acute-capital-u" class="key" title="Acute U">&#218;</button>
+                <button id="acute-u" class="key" title="Acute u">&#250;</button>
+                <button id="macron-capital-u" class="key" title="Macron U">&#362;</button>
+                <button id="macron-u" class="key" title="Macron u">&#363;</button>
 
-<h3>u</h3>
-<button id="circumflex-capital-u" class="key" title="Circumflex U">&Ucirc;</button>
-<button id="circumflex-u" class="key" title="Circumflex u">&ucirc;</button>
-<button id="umlaut-capital-u" class="key" title="Umlaut U">&Uuml;</button>
-<button id="umlaut-u" class="key" title="Umlaut u">&uuml;</button>
-<button id="grave-capital-u" class="key" title="Grave U">&Ugrave;</button>
-<button id="grave-u" class="key" title="Grave u">&ugrave;</button>
-<button id="acute-capital-u" class="key" title="Acute U">&Uacute;</button>
-<button id="acute-u" class="key" title="Acute u">&uacute;</button>
-<button id="macron-capital-u" class="key" title="Macron U">&Umacr;</button>
-<button id="macron-u" class="key" title="Macron u">&umacr;</button>
+                <h3>b</h3>
+                <h4>Ḃ	ḃ	Ḅ	ḅ	Ḇ	ḇ</h4>
+                <button id="dot-over-capital-b" class="key" title="Dot Over B">&#7682;</button>
+                <button id="dot-over-b" class="key" title="Dot over b">&#7683;</button>
+                <button id="dot-below-capital-b" class="key" title="Dot Below B">&#7684;</button>
+                <button id="dot-below-b" class="key" title="Dot below b">&#7685;</button>
+                <button id="line-below-capital-b" class="key" title="Line Below B">&#7686;</button>
+                <button id="line-below-b" class="key" title="Line below b">&#7687;</button>
 
-<h3>b</h3>
-<button id="dot-capital-b" class="key" title="Dot B">Ḃ</button>
-<button id="dot-b" class="key" title="Dot b">ḃ</button>
-<button id="dot-below-capital-b" class="key" title="Dot Below B">Ḅ</button>
-<button id="dot-below-b" class="key" title="Dot Below b">ḅ</button>
-<button id="macron-capital-b" class="key" title="Macron B">Ḇ</button>
-<button id="macron-b" class="key" title="Macron b">ḇ</button>
-
-<h3>c</h3>
-<button id="grave-capital-D" class="key" title="Grave D">&Dcaron;</button>
-<button id="grave-d" class="key" title="Grave d">&dcaron;</button>
-<button id="acute-capital-D" class="key" title="Acute D">&Dstrok;</button>
-<button id="acute-d" class="key" title="Acute d">&dstrok;</button>
-<button id="circumflex-capital-D" class="key" title="Circumflex D"> </button>
-<button id="circumflex-d" class="key" title="Circumflex d">&dcirc;</button>
-<button id="umlaut-capital-D" class="key" title="Umlaut D">&Duml;</button>
-<button id="umlaut-d" class="key" title="Umlaut d">&duml;</button>
-<button id="tilde-capital-D" class="key" title="Tilde D">&Dtilde;</button>
-<button id="tilde-d" class="key" title="Tilde d">&dtilde;</button>
-<button id="ring-capital-D" class="key" title="Ring D">&Dring;</button>
-<button id="ring-d" class="key" title="Ring d">&dring;</button>
-
-
-<h3>d</h3>
-
-<button id="grave-capital-D" class="key" title="Grave D">&Dcaron;</button>
-<button id="grave-d" class="key" title="Grave d">&dcaron;</button>
-<button id="acute-capital-D" class="key" title="Acute D">&#7698;</button>
-<button id="acute-d" class="key" title="Acute d">&dstrok;</button>
-<button id="circumflex-capital-D" class="key" title="Circumflex D">&Dcirc;</button>
-<button id="circumflex-d" class="key" title="Circumflex d">&dcirc;</button>
-<button id="umlaut-capital-D" class="key" title="Umlaut D">&Duml;</button>
-<button id="umlaut-d" class="key" title="Umlaut d">&duml;</button>
-<button id="tilde-capital-D" class="key" title="Tilde D">&Dtilde;</button>
-<button id="tilde-d" class="key" title="Tilde d">&dtilde;</button>
-<button id="ring-capital-D" class="key" title="Ring D">&Dring;</button>
-<button id="ring-d" class="key" title="Ring d">&dring;</button>
+                <h3>c</h3>
+                <h4>Ć	ć	Č	č	Ç	ç	Ḉ	ḉ	Ĉ	ĉ	Ċ	ċ</h4>
+                <button id="acute-capital-c" class="key" title="Acute C">&#262;</button>
+                <button id="acute-c" class="key" title="Acute c">&#263;</button>
+                <button id="caron-capital-c" class="key" title="Caron C">&#268;</button>
+                <button id="caron-c" class="key" title="Caron c">&#269;</button>
+                <button id="cedilla-capital-c" class="key" title="Cedilla C">&#199;</button>
+                <button id="cedilla-c" class="key" title="Cedilla c">&#231;</button>
+                <button id="cedilla-acute-capital-c" class="key" title="Cedilla Acute C">&#7688;</button>
+                <button id="cedilla-acute-c" class="key" title="Cedilla Acute c">&#7689;</button>
+                <button id="circumflex-capital-c" class="key" title="Circumflex C">&#264;</button>
+                <button id="circumflex-c" class="key" title="Circumflex c">&#265;</button>
+                <button id="dot-above-capital-c" class="key" title="Dot above C">&#266;</button>
+                <button id="dot-above-c" class="key" title="Dot above c">&#267;</button>
 
 
-<h3>f</h3>
-<h3>g</h3>
-<h3>h</h3>
-<h3j</h3>
+                <h3>d</h3>
+                <h4>Ď	ď	Ḑ	ḑ	Ḓ	ḓ	Ḋ	ḋ	Ḍ	ḍ	Ḏ	ḏ</h4>
+                <button id="caron-capital-d" class="key" title="Caron D">&#270;</button>
+                <button id="caron-d" class="key" title="Caron d">&#271;</button>
+                <button id="cedilla-bellow-capital-d" class="key" title="Cedilla below D">&#7696;</button>
+                <button id="cedilla-bellow-d" class="key" title="Circumflex d">&#7697;</button>
+                <button id="circumflex-below-capital-d" class="key" title="circumflex below D">&#7698;</button>
+                <button id="circumflex-below-d" class="key" title="circumflex below d">&#7699;</button>
+                <button id="dot-above-capital-d" class="key" title="Dot above D">&#7690;</button>
+                <button id="dot-above-d" class="key" title="Dot above d">&#7691;</button>
+                <button id="dot-below-capital-d" class="key" title="Dot Below D">&#7692;</button>
+                <button id="dot-below-d" class="key" title="Dot Below d">&#7693;</button>
+                <button id="line-below-capital-d" class="key" title="Line below D">&#7694;</button>
+                <button id="line-below-d" class="key" title="Line below d">&#7695;</button>
+
+                <h3>g</h3>
+                <h4>Ǵ	ǵ	Ğ	ğ	Ǧ	ǧ	Ģ	ģ	Ĝ	ĝ	Ġ	ġ	Ḡ	ḡ</h4>
+                <button id="acute-capital-g" class="key" title="Acute G">&#500;</button>
+                <button id="acute-g" class="key" title="Acute g">&#501;</button>
+                <button id="breve-capital-g" class="key" title="Breve G">&#286;</button>
+                <button id="breve-g" class="key" title="Breve g">&#287;</button>
+                <button id="caron-capital-g" class="key" title="Caron G">&#486;</button>
+                <button id="caron-g" class="key" title="Caron g">&#487;</button>
+                <button id="cedilla-capital-g" class="key" title="Cedilla G">&#290;</button>
+                <button id="cedilla-g" class="key" title="Cedilla g">&#291;</button>
+                <button id="circumflex-capital-g" class="key" title="Circumflex G">&#284;</button>
+                <button id="circumflex-g" class="key" title="Circumflex g">&#285;</button>
+                <button id="dot-above-capital-g" class="key" title="Dot G">&#288;</button>
+                <button id="dot-above-g" class="key" title="Dot g">&#289;</button>
+                <button id="macron-capital-g" class="key" title="Macron G">&#7712;</button>
+                <button id="macron-g" class="key" title="Macron g">&#7713;</button>
+
+                <h3>h</h3>
+                <h4>Ḫ	ḫ	Ȟ	ȟ	Ḩ	ḩ	Ĥ	ĥ	Ḧ	ḧ	Ḣ	ḣ	Ḥ	ḥ	ẖ</h4>		
+                <button id=breve-below-capital-h class="key" title="Breve H">&#x1E2A;</button>
+                <button id="breve-below-h" class="key" title="Breve h">&#x1E2B;</button>
+                <button id="caron-capital-h" class="key" title="Caron H">&#x021E;</button>
+                <button id="caron-h" class="key" title="Caron h">&#x021F;</button>
+                <button id="cedilla-capital-h" class="key" title="Cedilla H">&#x1E28;</button>
+                <button id="cedilla-h" class="key" title="Cedilla h">&#x1E29;</button>
+                <button id="circumflex-capital-h" class="key" title="Circumflex H">&#x0124;</button>
+                <button id="circumflex-h" class="key" title="Circumflex h">&#x0125;</button>
+                <button id="diaeresis-capital-h" class="key" title="Diaeresis H">&#x1E26;</button>
+                <button id="diaeresis-h" class="key" title="Diaeresis h">&#x1E27;</button>
+                <button id="dot-above-capital-h" class="key" title="Dot Above H">&#x1E24;</button>
+                <button id="dot-above-h" class="key" title="Dot Above h">&#x1E25;</button>
+                <button id="dot-below-capital-h" class="key" title="Dot Below H">&#x1E22;</button>
+                <button id="dot-below-h" class="key" title="Dot Below h">&#x1E23;</button>
+                <button id="line-below-h" class="key" title="Line Below h">&#x1E96;</button>
+
+                <h3>j</h3>
+                <h4>ǰ	Ĵ	ĵ</h4>
+                <button id="caron-capital-j" class="key" title="Caron J">&#x01F0;</button>
+                <button id="circumflex-capital-j" class="key" title="Circumflex J">&#x0134;</button>
+                <button id="circumflex-j" class="key" title="Circumflex j">&#x0135;</button>
+
+                <h3>k</h3>
+                <h4>ḱ	Ǩ	ǩ	Ķ	ķ	Ḳ	ḳ	Ḵ	ḵ</h4>
+                <button id="acute-capital-k" class="key" title="Acute K">&#x1E30;</button>
+                <button id="caron-capital-k" class="key" title="Caron K">&#x01E8;</button>
+                <button id="caron-k" class="key" title="Caron k">&#x01E9;</button>
+                <button id="cedilla-capital-k" class="key" title="Cedilla K">&#x0136;</button> 
+                <button id="cedilla-k" class="key" title="Cedilla k">&#x0137;</button>
+                <button id="dot-below-capital-k" class="key" title="Dot Below K">&#x1E32;</button>
+                <button id="dot-below-k" class="key" title="Dot Below k">&#x1E33;</button>
+                <button id="line-below-capital-k" class="key" title="Line Below K">&#x1E34;</button>
+                <button id="line-below-k" class="key" title="Line Below k">&#x1E35;</button>
+
+
 <h3>k</h3>
 <h3>d</h3>
 &#7698; &#x1E12;
@@ -188,7 +238,10 @@
             
                 <p id="p1">Hello, I'm TEXT 1</p>
                 <input type="text">
+                
             </section>
+
+            THIS IS END
         </div>
 
         <script>
