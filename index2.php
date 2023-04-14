@@ -59,15 +59,17 @@
                 <div class="key-section">
 
                 <h3>a</h3>
-                <h4>Á á Â â Ä	ä Ã	ã	Å	å	Ā	ā</h4>
+                <h4>Á á Â â Ä	ä Ã	ã Ǽ ǽ	Å	å	Ā	ā</h4>
                 <button id="grave-capital-a" class="key" title="Grave A">&#192;</button>
                 <button id="grave-a" class="key" title="Grave a">&#224;</button>
                 <button id="acute-capital-a" class="key" title="Acute A">&#193;</button>
                 <button id="acute-a" class="key" title="Acute a">&#225;</button>
-                <button id="circ-capital-a" class="key" title="Circumflex A">&#194;</button>
-                <button id="circ-a" class="key" title="Circumflex a">&#226;</button>
+                <button id="circumflex-capital-a" class="key" title="Circumflex A">&#194;</button>
+                <button id="circumflex-a" class="key" title="Circumflex a">&#226;</button>
                 <button id="diaeresis-capital-a" class="key" title="Diaeresis A">&#196;</button>
                 <button id="diaeresis-a" class="key" title="Diaeresis a">&#228;</button>
+                <button id="acute-capital-ae" class="key" title="Acute AE">&#x01FC;</button>
+                <button id="acute-ae" class="key" title="Acute ae">&#x01FD;</button>
                 <button id="tilde-capital-a" class="key" title="Tilde A">&#195;</button>
                 <button id="tilde-a" class="key" title="Tilde a">&#227;</button>
                 <button id="ring-capital-a" class="key" title="Ring A">&#197;</button>
@@ -94,8 +96,8 @@
 
                 <h3>i</h3>
                 <h4>Î	î	Ï	ï	Í	í	Ī	ī	Į	į	Ì	ì</h4>
-                <button id="circ-capital-i" class="key" title="Circumflex I">&#206;</button>
-                <button id="circ-i" class="key" title="Circumflex i">&#238;</button>
+                <button id="circumflex-capital-i" class="key" title="Circumflex I">&#206;</button>
+                <button id="circumflex-i" class="key" title="Circumflex i">&#238;</button>
                 <button id="diaeresis-capital-i" class="key" title="Diaeresis I">&#207;</button>
                 <button id="diaeresis-i" class="key" title="Diaeresis i">&#239;</button>
                 <button id="acute-capital-i" class="key" title="Acute I">&#205;</button>
@@ -109,8 +111,8 @@
 
                 <h3>o</h3>
                 <h4>Ô	ô	Ö	ö	Ò	ò	Ó	ó	Ø	ø	Ō	ō	Õ	õ</h4>
-                <button id="circum-capital-o" class="key" title="Circumflex O">&#212;</button>
-                <button id="circum-o" class="key" title="Circumflex o">&#244;</button>
+                <button id="circumflex-capital-o" class="key" title="Circumflex O">&#212;</button>
+                <button id="circumflex-o" class="key" title="Circumflex o">&#244;</button>
                 <button id="diaeresis-capital-o" class="key" title="Diaeresis O">&#214;</button>
                 <button id="diaeresis-o" class="key" title="Diaeresis o">&#246;</button>
                 <button id="grave-capital-o" class="key" title="Grave O">&#210;</button>
@@ -126,8 +128,8 @@
 
                 <h3>u</h3>
                 <h4>Û	û	Ü	ü	Ù	ù	Ú	ú	Ū	ū</h4>
-                <button id="circum-capital-u" class="key" title="Circumflex U">&#219;</button>
-                <button id="circum-u" class="key" title="Circumflex u">&#251;</button>
+                <button id="circumflex-capital-u" class="key" title="Circumflex U">&#219;</button>
+                <button id="circumflex-u" class="key" title="Circumflex u">&#251;</button>
                 <button id="diaeresis-capital-u" class="key" title="Diaeresis U">&#220;</button>
                 <button id="diaeresis-u" class="key" title="Diaeresis u">&#252;</button>
                 <button id="grave-capital-u" class="key" title="Grave U">&#217;</button>
