@@ -166,8 +166,8 @@
                 <h4>Ď	ď	Ḑ	ḑ	Ḓ	ḓ	Ḋ	ḋ	Ḍ	ḍ	Ḏ	ḏ</h4>
                 <button id="caron-capital-d" class="key" title="Caron D">&#270;</button>
                 <button id="caron-d" class="key" title="Caron d">&#271;</button>
-                <button id="cedilla-bellow-capital-d" class="key" title="Cedilla below D">&#7696;</button>
-                <button id="cedilla-bellow-d" class="key" title="Circumflex d">&#7697;</button>
+                <button id="cedilla-capital-d" class="key" title="Cedilla below D">&#7696;</button>
+                <button id="cedilla-d" class="key" title="Cedilla d">&#7697;</button>
                 <button id="circumflex-below-capital-d" class="key" title="circumflex below D">&#7698;</button>
                 <button id="circumflex-below-d" class="key" title="circumflex below d">&#7699;</button>
                 <button id="dot-above-capital-d" class="key" title="Dot above D">&#7690;</button>
@@ -230,18 +230,199 @@
                 <button id="line-below-capital-k" class="key" title="Line Below K">&#x1E34;</button>
                 <button id="line-below-k" class="key" title="Line Below k">&#x1E35;</button>
 
+                <h3>l</h3>
+                <h4>Ĺ	ĺ	Ľ	ľ	Ļ	ļ	Ḽ	ḽ	Ḷ	ḷ	Ḹ	ḹ	Ḻ	ḻ</h4>
+                <button id="acute-capital-l" class="key" title="Acute L">&#x0139;</button>
+                <button id="acute-l" class="key" title="Acute l">&#x013A;</button>	
+                <button id="caron-capital-l" class="key" title="Caron L">&#x013D;</button>
+                <button id="caron-l" class="key" title="Caron l">&#x013E;</button>
+                <button id="cedilla-capital-l" class="key" title="Cedilla L">&#x013B;</button>
+                <button id="cedilla-l" class="key" title="Cedilla l">&#x013C;</button>
+                <button id="circumflex-below-capital-l" class="key" title="Circumflex Below L">&#x1E3C;</button>
+                <button id="circumflex-below-l" class="key" title="Circumflex Below l">&#x1E3D;</button>
+                <button id="dot-below-capital-l" class="key" title="Dot Below L">&#x1E36;</button>
+                <button id="dot-below-l" class="key" title="Dot Below l">&#x1E37;</button>
+                <button id="dot-below-macron-capital-l" class="key" title="Dot Below Macron L">&#x1E38;</button>
+                <button id="dot-below-macron-l" class="key" title="Dot Below Macron l">&#x1E39;</button>
+                <button id="line-below-capital-l" class="key" title="Line Below L">&#x1E3A;</button>
+                <button id="line-below-l" class="key" title="Line Below l">&#x1E3B;</button>
+                
 
-<h3>k</h3>
-<h3>d</h3>
-&#7698; &#x1E12;
-<h3>d</h3>
-            
-                <p id="p1">Hello, I'm TEXT 1</p>
+                <h3>m</h3>
+                <h4>Ḿ	ḿ	Ṁ	ṁ	Ṃ	ṃ</h4>
+               <button id="acute-capital-m" class="key" title="Acute M">&#x1E3E;</button>
+               <button id="acute-m" class="key" title="Acute m">&#x1E3F;</button>
+               <button id="dot-above-capital-m" class="key" title="Dot Above M">&#x1E40;</button>
+               <button id="dot-above-m" class="key" title="Dot Above m">&#x1E41;</button>
+               <button id="dot-below-capital-m" class="key" title="Dot Below M">&#x1E42;</button>
+               <button id="dot-below-m" class="key" title="Dot Below m">&#x1E43;</button>
+
+                <h3>n</h3>
+                <h4>Ń	ń	Ň	ň	Ņ	ņ	Ṋ	ṋ	Ṅ	ṅ	Ṇ	ṇ	Ǹ	ǹ	Ṉ	ṉ	Ñ	ñ</h4>
+                <button id="acute-capital-n" class="key" title="Acute N">&#x0143;</button>
+                <button id="acute-n" class="key" title="Acute n">&#x0144;</button>
+                <button id="caron-capital-n" class="key" title="Caron N">&#x0147;</button>
+                <button id="caron-n" class="key" title="Caron n">&#x0148;</button>
+                <button id="cedilla-capital-n" class="key" title="Cedilla N">&#x0145;</button>
+                <button id="cedilla-n" class="key" title="Cedilla n">&#x0146;</button>
+                <button id="circumflex-below-capital-n" class="key" title="Circumflex Below N">&#x1E4A;</button>
+                <button id="circumflex-below-n" class="key" title="Circumflex Below n">&#x1E4B;</button>
+                <button id="dot-above-capital-n" class="key" title="Dot Above N">&#x1E44;</button>
+                <button id="dot-above-n" class="key" title="Dot Above n">&#x1E45;</button>
+                <button id="dot-below-capital-n" class="key" title="Dot Below N">&#x1E46;</button>
+                <button id="dot-below-n" class="key" title="Dot Below n">&#x1E47;</button>
+                <button id="n-capital-grave" class="key" title="Grave N">&#x01F8;</button>
+                <button id="n-grave" class="key" title="Grave n">&#x01F9;</button>
+                <button id="line-above-capital-n" class="key" title="Line Above N">&#x1E48;</button>
+                <button id="line-above-n" class="key" title="Line Above n">&#x1E49;</button>
+                <button id="tilde-capital-n" class="key" title="Tilde N">&#x00D1;</button>
+                <button id="tilde-n" class="key" title="Tilde n">&#x00F1;</button>
+
+                <h3>p</h3>
+                <h4>Ṕ	ṕ	Ṗ	ṗ</h4>
+                <button id="acute-capital-p" class="key" title="Acute P">&#x1E54;</button>
+                <button id="acute-p" class="key" title="Acute p">&#x1E55;</button>
+                <button id="dot-above-capital-p" class="key" title="Dot Above P">&#x1E56;</button>
+                <button id="dot-above-p" class="key" title="Dot Above p">&#x1E57;</button>
+
+                <h3>r</h3>
+                <h4>Ŕ	ŕ	Ř	ř	Ŗ	ŗ	Ṙ	ṙ	Ṛ	ṛ	Ṝ	ṝ	Ȑ	ȑ	Ȓ	ȓ	Ṟ	ṟ</h4>
+                <button id="acute-capital-r" class="key" title="Acute R">&#x0154;</button>
+                <button id="acute-r" class="key" title="Acute r">&#x0155;</button>
+                <button id="caron-capital-r" class="key" title="Caron R">&#x0158;</button>
+                <button id="caron-r" class="key" title="Caron r">&#x0159;</button>
+                <button id="cedilla-capital-r" class="key" title="Cedilla R">&#x0156;</button>
+                <button id="cedilla-r" class="key" title="Cedilla r">&#x0157;</button>
+                <button id="dot-above-capital-r" class="key" title="Dot Above R">&#x1E58;</button>
+                <button id="dot-above-r" class="key" title="Dot Above r">&#x1E59;</button>
+                <button id="dot-below-capital-r" class="key" title="Dot Below R">&#x1E5A;</button>
+                <button id="dot-below-r" class="key" title="Dot Below r">&#x1E5B;</button>
+                <button id="dot-below-macron-capital-r" class="key" title="Dot Below Macron R">&#x1E5C;</button>
+                <button id="dot-below-macron-r" class="key" title="Dot Below Macron r">&#x1E5D;</button>
+                <button id="double-grave-capital-r" class="key" title="Double Grave R">&#x0210;</button>
+                <button id="double-grave-r" class="key" title="Double Grave r">&#x0211;</button>
+                <button id="inverted-breve-capital-r" class="key" title="Inverted Breve R">&#x0212;</button>
+                <button id="inverted-breve-r" class="key" title="Inverted Breve r">&#x0213;</button>
+                <button id="line-below-capital-r" class="key" title="Line Below R">&#x1E5E;</button>
+                <button id="line-below-r" class="key" title="Line Below r">&#x1E5F;</button>
+
+                <h3>s</h3>
+                <h4>Ś	ś	Ṥ	ṥ	Š	š	Ṧ	ṧ	Ş	ş	Ŝ	ŝ	Ș	ș	Ṡ	ṡ ẛ	Ṣ	ṣ	Ṩ	ṩ</h4>
+                <button id="acute-capital-s" class="key" title="Acute S">&#x015A;</button>
+                <button id="acute-s" class="key" title="Acute s">&#x015B;</button>
+                <button id="dot-above-acute-capital-s" class="key" title="Dot Above Acute S">&#x1E64;</button>
+                <button id="dot-above-acute-s" class="key" title="Dot Above Acute s">&#x1E65;</button>
+                <button id="caron-capital-s" class="key" title="Caron S">&#x0160;</button>
+                <button id="caron-s" class="key" title="Caron s">&#x0161;</button>
+                <button id="dot-above-caron-capital-s" class="key" title="Dot Above Caron S">&#x1E66;</button>
+                <button id="dot-above-caron-s" class="key" title="Dot Above Caron s">&#x1E67;</button>
+                <button id="cedilla-capital-s" class="key" title="Cedilla S">&#x015E;</button>
+                <button id="cedilla-s" class="key" title="Cedilla s">&#x015F;</button>
+                <button id="circumflex-capital-s" class="key" title="Circumflex S">&#x015C;</button>
+                <button id="circumflex-s" class="key" title="Circumflex s">&#x015D;</button>
+                <button id="comma-below-capital-s" class="key" title="Comma Below S">&#x0218;</button>
+                <button id="comma-below-s" class="key" title="Comma Below s">&#x0219;</button>
+                <button id="dot-above-capital-s" class="key" title="Dot Above S">&#x1E60;</button>
+                <button id="dot-above-s" class="key" title="Dot Above s">&#x1E61;</button>
+                <button id="dot-above-long-s" class="key" title="Dot Above Long S">&#x1E9B;</button>
+                <button id="dot-below-capital-s" class="key" title="Dot Below S">&#x1E62;</button>
+                <button id="dot-below-s" class="key" title="Dot Below s">&#x1E63;</button>
+                <button id="dot-below-above-capital-s" class="key" title="Dot Below Above S">&#x1E68;</button>
+                <button id="dot-below-above-s" class="key" title="Dot Below Above s">&#x1E69;</button>
+
+                <h3>t</h3>
+                <h4>Ť	ť	Ţ	ţ	Ṱ	ṱ	Ț	ț	ẗ	Ṫ	ṫ	Ṭ	ṭ	Ṯ	ṯ</h4>
+                <button id="caron-capital-t" class="key" title="Caron T">&#x0164;</button>
+                <button id="caron-t" class="key" title="Caron t">&#x0165;</button>
+                <button id="cedilla-capital-t" class="key" title="Cedilla T">&#x0162;</button>
+                <button id="cedilla-t" class="key" title="Cedilla t">&#x0163;</button>
+                <button id="circumflex-capital-t" class="key" title="Circumflex T">&#x1E70;</button>
+                <button id="circumflex-t" class="key" title="Circumflex t">&#x1E71;</button>
+                <button id="comma-below-capital-t" class="key" title="Comma Below T">&#x021A;</button>
+                <button id="comma-below-t" class="key" title="Comma Below t">&#x021B;</button>
+                <button id="diaeresis-capital-t" class="key" title="Diaeresis T">&#x1E97;</button>
+                <button id="dot-above-capital-t" class="key" title="Dot Above T">&#x1E6A;</button>
+                <button id="dot-above-t" class="key" title="Dot Above t">&#x1E6B;</button>
+                <button id="dot-below-capital-t" class="key" title="Dot Below T">&#x1E6C;</button>
+                <button id="dot-below-t" class="key" title="Dot Below t">&#x1E6D;</button>
+                <button id="line-below-capital-t" class="key" title="Line Below T">&#x1E6E;</button>
+                <button id="line-below-t" class="key" title="Line Below t">&#x1E6F;</button>
+
+                <h3>V</h3>
+                <h4>Ṿ	ṿ	Ṽ	ṽ</h4>
+                <button id="dot-below-capital-v" class="key" title="Dot Below V">&#x1E7E;</button>
+                <button id="dot-below-v" class="key" title="Dot Below v">&#x1E7F;</button>
+                <button id="tilde-capital-v" class="key" title="Tilde V">&#x1E7C;</button>
+                <button id="tilde-v" class="key" title="Tilde v">&#x1E7D;</button>
+
+                <h3>w</h3>
+                <h4>Ẃ	ẃ	Ŵ	ŵ	Ẅ	ẅ	Ẇ	ẇ	Ẉ	ẉ	Ẁ	ẁ	ẘ</h4>
+                <button id="acute-capital-w" class="key" title="Acute W">&#x1E82;</button>
+                <button id="acute-w" class="key" title="Acute w">&#x1E83;</button>
+                <button id="circumflex-capital-w" class="key" title="Circumflex W">&#x0174;</button>
+                <button id="circumflex-w" class="key" title="Circumflex w">&#x0175;</button>
+                <button id="diaeresis-capital-w" class="key" title="Diaeresis W">&#x1E84;</button>
+                <button id="diaeresis-w" class="key" title="Diaeresis w">&#x1E85;</button>
+                <button id="dot-above-capital-w" class="key" title="Dot Above W">&#x1E86;</button>
+                <button id="dot-above-w" class="key" title="Dot Above w">&#x1E87;</button>
+                <button id="dot-below-capital-w" class="key" title="Dot Below W">&#x1E88;</button>
+                <button id="dot-below-w" class="key" title="Dot Below w">&#x1E89;</button>
+                <button id="grave-capital-w" class="key" title="Grave W">&#x1E80;</button>
+                <button id="grave-w" class="key" title="Grave w">&#x1E81;</button>
+                <button id="ring-w" class="key" title="Ring w">&#x1E98;</button>
+
+                <h3>x</h3>
+                <h4>Ẍ	ẍ	Ẋ	ẋ</h4>
+                <button id="diaeresis-capital-x" class="key" title="Diaeresis X">&#x1E8C;</button>
+                <button id="diaeresis-x" class="key" title="Diaeresis x">&#x1E8D;</button>
+                <button id="dot-above-capital-x" class="key" title="Dot Above X">&#x1E8A;</button>
+                <button id="dot-above-x" class="key" title="Dot Above x">&#x1E8B;</button>
+                
+                <h3>y</h3>
+                <h4>Ý	ý	Ŷ	ŷ	Ÿ	ÿ	Ẏ	ẏ	Ỵ	ỵ	Ỳ	ỳ	Ỷ	ỷ	Ȳ	ȳ	ẙ	Ỹ	ỹ</h4>
+                <button id="acute-capital-y" class="key" title="Acute Y">&#x00DD;</button>
+                <button id="acute-y" class="key" title="Acute y">&#x00FD;</button>
+                <button id="circumflex-capital-y" class="key" title="Circumflex Y">&#x0176;</button>
+                <button id="circumflex-y" class="key" title="Circumflex y">&#x0177;</button>
+                <button id="diaeresis-capital-y" class="key" title="Diaeresis Y">&#x0178;</button>
+                <button id="diaeresis-y" class="key" title="Diaeresis y">&#x00FF;</button>
+                <button id="dot-above-capital-y" class="key" title="Dot Above Y">&#x1E8E;</button>
+                <button id="dot-above-y" class="key" title="Dot Above y">&#x1E8F;</button>
+                <button id="dot-below-capital-y" class="key" title="Dot Below Y">&#x1EF4;</button>
+                <button id="dot-below-y" class="key" title="Dot Below y">&#x1EF5;</button>
+                <button id="grave-capital-y" class="key" title="Grave Y">&#x1EF2;</button>
+                <button id="grave-y" class="key" title="Grave y">&#x1EF3;</button>
+                <button id="hook-above-capital-y" class="key" title="Hook Above Y">&#x1EF6;</button>
+                <button id="hook-above-y" class="key" title="Hook Above y">&#x1EF7;</button>
+                <button id="macron-capital-y" class="key" title="Macron Y">&#x0232;</button>
+                <button id="macron-y" class="key" title="Macron y">&#x0233;</button>
+                <button id="ring-y" class="key" title="Ring y">&#x1E99;</button>
+                <button id="tilde-capital-y" class="key" title="Tilde Y">&#x1EF8;</button>
+                <button id="tilde-y" class="key" title="Tilde y">&#x1EF9;</button>
+
+                <h3>z</h3>
+                <h4>Ź	ź	Ž	ž	Ẑ	ẑ	Ż	ż	Ẓ	ẓ	Ẕ	ẕ</h4>
+                <button id="acute-capital-z" class="key" title="Acute Z">&#x0179;</button>
+                <button id="acute-z" class="key" title="Acute z">&#x017A;</button>
+                <button id="caron-capital-z" class="key" title="Caron Z">&#x017D;</button>
+                <button id="caron-z" class="key" title="Caron z">&#x017E;</button>
+                <button id="circumflex-capital-z" class="key" title="Circumflex Z">&#x1E90;</button>
+                <button id="circumflex-z" class="key" title="Circumflex z">&#x1E91;</button>
+                <button id="dot-above-capital-z" class="key" title="Dot Above Z">&#x017B;</button>
+                <button id="dot-above-z" class="key" title="Dot Above z">&#x017C;</button>
+                <button id="dot-below-capital-z" class="key" title="Dot Below Z">&#x1E92;</button>
+                <button id="dot-below-z" class="key" title="Dot Below z">&#x1E93;</button>
+                <button id="line-below-capital-z" class="key" title="Line Below Z">&#x1E94;</button>
+                <button id="line-below-z" class="key" title="Line Below z">&#x1E95;</button>
+
+
+
+                <p id="p1">Hello, I'm a placeHolder</p>
                 <input type="text">
                 
             </section>
 
-            THIS IS END
+            THIS IS THE END
         </div>
 
         <script>
