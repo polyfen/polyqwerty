@@ -4,7 +4,8 @@
     background: #000000;
     color: #ffffff;
     cursor: pointer;
-
+    border-style: none;
+    margin: 6px 4px 4px;
 }
 
 hr.new {
@@ -29,4 +30,17 @@ small {
 
 section#diacritics {
     margin-top: 80px;
+}
+
+button.key{
+    font-size: 32px;
+}
+
+button.key:hover{
+    background: #FD0098;
+}
+
+header a img {
+    margin-right: 10px;
+    vertical-align: middle;
 }

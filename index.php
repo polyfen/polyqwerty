@@ -52,7 +52,7 @@
         </header>
         <div class="container">
             <h1 class="title-1 align-center">Your keyboard’s assistant</h1>
-            <small><span id="click">Click</span> on a character to copy it</small>
+            <h2 class="heading-2"><span id="click">Click</span> on a character to copy it</h2>
 
             <section id="diacritics">
                 <h2 class="title-1">Diacritics</h2>
