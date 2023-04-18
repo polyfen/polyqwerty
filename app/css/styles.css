@@ -6,3 +6,27 @@
     cursor: pointer;
 
 }
+
+hr.new {
+    border: 2.5px solid #D9D9D9 !important;
+    opacity: 1 !important;
+    margin: 15px auto 19px !important;
+}
+
+header {
+    grid-template-columns: auto auto !important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span#click{
+    color:#FD0098;
+}
+
+small {
+    margin: 20px auto !important;
+}
+
+section#diacritics {
+    margin-top: 80px;
+}
