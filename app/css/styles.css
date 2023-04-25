@@ -5,27 +5,23 @@
     color: #ffffff;
     cursor: pointer;
     border-style: none;
-    margin: 6px 4px 4px;
 }
 
 hr.new {
-    border: 2.5px solid #D9D9D9 !important;
-    opacity: 1 !important;
-    margin: 15px auto 19px !important;
+    border: 2.5px solid #D9D9D9;
+    opacity: 1;
+    margin: 15px auto 19px;
+    max-width: 100%;
 }
 
 header {
-    grid-template-columns: auto auto !important;
+    grid-template-columns: auto auto;
     align-items: center;
     justify-content: space-between;
 }
 
 span#click{
     color:#FD0098;
-}
-
-small {
-    margin: 20px auto !important;
 }
 
 section#diacritics {
@@ -42,5 +38,32 @@ button.key:hover{
 
 header a img {
     margin-right: 10px;
-    vertical-align: middle;
+}
+
+header a#github {
+    display: flex;
+    justify-content: flex-end;
+}
+
+div.key-section {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-gap: 10px;
+}
+
+
+
+/* break points */
+
+@media (max-width: 400px) {
+    div.key-section {
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 5px;
+    }
+
+    /*@media (hover: none) {
+        button.key:hover{
+            background: #000000;
+        }
+    }*/
 }

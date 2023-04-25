@@ -47,16 +47,16 @@
     <body class="light-mode">
 
         <header>
-            <img alt="Poly Qwerty" src="imgs/polyqwerty.svg" height="46px" width="auto" target="_black">
-            <a href="https://github.com/The-Poly-Group/polyqwerty"><img alt="Github" src="imgs/github.svg">open-source</a>
+            <img alt="Poly Qwerty" src="imgs/polyqwerty.svg" height="35px" width="auto" target="_black">
+            <a id="github" href="https://github.com/The-Poly-Group/polyqwerty"><img alt="Github" src="imgs/github.svg">open-source</a>
         </header>
         <div class="container">
-            <h1 class="title-1 align-center">Your keyboard’s assistant</h1>
-            <h2 class="heading-2"><span id="click">Click</span> on a character to copy it</h2>
+            <h1 class="heading-1 align-center">Your keyboard’s assistant</h1>
+            <h2 class="caption align-center"><span id="click">Click</span> on a character to copy it</h2>
 
             <section id="diacritics">
-                <h2 class="title-1">Diacritics</h2>
-                <hr class="new">
+                <h2 class="heading-1">Diacritics</h2>
+                <hr class="new align-center">
 
                 <div class="key-section">
 
@@ -371,9 +371,6 @@
                 <button id="line-below-capital-z" class="key" title="Line Below Z">&#x1E94;</button>
                 <button id="line-below-z" class="key" title="Line Below z">&#x1E95;</button>
 
-
-
-                <input type="text">
                 
             </section>
 
