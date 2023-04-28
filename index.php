@@ -42,7 +42,20 @@
         <meta name="twitter:image" content="" />
         <meta name="robots" content="index, follow">
         <!-- PAGE-SPECIFIC META end -->
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+            const buttons = document.getElementsByClassName('key-section')[0].querySelectorAll('button');
 
+
+            buttons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                navigator.clipboard.writeText(button.innerText);
+            });
+            });
+        }, false);
+        </script>
     </head>
     <body class="light-mode">
 
@@ -376,17 +389,5 @@
 
            
         </div>
-
-        <script>
-            const buttons = document.getElementsByClassName('key-section')[0].querySelectorAll('button');
-
-
-            buttons.forEach(button => {
-            button.addEventListener('click', (e) => {
-                e.preventDefault();
-                navigator.clipboard.writeText(button.innerText);
-            });
-            });
-        </script>
     </body>
 </html>
