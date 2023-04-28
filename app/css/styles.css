@@ -1,3 +1,7 @@
+div.container {
+    max-width: 980px;
+}
+
 .key {
     width: 66px;
     height: 66px;
@@ -5,6 +9,7 @@
     color: #ffffff;
     cursor: pointer;
     border-style: none;
+    border-radius: 4px;
 }
 
 hr.new {
