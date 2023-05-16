@@ -61,7 +61,22 @@
             btn.id = button.id;
             btn.title = button.title;
 
-            currencies-buttons.appendChild(btn);
+            buttons.appendChild(btn);
+        });
+    </script>
+    <script type="module">
+        import punctuation from './app/js/punctuation.js';
+
+        const buttons2 = document.getElementById('punctuation-buttons');
+        punctuation.forEach(button => {
+            let btn = document.createElement('button');
+
+            btn.innerHTML = button.text;
+            btn.className = 'key';
+            btn.id = button.id;
+            btn.title = button.title;
+
+            buttons2.appendChild(btn);
         });
     </script>
 
@@ -81,6 +96,17 @@
 
         document.addEventListener('DOMContentLoaded', function () {
             const buttons = document.getElementsByClassName('key-section')[1].querySelectorAll('button');
+
+
+            buttons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    navigator.clipboard.writeText(button.innerText);
+                });
+            });
+        }, false);
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttons = document.getElementsByClassName('key-section')[2].querySelectorAll('button');
 
 
             buttons.forEach(button => {
@@ -433,6 +459,12 @@
             <h2 class="heading-1">Currencies</h2>
             <hr class="new align-center">
             <div class="key-section" id="currencies-buttons"></div>
+        </section>
+
+        <section id="punctuation">
+            <h2 class="heading-1">punctuation</h2>
+            <hr class="new align-center">
+            <div class="key-section" id="punctuation-buttons"></div>
         </section>
     </div><!--div-container-->
 </body>

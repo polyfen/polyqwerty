@@ -17,3 +17,22 @@ const data = [
 ]
 
 export default data;
+
+
+/* extras letras qe podrian ir
+
+U+0F3B
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
