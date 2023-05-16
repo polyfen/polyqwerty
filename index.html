@@ -1,77 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- META General -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <meta property="og:type" content="website"/>
-        <meta name="author"  content="The Poly Group"/>
 
-        <!-- FAVICON -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fe30b8">
-        <meta name="msapplication-TileColor" content="#fe30b8">
-        <meta name="theme-color" content="#fe30b8">
+<head>
+    <!-- META General -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta property="og:type" content="website" />
+    <meta name="author" content="The Poly Group" />
 
-        <!-- CSS General -->
-        <link rel="stylesheet" href="https://polynucleus.com/styles.css">
-        <link rel="stylesheet" href="app/css/styles.css">
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fe30b8">
+    <meta name="msapplication-TileColor" content="#fe30b8">
+    <meta name="theme-color" content="#fe30b8">
 
-        <!-- FONTS -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://polynucleus.com/styles.css" type="text/css">
-        
-        <!-- PAGE-SPECIFIC META start -->
-        <meta property="og:title" content="Poly Qwerty"/>
-        <meta property="og:url" content="https://polyqwerty.com"/>
-        <meta name="keywords" content="" />
-        <meta name="description" property="og:description" content="" />
-        <meta property="og:image" content=""/>
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="Poly Qwerty" />
-        <meta name="twitter:creator" content="@ThePolyGroupCo">
-        <meta name="twitter:title" content="Your keyboard's assistant" />
-        <meta name="twitter:description" content="" />
-        <meta name="twitter:image" content="" />
-        <meta name="robots" content="index, follow">
-        <!-- PAGE-SPECIFIC META end -->
-        
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
+    <!-- CSS General -->
+    <link rel="stylesheet" href="https://polynucleus.com/styles.css">
+    <link rel="stylesheet" href="app/css/styles.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://polynucleus.com/styles.css" type="text/css">
+
+    <!-- PAGE-SPECIFIC META start -->
+    <meta property="og:title" content="Poly Qwerty" />
+    <meta property="og:url" content="https://polyqwerty.com" />
+    <meta name="keywords" content="" />
+    <meta name="description" property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="Poly Qwerty" />
+    <meta name="twitter:creator" content="@ThePolyGroupCo">
+    <meta name="twitter:title" content="Your keyboard's assistant" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="robots" content="index, follow">
+    <!-- PAGE-SPECIFIC META end -->
+
+
+
+    <!-- SCRIPTS---------------------------------------------------------------------------------->
+    <script type="module">
+        import currencies from './app/js/currencies.js';
+
+        const buttons = document.getElementById('currencies-buttons');
+        currencies.forEach(button => {
+            let btn = document.createElement('button');
+
+            btn.innerHTML = button.text;
+            btn.className = 'key';
+            btn.id = button.id;
+            btn.title = button.title;
+
+            currencies-buttons.appendChild(btn);
+        });
+    </script>
+
+    <!-- Script addEventListener, old-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
             const buttons = document.getElementsByClassName('key-section')[0].querySelectorAll('button');
 
 
             buttons.forEach(button => {
-            button.addEventListener('click', (e) => {
-                e.preventDefault();
-                navigator.clipboard.writeText(button.innerText);
-            });
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    navigator.clipboard.writeText(button.innerText);
+                });
             });
         }, false);
-        </script>
-    </head>
-    <body class="light-mode">
 
-        <header>
-            <img alt="Poly Qwerty" src="imgs/polyqwerty.svg" height="35px" width="auto" target="_black">
-            <a id="github" href="https://github.com/The-Poly-Group/polyqwerty"><img alt="Github" src="imgs/github.svg">open-source</a>
-        </header>
-        <div class="container">
-            <h1 class="heading-1 align-center">Your keyboard’s assistant</h1>
-            <h2 class="caption align-center"><span id="click">Click</span> on a character to copy it</h2>
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttons = document.getElementsByClassName('key-section')[1].querySelectorAll('button');
 
-            <section id="diacritics">
-                <h2 class="heading-1">Diacritics</h2>
-                <hr class="new align-center">
 
-                <div class="key-section">
+            buttons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    navigator.clipboard.writeText(button.innerText);
+                });
+            });
+        }, false);
+    </script>
+    <!-- Script addEventListener, old-->
+
+</head>
+
+<body class="light-mode">
+
+    <header>
+        <img alt="Poly Qwerty" src="imgs/polyqwerty.svg" height="35px" width="auto" target="_black">
+        <a id="github" href="https://github.com/The-Poly-Group/polyqwerty"><img alt="Github"
+                src="imgs/github.svg">open-source</a>
+    </header>
+    <div class="container">
+        <h1 class="heading-1 align-center">Your keyboard’s assistant</h1>
+        <h2 class="caption align-center"><span id="click">Click</span> on a character to copy it</h2>
+
+
+        <!-- DIACRITICS BUTTONS OLD WAY ------------------------------------------------------------------->
+        <section id="diacritics">
+            <h2 class="heading-1">Diacritics</h2>
+            <hr class="new align-center">
+
+            <div class="key-section">
 
                 <button id="grave-capital-a" class="key" title="Grave A">&#192;</button>
                 <button id="grave-a" class="key" title="Grave a">&#224;</button>
@@ -216,7 +257,7 @@
                 <button id="acute-capital-k" class="key" title="Acute K">&#x1E30;</button>
                 <button id="caron-capital-k" class="key" title="Caron K">&#x01E8;</button>
                 <button id="caron-k" class="key" title="Caron k">&#x01E9;</button>
-                <button id="cedilla-capital-k" class="key" title="Cedilla K">&#x0136;</button> 
+                <button id="cedilla-capital-k" class="key" title="Cedilla K">&#x0136;</button>
                 <button id="cedilla-k" class="key" title="Cedilla k">&#x0137;</button>
                 <button id="dot-below-capital-k" class="key" title="Dot Below K">&#x1E32;</button>
                 <button id="dot-below-k" class="key" title="Dot Below k">&#x1E33;</button>
@@ -224,7 +265,7 @@
                 <button id="line-below-k" class="key" title="Line Below k">&#x1E35;</button>
 
                 <button id="acute-capital-l" class="key" title="Acute L">&#x0139;</button>
-                <button id="acute-l" class="key" title="Acute l">&#x013A;</button>	
+                <button id="acute-l" class="key" title="Acute l">&#x013A;</button>
                 <button id="caron-capital-l" class="key" title="Caron L">&#x013D;</button>
                 <button id="caron-l" class="key" title="Caron l">&#x013E;</button>
                 <button id="cedilla-capital-l" class="key" title="Cedilla L">&#x013B;</button>
@@ -237,14 +278,14 @@
                 <button id="dot-below-macron-l" class="key" title="Dot Below Macron l">&#x1E39;</button>
                 <button id="line-below-capital-l" class="key" title="Line Below L">&#x1E3A;</button>
                 <button id="line-below-l" class="key" title="Line Below l">&#x1E3B;</button>
-                
 
-               <button id="acute-capital-m" class="key" title="Acute M">&#x1E3E;</button>
-               <button id="acute-m" class="key" title="Acute m">&#x1E3F;</button>
-               <button id="dot-above-capital-m" class="key" title="Dot Above M">&#x1E40;</button>
-               <button id="dot-above-m" class="key" title="Dot Above m">&#x1E41;</button>
-               <button id="dot-below-capital-m" class="key" title="Dot Below M">&#x1E42;</button>
-               <button id="dot-below-m" class="key" title="Dot Below m">&#x1E43;</button>
+
+                <button id="acute-capital-m" class="key" title="Acute M">&#x1E3E;</button>
+                <button id="acute-m" class="key" title="Acute m">&#x1E3F;</button>
+                <button id="dot-above-capital-m" class="key" title="Dot Above M">&#x1E40;</button>
+                <button id="dot-above-m" class="key" title="Dot Above m">&#x1E41;</button>
+                <button id="dot-below-capital-m" class="key" title="Dot Below M">&#x1E42;</button>
+                <button id="dot-below-m" class="key" title="Dot Below m">&#x1E43;</button>
 
                 <button id="acute-capital-n" class="key" title="Acute N">&#x0143;</button>
                 <button id="acute-n" class="key" title="Acute n">&#x0144;</button>
@@ -350,7 +391,7 @@
                 <button id="diaeresis-x" class="key" title="Diaeresis x">&#x1E8D;</button>
                 <button id="dot-above-capital-x" class="key" title="Dot Above X">&#x1E8A;</button>
                 <button id="dot-above-x" class="key" title="Dot Above x">&#x1E8B;</button>
-                
+
                 <button id="acute-capital-y" class="key" title="Acute Y">&#x00DD;</button>
                 <button id="acute-y" class="key" title="Acute y">&#x00FD;</button>
                 <button id="circumflex-capital-y" class="key" title="Circumflex Y">&#x0176;</button>
@@ -383,11 +424,17 @@
                 <button id="dot-below-z" class="key" title="Dot Below z">&#x1E93;</button>
                 <button id="line-below-capital-z" class="key" title="Line Below Z">&#x1E94;</button>
                 <button id="line-below-z" class="key" title="Line Below z">&#x1E95;</button>
+            </div>
+        </section>
+        <!-- END DIACRITICS BUTTONS OLD WAY ------------------------------------------------------------------->
 
-                
-            </section>
 
-           
-        </div>
-    </body>
+        <section id="currencies">
+            <h2 class="heading-1">Currencies</h2>
+            <hr class="new align-center">
+            <div class="key-section" id="currencies-buttons"></div>
+        </section>
+    </div><!--div-container-->
+</body>
+
 </html>
