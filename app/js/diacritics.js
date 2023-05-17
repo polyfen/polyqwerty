@@ -131,12 +131,12 @@ const diacritics = [
     },
     {
         id: "dot-above-capital-e",
-        title: "Dot Above E",
+        title: "Dot above E",
         text: "&#278;"
     },
     {
         id: "dot-above-e",
-        title: "Dot Above e",
+        title: "Dot above e",
         text: "&#279;"
     },
     {
@@ -325,17 +325,17 @@ const diacritics = [
         title: "Macron u",
         text: "&#363;"
     }, {
-        id: "dot-over-capital-b",
-        title: "Dot Over B",
+        id: "dot-above-capital-b",
+        title: "Dot above B",
         text: "&#7682;"
     },
     {
-        id: "dot-over-b",
-        title: "Dot over b",
+        id: "dot-above-b",
+        title: "Dot above b",
         text: "&#7683;"
     }, {
         id: "dot-below-capital-b",
-        title: "Dot Below B",
+        title: "Dot below B",
         text: "&#7684;"
     },
     {
@@ -344,7 +344,7 @@ const diacritics = [
         text: "&#7685;"
     }, {
         id: "line-below-capital-b",
-        title: "Line Below B",
+        title: "Line below B",
         text: "&#7686;"
     },
     {
@@ -443,12 +443,12 @@ const diacritics = [
         text: "&#7691;"
     }, {
         id: "dot-below-capital-d",
-        title: "Dot Below D",
+        title: "Dot below D",
         text: "&#7692;"
     },
     {
         id: "dot-below-d",
-        title: "Dot Below d",
+        title: "Dot below d",
         text: "&#7693;"
     }, {
         id: "line-below-capital-d",
@@ -571,22 +571,22 @@ const diacritics = [
     },
     {
         id: "dot-below-capital-h",
-        title: "Dot Below H",
+        title: "Dot below H",
         text: "&#x1E24;"
     },
     {
         id: "dot-below-h",
-        title: "Dot Below h",
+        title: "Dot below h",
         text: "&#x1E25;"
     },
     {
         id: "dot-above-capital-h",
-        title: "Dot Above H",
+        title: "Dot above H",
         text: "&#x1E22;"
     },
     {
         id: "dot-above-h",
-        title: "Dot Above h",
+        title: "Dot above h",
         text: "&#x1E23;"
     },
 
@@ -639,22 +639,22 @@ const diacritics = [
     },
     {
         text: "&#x1E32;",
-        title: "Dot Below Capital K",
+        title: "Dot below Capital K",
         id: "dot-below-capital-k"
     },
     {
         text: "&#x1E33;",
-        title: "Dot Below k",
+        title: "Dot below k",
         id: "dot-below-k"
     },
     {
         text: "&#x1E34;",
-        title: "Line Below Capital K",
+        title: "Line below Capital K",
         id: "line-below-capital-k"
     },
     {
         text: "&#x1E35;",
-        title: "Line Below k",
+        title: "Line below k",
         id: "line-below-k"
     },
     {
@@ -1029,12 +1029,12 @@ const diacritics = [
     },
     {
         id: "comma-below-capital-s",
-        title: "Comma Below Capital S",
+        title: "Comma below Capital S",
         text: "&#x0218;"
     },
     {
         id: "comma-below-s",
-        title: "Comma Below s",
+        title: "Comma below s",
         text: "&#x0219;"
     },
     {
@@ -1104,12 +1104,12 @@ const diacritics = [
     },
     {
         id: "comma-below-capital-t",
-        title: "Comma Below Capital T",
+        title: "Comma below Capital T",
         text: "&#x021A;"
     },
     {
         id: "comma-below-t",
-        title: "Comma Below t",
+        title: "Comma below t",
         text: "&#x021B;"
     },
     {
@@ -1119,17 +1119,17 @@ const diacritics = [
     },
     {
         id: "dot-above-capital-t",
-        title: "Dot Above Capital T",
+        title: "Dot above Capital T",
         text: "&#x1E6A;"
     },
     {
         id: "dot-above-t",
-        title: "Dot Above t",
+        title: "Dot above t",
         text: "&#x1E6B;"
     },
     {
         id: "dot-below-capital-t",
-        title: "Dot Below Capital T",
+        title: "Dot below Capital T",
         text: "&#x1E6C;"
     },
     {
@@ -1149,12 +1149,12 @@ const diacritics = [
     },
     {
         id: "dot-below-capital-v",
-        title: "Dot Below V",
+        title: "Dot below V",
         text: "&#x1E7E;"
     },
     {
         id: "dot-below-v",
-        title: "Dot Below v",
+        title: "Dot below v",
         text: "&#x1E7F;"
     },
     {
@@ -1199,22 +1199,22 @@ const diacritics = [
     },
     {
         id: "dot-above-capital-w",
-        title: "Dot Above W",
+        title: "Dot above W",
         text: "&#x1E86;"
     },
     {
         id: "dot-above-w",
-        title: "Dot Above w",
+        title: "Dot above w",
         text: "&#x1E87;"
     },
     {
         id: "dot-below-capital-w",
-        title: "Dot Below W",
+        title: "Dot below W",
         text: "&#x1E88;"
     },
     {
         id: "dot-below-w",
-        title: "Dot Below w",
+        title: "Dot below w",
         text: "&#x1E89;"
     },
     {
@@ -1244,12 +1244,12 @@ const diacritics = [
     },
     {
         id: "dot-above-capital-x",
-        title: "Dot Above X",
+        title: "Dot above X",
         text: "&#x1E8A;"
     },
     {
         id: "dot-above-x",
-        title: "Dot Above x",
+        title: "Dot above x",
         text: "&#x1E8B;"
     },
     {
@@ -1284,22 +1284,22 @@ const diacritics = [
     },
     {
         id: "dot-above-capital-y",
-        title: "Dot Above Y",
+        title: "Dot above Y",
         text: "&#x1E8E;"
     },
     {
         id: "dot-above-y",
-        title: "Dot Above y",
+        title: "Dot above y",
         text: "&#x1E8F;"
     },
     {
         id: "dot-below-capital-y",
-        title: "Dot Below Y",
+        title: "Dot below Y",
         text: "&#x1EF4;"
     },
     {
         id: "dot-below-y",
-        title: "Dot Below y",
+        title: "Dot below y",
         text: "&#x1EF5;"
     },
     {
@@ -1314,12 +1314,12 @@ const diacritics = [
     },
     {
         id: "hook-above-capital-y",
-        title: "Hook Above Y",
+        title: "Hook above Y",
         text: "&#x1EF6;"
     },
     {
         id: "hook-above-y",
-        title: "Hook Above y",
+        title: "Hook above y",
         text: "&#x1EF7;"
     },
     {
@@ -1379,32 +1379,32 @@ const diacritics = [
     },
     {
         id: "dot-above-capital-z",
-        title: "Dot Above Z",
+        title: "Dot above Z",
         text: "&#x017B;"
     },
     {
         id: "dot-above-z",
-        title: "Dot Above z",
+        title: "Dot above z",
         text: "&#x017C;"
     },
     {
         id: "dot-below-capital-z",
-        title: "Dot Below Z",
+        title: "Dot below Z",
         text: "&#x1E92;"
     },
     {
         id: "dot-below-z",
-        title: "Dot Below z",
+        title: "Dot below z",
         text: "&#x1E93;"
     },
     {
         id: "line-below-capital-z",
-        title: "Line Below Z",
+        title: "Line below Z",
         text: "&#x1E94;"
     },
     {
         id: "line-below-z",
-        title: "Line Below z",
+        title: "Line below z",
         text: "&#x1E95;"
     },
 ]
