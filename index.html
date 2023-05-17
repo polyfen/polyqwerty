@@ -79,6 +79,21 @@
             buttons2.appendChild(btn);
         });
     </script>
+    <script type="module">
+        import diacritics from './app/js/diacritics.js';
+
+        const buttons3 = document.getElementById('diacritics-buttons');
+        diacritics.forEach(button => {
+            let btn = document.createElement('button');
+
+            btn.innerHTML = button.text;
+            btn.className = 'key';
+            btn.id = button.id;
+            btn.title = button.title;
+
+            buttons3.appendChild(btn);
+        });
+    </script>
 
     <!-- Script addEventListener, old-->
     <script>
@@ -107,6 +122,17 @@
         }, false);
         document.addEventListener('DOMContentLoaded', function () {
             const buttons = document.getElementsByClassName('key-section')[2].querySelectorAll('button');
+
+
+            buttons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    navigator.clipboard.writeText(button.innerText);
+                });
+            });
+        }, false);
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttons = document.getElementsByClassName('key-section')[3].querySelectorAll('button');
 
 
             buttons.forEach(button => {
@@ -454,6 +480,11 @@
         </section>
         <!-- END DIACRITICS BUTTONS OLD WAY ------------------------------------------------------------------->
 
+        <section id="diacritics">
+            <h2 class="heading-1">Diacritics</h2>
+            <hr class="new align-center">
+            <div class="key-section" id="diacritics-buttons"></div>
+        </section>
 
         <section id="currencies">
             <h2 class="heading-1">Currencies</h2>
