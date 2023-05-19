@@ -1,4 +1,9 @@
-div.container{
+div.container {
+    max-width: 980px;
+}
+
+header {
+    margin: auto;
     max-width: 980px;
 }
 
@@ -61,17 +66,24 @@ div.key-section {
 section h2.heading-1 {
     margin-top: 50px;
 }
-/* break points */
 
-@media (max-width: 400px) {
+/* break points */
+@media (max-width: 890px) {
+    div.key-section {
+        grid-template-columns: repeat(10, 1fr);
+        grid-gap: 8px;
+    }
+}
+
+@media (max-width: 420px) {
     div.key-section {
         grid-template-columns: repeat(5, 1fr);
         grid-gap: 5px;
     }
+}
 
-    /*@media (hover: none) {
+/*@media (hover: none) {
         button.key:hover{
             background: #000000;
         }
     }*/
-}
