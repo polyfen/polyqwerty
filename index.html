@@ -158,16 +158,6 @@
                 });
             });
         }, false);
-        document.addEventListener('DOMContentLoaded', function () {
-            const buttons = document.getElementsByClassName('key-section')[4].querySelectorAll('button');
-
-            buttons.forEach(button => {
-                button.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    navigator.clipboard.writeText(button.innerText);
-                });
-            });
-        }, false);
     </script>
     <!-- Script addEventListener end--------------->
 
