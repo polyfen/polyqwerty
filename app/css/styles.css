@@ -5,12 +5,25 @@ div.container {
 .key {
     width: 66px;
     height: 66px;
-    background: #000000;
-    color: #ffffff;
     cursor: pointer;
     border-style: none;
     border-radius: 4px;
+    font-size: 32px;
+    background: none;
+    color: #000000;
+    border: 2px solid #E5E5E5;
+
 }
+
+button#roman-numeral-eight {
+    padding: 0;
+}
+
+button.key:hover {
+    background: #FD0098;
+}
+
+
 
 hr.new {
     border: 2.5px solid #D9D9D9;
@@ -25,20 +38,12 @@ header {
     justify-content: space-between;
 }
 
-span#click{
-    color:#FD0098;
+span#click {
+    color: #FD0098;
 }
 
 section#diacritics {
     margin-top: 80px;
-}
-
-button.key{
-    font-size: 32px;
-}
-
-button.key:hover{
-    background: #FD0098;
 }
 
 header a img {
@@ -56,6 +61,9 @@ div.key-section {
     grid-gap: 10px;
 }
 
+section h2.heading-1 {
+    margin-top: 50px;
+}
 
 
 /* break points */

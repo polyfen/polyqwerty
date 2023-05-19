@@ -44,21 +44,23 @@ const punctuation = [
   },
 
   {
+    id: "flower-punctuation mark",
+    title: "Flower Punctuation Mark",
+    text: "&#x2055"
+  },
+
+  {
     id: "reference-mark",
     title: "Reference Mark",
     text: "&#8251;"
   },
-  
+
   {
     id: "inverted-undertie",
     title: "Inverted Undertie",
     text: "&#x2054;"
   },
-  {
-    id: "flower-punctuation mark",
-    title: "Flower Punctuation Mark",
-    text: "&#x2055"
-  },
+
   {
     id: "wave-dash",
     title: "Wave Dash",
@@ -263,9 +265,9 @@ const punctuation = [
     text: "&#172;"
   },
   {
-    id:"halfwidth-right-corner-bracket",
-    title:"Halfwidth Right Corner Bracket",
-    text:"&#xFF63;"
+    id: "halfwidth-right-corner-bracket",
+    title: "Halfwidth Right Corner Bracket",
+    text: "&#xFF63;"
   },
   {
     id: "registered-sign",

@@ -94,6 +94,22 @@
             buttons3.appendChild(btn);
         });
     </script>
+
+    <script type="module">
+        import mathematicals from './app/js/mathematicals.js';
+
+        const buttons4 = document.getElementById('mathematicals-buttons');
+        mathematicals.forEach(button => {
+            let btn = document.createElement('button');
+
+            btn.innerHTML = button.text;
+            btn.className = 'key';
+            btn.id = button.id;
+            btn.title = button.title;
+
+            buttons4.appendChild(btn);
+        });
+    </script>
     <!-- Script-Create-Buttons-end---------------------------->
     <!-- Script addEventListener start--------------->
     <script>
@@ -142,6 +158,16 @@
                 });
             });
         }, false);
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttons = document.getElementsByClassName('key-section')[4].querySelectorAll('button');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    navigator.clipboard.writeText(button.innerText);
+                });
+            });
+        }, false);
     </script>
     <!-- Script addEventListener end--------------->
 
@@ -176,6 +202,11 @@
             <hr class="new align-center">
             <div class="key-section" , id="punctuation-buttons"></div>
         </section>
+
+        <section id="mathematicals">
+            <h2 class="heading-1">Mathematicals</h2>
+            <hr class="new align-center">
+            <div class="key-section" , id="mathematicals-buttons"></div>
     </div><!--div-container-->
 </body>
 
