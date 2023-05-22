@@ -157,7 +157,7 @@ const emojis = [
     { text: "&#x1F480;", id: "skull", title: "Skull" },
     { text: "&#x1F47B;", id: "ghost", title: "Ghost" },
     { text: "&#x1F47D;", id: "extraterrestrial-alien", title: "Extraterrestrial Alien" },
-    { text: "&#x1F47E;", id: "alien-monster", title: "Alien Monster" },
+    { text: "&#x1F47E;", id: "alien-monster", title: "Alien Monster / Space Invader" },
     { text: "&#x1F47F;", id: "imp", title: "Imp" },
     { text: "&#x1F383;", id: "jack-o-lantern", title: "Jack-O-Lantern" },
     { text: "&#x1F385;", id: "father-christmas", title: "Father Christmas" },
@@ -247,7 +247,7 @@ const emojis = [
     { text: "&#x1F43C;", id: "panda-face", title: "Panda Face" },
     { text: "&#x1F43D;", id: "pig-nose", title: "Pig Nose" },
     { text: "&#x1F43E;", id: "paw-prints", title: "Paw Prints" },
-    { text: "&#x1F43F;", id: "chipmunk", title: "Chipmunk" },
+
 
     /* food & drinks*/
     { text: "&#x1F32D;", id: "hot-dog", title: "Hot Dog" },
