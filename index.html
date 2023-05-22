@@ -2,54 +2,52 @@
 <html lang="en">
 
 <head>
-    <!-- META General -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta property="og:type" content="website" />
-    <meta name="author" content="The Poly Group" />
+  <!-- META General -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta property="og:type" content="website" />
+  <meta name="author" content="The Poly Group" />
 
-    <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fe30b8">
-    <meta name="msapplication-TileColor" content="#fe30b8">
-    <meta name="theme-color" content="#fe30b8">
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fe30b8">
+  <meta name="msapplication-TileColor" content="#fe30b8">
+  <meta name="theme-color" content="#fe30b8">
 
-    <!-- CSS General -->
-    <link rel="stylesheet" href="https://polynucleus.com/styles.css">
-    <link rel="stylesheet" href="app/css/styles.css">
+  <!-- CSS General -->
+  <link rel="stylesheet" href="https://polynucleus.com/styles.css">
+  <link rel="stylesheet" href="app/css/styles.css">
 
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://polynucleus.com/styles.css" type="text/css">
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://polynucleus.com/styles.css" type="text/css">
 
-    <!-- PAGE-SPECIFIC META start -->
-    <meta property="og:title" content="Poly Qwerty" />
-    <meta property="og:url" content="https://polyqwerty.com" />
-    <meta name="keywords" content="" />
-    <meta name="description" property="og:description" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="Poly Qwerty" />
-    <meta name="twitter:creator" content="@ThePolyGroupCo">
-    <meta name="twitter:title" content="Your keyboard's assistant" />
-    <meta name="twitter:description" content="" />
-    <meta name="twitter:image" content="" />
-    <meta name="robots" content="index, follow">
-    <!-- PAGE-SPECIFIC META end -->
+  <!-- PAGE-SPECIFIC META start -->
+  <meta property="og:title" content="Poly Qwerty" />
+  <meta property="og:url" content="https://polyqwerty.com" />
+  <meta name="keywords" content="" />
+  <meta name="description" property="og:description" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="Poly Qwerty" />
+  <meta name="twitter:creator" content="@ThePolyGroupCo">
+  <meta name="twitter:title" content="Your keyboard's assistant" />
+  <meta name="twitter:description" content="" />
+  <meta name="twitter:image" content="" />
+  <meta name="robots" content="index, follow">
+  <!-- PAGE-SPECIFIC META end -->
 
-
-
-    <!-- Script-Create-Buttons-start---------------------------->
-    <script type="module">
+  <!-- Script-Create-Buttons-start---------------------------->
+  <!-- <script type="module">
         import currencies from './app/js/currencies.js';
 
         const buttons = document.getElementById('currencies-buttons');
@@ -94,7 +92,6 @@
             buttons3.appendChild(btn);
         });
     </script>
-
     <script type="module">
         import mathematicals from './app/js/mathematicals.js';
 
@@ -109,10 +106,10 @@
 
             buttons4.appendChild(btn);
         });
-    </script>
-    <!-- Script-Create-Buttons-end---------------------------->
-    <!-- Script addEventListener start--------------->
-    <script>
+    </script> -->
+  <!-- Script-Create-Buttons-end---------------------------->
+  <!-- Script addEventListener start--------------->
+  <!-- <script>
         document.addEventListener('DOMContentLoaded', function () {
             const buttons = document.getElementsByClassName('key-section')[0].querySelectorAll('button');
 
@@ -158,46 +155,93 @@
                 });
             });
         }, false);
-    </script>
-    <!-- Script addEventListener end--------------->
+    </script> -->
+  <!-- Script addEventListener end--------------->
 
+
+  <script type="module">
+    import all from './app/js/index.js';
+
+    const app = document.getElementById('app');
+
+    all.forEach(({ title, codes }) => {
+      let section = document.createElement('section');
+      let heading = document.createElement('h3');
+      let hr = document.createElement('hr');
+      let div = document.createElement('div');
+
+      section.id = title;
+      heading.className = 'heading-1';
+      heading.textContent = title;
+      div.id = `${title}-buttons`;
+
+      codes.forEach(({ text, id, title }) => {
+        let btn = document.createElement('button');
+
+        btn.innerHTML = text;
+        btn.id = id;
+        btn.title = title;
+
+        div.appendChild(btn);
+      });
+
+      section.append(heading, hr, div);
+      app.appendChild(section);
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('button');
+
+      buttons.forEach(button => {
+        button.addEventListener('click', e => {
+          e.preventDefault();
+          navigator.clipboard.writeText(button.innerText);
+        });
+      });
+    });
+  </script>
 </head>
 
 <body class="light-mode">
+  <header>
+    <img alt="Poly Qwerty" src="imgs/polyqwerty.svg" height="35px" width="auto" target="_black" />
+    <a id="github" class="github" href="https://github.com/The-Poly-Group/polyqwerty">
+      <img alt="Github" src="imgs/github.svg" />
+      open-source
+    </a>
+  </header>
 
-    <header>
-        <img alt="Poly Qwerty" src="imgs/polyqwerty.svg" height="35px" width="auto" target="_black">
-        <a id="github" href="https://github.com/The-Poly-Group/polyqwerty"><img alt="Github"
-                src="imgs/github.svg">open-source</a>
-    </header>
-    <div class="container">
-        <h1 class="heading-1 align-center">Your keyboard&#x2019;s assistant</h1>
-        <h2 class="caption align-center"><span id="click">Click</span> on a character to copy it</h2>
+  <div class="container">
+    <h1 class="heading-1 align-center">Your keyboard&#x2019;s assistant</h1>
+    <h2 class="caption align-center"><span id="click">Click</span> on a character to copy it</h2>
+    <div id="app"></div>
 
 
-        <section id="diacritics">
-            <h2 class="heading-1">Diacritics</h2>
-            <hr class="new align-center">
-            <div class="key-section" , id="diacritics-buttons"></div>
-        </section>
+    <!-- <section id="diacritics">
+      <h2 class="heading-1">Diacritics</h2>
+      <hr class="new align-center">
+      <div class="key-section" id="diacritics-buttons"></div>
+    </section>
 
-        <section id="currencies">
-            <h2 class="heading-1">Currencies</h2>
-            <hr class="new align-center">
-            <div class="key-section" , id="currencies-buttons"></div>
-        </section>
+    <section id="currencies">
+      <h2 class="heading-1">Currencies</h2>
+      <hr class="new align-center">
+      <div class="key-section" id="currencies-buttons"></div>
+    </section>
 
-        <section id="punctuation">
-            <h2 class="heading-1">punctuation</h2>
-            <hr class="new align-center">
-            <div class="key-section" , id="punctuation-buttons"></div>
-        </section>
+    <section id="punctuation">
+      <h2 class="heading-1">punctuation</h2>
+      <hr class="new align-center">
+      <div class="key-section" id="punctuation-buttons"></div>
+    </section>
 
-        <section id="mathematicals">
-            <h2 class="heading-1">Mathematicals</h2>
-            <hr class="new align-center">
-            <div class="key-section" , id="mathematicals-buttons"></div>
-    </div><!--div-container-->
+    <section id="mathematicals">
+      <h2 class="heading-1">Mathematicals</h2>
+      <hr class="new align-center">
+      <div class="key-section" id="mathematicals-buttons"></div>
+    </section> -->
+  </div>
 </body>
 
 </html>

@@ -1,89 +1,87 @@
+:root {
+  --pink: #FD0098; /* variable CSS */
+}
+
 div.container {
-    max-width: 980px;
+  max-width: 980px;
+  padding-bottom: 50px;
 }
 
 header {
-    margin: auto;
-    max-width: 980px;
+  margin: auto;
+  max-width: 980px;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.key {
-    width: 66px;
-    height: 66px;
-    cursor: pointer;
-    border-style: none;
-    border-radius: 4px;
-    font-size: 32px;
-    background: none;
-    color: #000000;
-    border: 2px solid #E5E5E5;
-    padding: 0;
-
+header .github {
+  display: flex;
+  justify-content: flex-end;
 }
-
-button.key:hover {
-    background: #FD0098;
-}
-
-
-
-hr.new {
-    border: 2.5px solid #D9D9D9;
-    opacity: 1;
-    margin: 15px auto 19px;
-    max-width: 100%;
-}
-
-header {
-    grid-template-columns: auto auto;
-    align-items: center;
-    justify-content: space-between;
-}
-
-span#click {
-    color: #FD0098;
-}
-
-section#diacritics {
-    margin-top: 80px;
-}
-
 header a img {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
-header a#github {
-    display: flex;
-    justify-content: flex-end;
+h2 span {
+  color: var(--pink);
 }
 
-div.key-section {
-    display: grid;
-    grid-template-columns: repeat(13, 1fr);
-    grid-gap: 10px;
+#app {
+  padding-top: 30px;
+}
+#app section {
+  margin-top: 50px;
+}
+#app section hr {
+  border: 2.5px solid #D9D9D9;
+  opacity: 1;
+  margin: 15px auto 19px;
+  max-width: 100%;
+}
+#app section h3 {
+  text-transform: capitalize;
+}
+#app section div {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-gap: 10px;
+}
+#app section div button {
+  width: 66px;
+  height: 66px;
+  cursor: pointer;
+  border-style: none;
+  border-radius: 4px;
+  font-size: 32px;
+  background: none;
+  color: #000000;
+  border: 2px solid #E5E5E5;
+  padding: 0;
+
+}
+#app section div button:hover {
+  background: var(--pink);
 }
 
-section h2.heading-1 {
-    margin-top: 50px;
-}
 
 /* break points */
 @media (max-width: 890px) {
-    div.key-section {
-        grid-template-columns: repeat(10, 1fr);
-        grid-gap: 8px;
-    }
+  #app section div {
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 8px;
+  }
 }
 
 @media (max-width: 420px) {
-    div.key-section {
-        grid-template-columns: repeat(5, 1fr);
-        grid-gap: 5px;
-    }
+  #app section div {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+  }
 }
 
-/*@media (hover: none) {
-        button.key:hover{
-            background: #000000;
-        }
-    }*/
+/*
+@media (hover: none) {
+  button.key:hover{
+    background: #000000;
+  }
+} */
