@@ -356,7 +356,7 @@ const emojis = [
     /* weather */
     { text: "&#x26C5;", id: "sun-behind-cloud", title: "Sun behind cloud" },
     { text: "&#x1f302;", id: "closed-umbrella", title: "Closed umbrella" },
-    { text: "&#x1f303;", id: "night-with-stars", title: "night with stars" },
+     { text: "&#x1f303;", id: "night-with-stars", title: "night with stars" },
     { text: "&#x1f301;", id: "foggy", title: "Foggy" },
     { text: "&#x1f304;", id: "sunrise-over-mountains", title: "Sunrise over mountains" },
     { text: "&#x1f305;", id: "sunrise", title: "Sunrise" },
@@ -367,6 +367,25 @@ const emojis = [
     { text: "&#x2600;", id: "black-sun-with-rays", title: "Black sun with rays" },
     { text: "&#x2601;", id: "cloud", title: "Cloud" },
     { text: "&#x26C4;", id: "snowman", title: "Snowman" },
+/* new weather */
+    { text: "&#x1F324;", id: "sun-behind-small-cloud", title: "Sun Behind Small Cloud" },
+    { text: "&#x1F325;", id: "sun-behind-large-cloud", title: "Sun Behind Large Cloud" },
+    { text: "&#x1F326;", id: "sun-behind-rain-cloud", title: "Sun Behind Rain Cloud" },
+    { text: "&#x1F327;", id: "cloud-with-rain", title: "Cloud with Rain" },
+    { text: "&#x1F328;", id: "cloud-with-snow", title: "Cloud with Snow" },
+    { text: "&#x1F329;", id: "cloud-with-lightning-and-rain", title: "Cloud with Lightning and Rain" },
+    { text: "&#x1F32A;", id: "cloud-with-lightning", title: "Cloud with Lightning" },
+    { text: "&#x1F32B;", id: "tornado", title: "Tornado" },
+    { text: "&#x1F32C;", id: "fog", title: "Fog" },
+    { text: "&#x1F300;", id: "cyclone", title: "Cyclone" },
+    { text: "&#x1F308;", id: "rainbow", title: "Rainbow" },
+    { text: "&#x1F302;", id: "closed-umbrella", title: "Closed Umbrella" },
+    { text: "&#x1F303;", id: "umbrella", title: "Umbrella" },
+    { text: "&#x1F304;", id: "umbrella-with-rain-drops", title: "Umbrella with Rain Drops" },
+    { text: "&#x1F305;", id: "high-voltage", title: "High Voltage" },
+    { text: "&#x1F306;", id: "snowflake", title: "Snowflake" },
+    { text: "&#x1F307;", id: "snowman", title: "Snowman" },
+    { text: "&#x1F309;", id: "comet", title: "Comet" },
 
 
     /* others*/
