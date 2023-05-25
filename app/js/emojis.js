@@ -362,7 +362,6 @@ const emojis = [
     { text: "&#x1f305;", id: "sunrise", title: "Sunrise" },
     { text: "&#x1f306;", id: "cityscape-at-dusk", title: "Cityscape at dusk" },
     { text: "&#x1f307;", id: "sunset-over-buildings", title: "Sunset over buildings" },
-    { text: "&#x1f308;", id: "rainbow", title: "rainbow" },
     { text: "&#127754;", id: "water-wave", title: "Water wave" },
     { text: "&#x2600;", id: "black-sun-with-rays", title: "Black sun with rays" },
     { text: "&#x2601;", id: "cloud", title: "Cloud" },
