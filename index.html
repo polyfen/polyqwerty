@@ -137,9 +137,18 @@
                 button.addEventListener('click', (e) => {
                     e.preventDefault();
                     navigator.clipboard.writeText(button.innerText);
+                    confirmation();
+
                 });
             });
-        }, false);
+            function confirmation() {
+                document.getElementById("confirm").classList.add("anime");
+                document.getElementById("confirm").addEventListener("animationend", () => {
+                    document.getElementById("confirm").classList.remove("anime");
+                });
+            }
+        });
+
 
         document.addEventListener('DOMContentLoaded', function () {
             const buttons = document.getElementsByClassName('key-section')[1].querySelectorAll('button');
@@ -149,9 +158,19 @@
                 button.addEventListener('click', (e) => {
                     e.preventDefault();
                     navigator.clipboard.writeText(button.innerText);
+                    confirmation();
+
                 });
             });
-        }, false);
+            function confirmation() {
+                document.getElementById("confirm").classList.add("anime");
+                document.getElementById("confirm").addEventListener("animationend", () => {
+                    document.getElementById("confirm").classList.remove("anime");
+                });
+            }
+        });
+
+
         document.addEventListener('DOMContentLoaded', function () {
             const buttons = document.getElementsByClassName('key-section')[2].querySelectorAll('button');
 
@@ -160,9 +179,19 @@
                 button.addEventListener('click', (e) => {
                     e.preventDefault();
                     navigator.clipboard.writeText(button.innerText);
+                    confirmation();
+
                 });
             });
-        }, false);
+            function confirmation() {
+                document.getElementById("confirm").classList.add("anime");
+                document.getElementById("confirm").addEventListener("animationend", () => {
+                    document.getElementById("confirm").classList.remove("anime");
+                });
+            }
+        });
+
+
         document.addEventListener('DOMContentLoaded', function () {
             const buttons = document.getElementsByClassName('key-section')[3].querySelectorAll('button');
 
@@ -171,9 +200,18 @@
                 button.addEventListener('click', (e) => {
                     e.preventDefault();
                     navigator.clipboard.writeText(button.innerText);
+                    confirmation();
+
                 });
             });
-        }, false);
+            function confirmation() {
+                document.getElementById("confirm").classList.add("anime");
+                document.getElementById("confirm").addEventListener("animationend", () => {
+                    document.getElementById("confirm").classList.remove("anime");
+                });
+            }
+        });
+
         document.addEventListener('DOMContentLoaded', function () {
             const buttons = document.getElementsByClassName('key-section')[4].querySelectorAll('button');
 
@@ -182,9 +220,17 @@
                 button.addEventListener('click', (e) => {
                     e.preventDefault();
                     navigator.clipboard.writeText(button.innerText);
+                    confirmation();
+
                 });
             });
-        }, false);
+            function confirmation() {
+                document.getElementById("confirm").classList.add("anime");
+                document.getElementById("confirm").addEventListener("animationend", () => {
+                    document.getElementById("confirm").classList.remove("anime");
+                });
+            }
+        });
     </script>
     <!-- Script addEventListener end--------------->
 
@@ -232,6 +278,8 @@
             <div class="key-section" , id="emojis-buttons"></div>
         </section>
     </div><!--div-container-->
+
+    <p id="confirm">Copied!</p>
 </body>
 
 </html>

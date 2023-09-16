@@ -67,6 +67,52 @@ section h2.heading-1 {
     margin-top: 50px;
 }
 
+p#confirm {
+    display: none;
+    position: fixed;
+    top: 70%;
+    left:50%;
+    z-index: 100;
+    color: #FD0098;
+    font-size: 32px;
+    font-weight: 700;
+    background-color: whitesmoke;
+    border: 3px solid #FD0098;
+    border-radius: 4px;
+    padding: 10px;
+    user-select: none;
+
+}
+
+.anime {
+     display: block !important;
+     animation-name: popUp;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+   }
+
+@keyframes popUp {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    30% {
+        display: block;
+        opacity: 1;
+    }
+    70% {
+        display: block;
+        opacity: 1;
+    }
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
 /* break points */
 @media (max-width: 890px) {
     div.key-section {
@@ -81,6 +127,8 @@ section h2.heading-1 {
         grid-gap: 5px;
     }
 }
+
+
 
 /*@media (hover: none) {
         button.key:hover{
