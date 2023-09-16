@@ -67,17 +67,11 @@ section h2.heading-1 {
     margin-top: 50px;
 }
 
-div#mensaje{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
 p#confirm {
     display: none;
     position: fixed;
-    top: 80%;
-    left:44%;
+    top: 80vh;
+    left:44vw;
     z-index: 100;
     color: #FD0098;
     font-size: 32px;
@@ -126,7 +120,7 @@ p#confirm {
         grid-gap: 8px;
     }
     p#confirm {
-        left: 32%;
+        left: 32vw;
     }
 }
 
