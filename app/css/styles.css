@@ -1,3 +1,7 @@
+body.light-theme {
+    background:#f6f8fe;
+}
+
 div.container {
     max-width: 980px;
 }
