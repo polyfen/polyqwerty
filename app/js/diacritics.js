@@ -391,8 +391,7 @@ const diacritics = [
         id: "circumflex-capital-c",
         title: "Circumflex C",
         text: "&#264;"
-    },
-    {
+    }, {
         id: "circumflex-c",
         title: "Circumflex c",
         text: "&#265;"
@@ -400,8 +399,7 @@ const diacritics = [
         id: "dot-above-capital-c",
         title: "Dot above C",
         text: "&#266;"
-    },
-    {
+    }, {
         id: "dot-above-c",
         title: "Dot above c",
         text: "&#267;"
@@ -409,8 +407,7 @@ const diacritics = [
         id: "caron-capital-d",
         title: "Caron D",
         text: "&#270;"
-    },
-    {
+    }, {
         id: "caron-d",
         title: "Caron d",
         text: "&#271;"
@@ -418,8 +415,7 @@ const diacritics = [
         id: "cedilla-capital-d",
         title: "Cedilla below D",
         text: "&#7696;"
-    },
-    {
+    }, {
         id: "cedilla-d",
         title: "Cedilla d",
         text: "&#7697;"
@@ -427,8 +423,7 @@ const diacritics = [
         id: "circumflex-below-capital-d",
         title: "circumflex below D",
         text: "&#7698;"
-    },
-    {
+    }, {
         id: "circumflex-below-d",
         title: "circumflex below d",
         text: "&#7699;"
@@ -436,8 +431,7 @@ const diacritics = [
         id: "dot-above-capital-d",
         title: "Dot above D",
         text: "&#7690;"
-    },
-    {
+    }, {
         id: "dot-above-d",
         title: "Dot above d",
         text: "&#7691;"
@@ -454,17 +448,31 @@ const diacritics = [
         id: "line-below-capital-d",
         title: "Line below D",
         text: "&#7694;"
-    },
-    {
+    }, {
         id: "line-below-d",
         title: "Line below d",
         text: "&#7695;"
     }, {
+        id: "stroke-capital-d",
+        title: "Stroke D",
+        text: "&#272;"
+    }, {
+        id: "stroke-d",
+        title: "Stroke d",
+        text: "&#273;"
+    },{
+        id: "caron-capital-d",
+        title: "Caron D",
+        text: "&#270;"
+    },{
+        id: "caron-d",
+        title: "Caron d",
+        text: "&#271;"
+    }, {
         id: "acute-capital-g",
         title: "Acute G",
         text: "&#500;"
-    },
-    {
+    }, {
         id: "acute-g",
         title: "Acute g",
         text: "&#501;"
@@ -526,8 +534,7 @@ const diacritics = [
         id: "breve-below-capital-h",
         title: "Breve H",
         text: "&#x1E2A;"
-    },
-    {
+    }, {
         id: "breve-below-h",
         title: "Breve h",
         text: "&#x1E2B;"
