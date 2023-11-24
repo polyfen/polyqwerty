@@ -1413,7 +1413,7 @@ const diacritics = [
         id: "line-below-z",
         title: "Line below z",
         text: "&#x1E95;"
-    },
+    }
 ]
 
 export default diacritics;
