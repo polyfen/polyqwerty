@@ -1,3 +1,8 @@
+* {
+    font-family: "Figtree", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+}
+  
+
 body.light-theme {
     background:#f6f8fe;
 }
@@ -69,6 +74,7 @@ div.key-section {
 
 section h2.heading-1 {
     margin-top: 50px;
+    margin-bottom: 0;
 }
 
 p#confirm {
