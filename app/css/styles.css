@@ -7,6 +7,10 @@ body.light-theme {
     background:#f6f8fe;
 }
 
+body.dark-mode {
+    background: #060819 !important;
+}
+
 div.container {
     max-width: 980px;
 }
@@ -31,7 +35,7 @@ header {
 }
 
 button.key:hover {
-    background: #fc7e00;
+    background: #fcb300;
 }
 
 
@@ -50,7 +54,7 @@ header {
 }
 
 span#click {
-    color: #fc7e00;
+    color: #fcb300;
 }
 
 section#diacritics {
@@ -83,11 +87,11 @@ p#confirm {
     top: 80vh;
     left:44vw;
     z-index: 100;
-    color: #fc7e00;
+    color: #fcb300;
     font-size: 32px;
     font-weight: 700;
     background-color: whitesmoke;
-    border: 3px solid #fc7e00;
+    border: 3px solid #fcb300;
     border-radius: 4px;
     padding: 10px;
     user-select: none;
