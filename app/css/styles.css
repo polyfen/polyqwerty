@@ -31,7 +31,7 @@ header {
 }
 
 button.key:hover {
-    background: #FD0098;
+    background: #fc7e00;
 }
 
 
@@ -50,7 +50,7 @@ header {
 }
 
 span#click {
-    color: #FD0098;
+    color: #fc7e00;
 }
 
 section#diacritics {
@@ -83,11 +83,11 @@ p#confirm {
     top: 80vh;
     left:44vw;
     z-index: 100;
-    color: #FD0098;
+    color: #fc7e00;
     font-size: 32px;
     font-weight: 700;
     background-color: whitesmoke;
-    border: 3px solid #FD0098;
+    border: 3px solid #fc7e00;
     border-radius: 4px;
     padding: 10px;
     user-select: none;
