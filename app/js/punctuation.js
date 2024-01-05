@@ -92,6 +92,16 @@ const punctuation = [
     text: "&#47;"
   },
   {
+    id: "vertical-bar",
+    title: "Vertical Bar",
+    text: "&#124;"
+  },
+  {
+    id: "backslash",
+    title: "Backslash",
+    text: "&#92;"
+  },
+  {
     id: "colon",
     title: "Colon",
     text: "&#58;"
@@ -117,11 +127,6 @@ const punctuation = [
     text: "&#91;"
   },
   {
-    id: "backslash",
-    title: "Backslash",
-    text: "&#92;"
-  },
-  {
     id: "right-square-bracket",
     title: "Right Square Bracket",
     text: "&#93;"
@@ -140,11 +145,6 @@ const punctuation = [
     id: "left-curly-brace",
     title: "Left Curly Brace",
     text: "&#123;"
-  },
-  {
-    id: "vertical-bar",
-    title: "Vertical Bar",
-    text: "&#124;"
   },
   {
     id: "right-curly-brace",
