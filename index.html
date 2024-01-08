@@ -143,6 +143,22 @@
             buttons6.appendChild(btn);
         });
     </script>
+
+    <script type="module">
+        import smileys from './app/js/smileys.js'
+
+        const buttons7 = document.getElementById('smileys-buttons');
+        smileys.forEach(button => {
+            let btn = document.createElement('button');
+
+            btn.innerHTML = button.text;
+            btn.className = 'key';
+            btn.id = button.id;
+            btn.title = button.title;
+
+            buttons6.appendChild(btn);
+        });
+    </script>
     <!-- Script-Create-Buttons-end -->
     <!-- Script addEventListener start -->
     <script>
@@ -306,6 +322,17 @@
                 <li><a href="#mathematicals">Mathematics</a></li>
                 <li><a href="#arrows">Arrows</a></li>
                 <li><a href="#emojis">Emojis</a></li>
+                <ul>
+                    <li><a href="#smileys">Smileys</a></li>
+                    <li><a href="#people">People</a></li>
+                    <li><a href="#animals-and-nature">Animals &amp; Nature</a></li>
+                    <li><a href="#food-and-drink">Food &amp; Drink</a></li>
+                    <li><a href="#activity">Activity</a></li>
+                    <li><a href="#travel-and-places">Travel &amp; Places</a></li>
+                    <li><a href="#objects">Objects</a></li>
+                    <li><a href="#symbols">Symbols</a></li>
+                    <li><a href="#flags">Flags</a></li>
+                </ul>
             </ul>
         </nav>
     </aside>
@@ -348,7 +375,42 @@
         <section id="emojis">
             <h2 class="heading-1">Emojis</h2>
             <hr class="new align-center">
-            <div class="key-section" id="emojis-buttons"></div>
+            <section id="smileys" class="sub-section">
+                <h3 class="heading-3">Smileys</h3>
+                <div class="key-section" id="smileys-buttons"></div>
+            </section>
+            <section id="people" class="sub-section">
+                <h3 class="heading-3">People</h3>
+                <div class="key-section" id="people-buttons"></div>
+            </section>
+            <section id="animals-and-nature" class="sub-section">
+                <h3 class="heading-3">Animals &amp; Nature</h3>
+                <div class="key-section" id="animals-and-nature-buttons"></div>
+            </section>
+            <section id="food-and-drink" class="sub-section">
+                <h3 class="heading-3">Food &amp; Drink</h3>
+                <div class="key-section" id="food-and-drink-buttons"></div>
+            </section>
+            <section id="activity" class="sub-section">
+                <h3 class="heading-3">Activity</h3>
+                <div class="key-section" id="activity-buttons"></div>
+            </section>
+            <section id="travel-and-places" class="sub-section">
+                <h3 class="heading-3">Travel &amp; Places</h3>
+                <div class="key-section" id="travel-and-places-buttons"></div>
+            </section>
+            <section id="objects" class="sub-section">
+                <h3 class="heading-3">Objects</h3>
+                <div class="key-section" id="objects-buttons"></div>
+            </section>
+            <section id="symbols" class="sub-section">
+                <h3 class="heading-3">Symbols</h3>
+                <div class="key-section" id="symbols-buttons"></div>
+            </section>
+            <section id="flags" class="sub-section">
+                <h3 class="heading-3">Flags</h3>
+                <div class="key-section" id="flags-buttons"></div>
+            </section>
         </section>
     </div><!--div-container-->
     <hr>
