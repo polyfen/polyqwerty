@@ -174,3 +174,46 @@ p#confirm {
             background: #000000;
         }
     }*/
+
+
+nav ul {
+    list-style: none; /* Remove default bullets */
+}
+nav ul li::before {
+    content: "•"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: hsl(0, 0%, 100%); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+nav ul ul {
+    display: none;
+}
+
+nav ul li#diacratics-anchor::before {
+    content: "À";
+}
+
+nav ul li#currency-anchor::before {
+    content: "$";
+}
+
+nav ul li#punctuation-anchor::before {
+    content: "¶";
+}
+
+nav ul li#math-anchor::before {
+    content: "∑";
+}
+
+nav ul li#arrows-anchor::before {
+    content: "↣";
+}
+
+nav ul li#emojis-anchor::before {
+    content: "😀";
+    margin-left: -1.4rem;
+    margin-right: 0.2rem;
+}

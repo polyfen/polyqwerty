@@ -97,10 +97,10 @@
     </script>
 
     <script type="module">
-        import mathematicals from './app/js/mathematicals.js';
+        import math from './app/js/math.js';
 
-        const buttons4 = document.getElementById('mathematicals-buttons');
-        mathematicals.forEach(button => {
+        const buttons4 = document.getElementById('math-buttons');
+        math.forEach(button => {
             let btn = document.createElement('button');
 
             btn.innerHTML = button.text;
@@ -300,12 +300,23 @@
     <aside>
         <nav>
             <ul>
-                <li><a href="#diacritics">Diacritics</a></li>
-                <li><a href="#currencies">Currency</a></li>
-                <li><a href="#punctuation">Punctuation</a></li>
-                <li><a href="#mathematicals">Mathematics</a></li>
-                <li><a href="#arrows">Arrows</a></li>
-                <li><a href="#emojis">Emojis</a></li>
+                <li id="diacratics-anchor"><a href="#diacritics">Diacritics</a></li>
+                <li id="currency-anchor"><a href="#currencies">Currency</a></li>
+                <li id="punctuation-anchor"><a href="#punctuation">Punctuation</a></li>
+                <li id="math-anchor"><a href="#math">Math</a></li>
+                <li id="arrows-anchor"><a href="#arrows">Arrows</a></li>
+                <li id="emojis-anchor"><a href="#emojis">Emojis</a></li>
+                <ul>
+                    <li><a href="#smileys">Smileys</a></li>
+                    <li><a href="#people">People</a></li>
+                    <li><a href="#animals-and-nature">Animals &amp; Nature</a></li>
+                    <li><a href="#food-and-drink">Food &amp; Drink</a></li>
+                    <li><a href="#activity">Activity</a></li>
+                    <li><a href="#travel-and-places">Travel &amp; Places</a></li>
+                    <li><a href="#objects">Objects</a></li>
+                    <li><a href="#symbols">Symbols</a></li>
+                    <li><a href="#flags">Flags</a></li>
+                </ul>
             </ul>
         </nav>
     </aside>
@@ -333,10 +344,10 @@
             <div class="key-section" id="punctuation-buttons"></div>
         </section>
 
-        <section id="mathematicals">
-            <h2 class="heading-1">Mathematics</h2>
+        <section id="math">
+            <h2 class="heading-1">Math</h2>
             <hr class="new align-center">
-            <div class="key-section" id="mathematicals-buttons"></div>
+            <div class="key-section" id="math-buttons"></div>
         </section>
 
         <section id="arrows">

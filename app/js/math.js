@@ -1,4 +1,4 @@
-const mathematicals = [
+const math = [
     {
         id: "minus-sign",
         title: "Minus Sign",
@@ -332,4 +332,4 @@ const mathematicals = [
 ]
 
 
-export default mathematicals;
+export default math;
