@@ -1,0 +1,238 @@
+* {
+    font-family: "Figtree", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+}
+  
+:has(:target) {
+    scroll-behavior: smooth;
+}
+section {
+	scroll-margin-top: 3rem;
+}
+
+body.light-theme {
+    background:#f6f8fe;
+}
+
+body.dark-mode {
+    background: #060819 !important;
+}
+
+div.container {
+    max-width: 980px;
+}
+
+header {
+    margin: auto;
+    max-width: 100%;
+}
+
+aside {
+    float: left;
+    position: fixed;
+}
+
+aside ul {
+    margin-left: 40px;
+}
+
+aside ul li {
+    font-size: 1.2rem;
+}
+
+.key {
+    width: 66px;
+    height: 66px;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 4px;
+    font-size: 32px;
+    background: none;
+    color: #000000;
+    border: 2px solid #e5e5e517;
+    padding: 0;
+
+}
+
+button.key:hover {
+    background: #fcb300;
+}
+
+
+
+hr.new {
+    border: 2.5px solid #d9d9d91c;
+    opacity: 1;
+    margin: 15px auto 19px;
+    max-width: 100%;
+}
+
+header {
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+}
+footer {
+    justify-content: center !important;
+    margin-bottom: 20px;
+}
+
+span#click {
+    color: #fcb300;
+}
+
+section#diacritics {
+    margin-top: 80px;
+}
+
+header a img {
+    margin-right: 8px;
+}
+
+header a#github {
+    display: flex;
+    justify-content: flex-end;
+}
+
+div.key-section {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit , 66px);
+    grid-gap: 10px;
+}
+
+section h2.heading-1 {
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+@media (min-width: 1280px) {
+    section h2.heading-1 {
+        margin-top: 200px;
+    }
+}
+
+p#confirm {
+    display: none;
+    position: fixed;
+    top: 80vh;
+    left:44vw;
+    z-index: 100;
+    color: #fcb300;
+    font-size: 32px;
+    font-weight: 700;
+    background-color: whitesmoke;
+    border: 3px solid #fcb300;
+    border-radius: 4px;
+    padding: 10px;
+    user-select: none;
+
+}
+
+.anime {
+    display: block !important;
+    animation-name: popUp;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+   }
+
+@keyframes popUp {
+    0%  {
+        display: block;
+        opacity: 1;
+    }
+    70% {
+        display: block;
+        opacity: 1;
+    }
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
+/* break points */
+@media (max-width: 890px) {
+    div.key-section {
+        grid-gap: 8px;
+    }
+    p#confirm {
+        left: 32vw;
+    }
+}
+
+@media (max-width: 420px) {
+    div.key-section {
+        grid-gap: 5px;
+    }
+}
+
+@media (max-width: 1280px) {
+    aside {
+        display: none;
+    }
+}
+
+
+
+/*@media (hover: none) {
+        button.key:hover{
+            background: #000000;
+        }
+    }*/
+
+
+nav ul {
+    list-style: none; /* Remove default bullets */
+}
+nav ul li::before {
+    content: "•"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: hsl(0, 0%, 100%); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+nav ul li a.active {
+    color: #FFFFFF;
+}
+
+nav ul ul {
+    display: none;
+}
+
+/* 
+nav ul li:has(a.active[href="#emojis"]) + ul {
+    display: block;
+}
+ */
+
+
+nav ul li#diacratics-anchor::before {
+    content: "À";
+}
+
+nav ul li#currency-anchor::before {
+    content: "$";
+}
+
+nav ul li#punctuation-anchor::before {
+    content: "¶";
+}
+
+nav ul li#math-anchor::before {
+    content: "∑";
+}
+
+nav ul li#arrows-anchor::before {
+    content: "↣";
+}
+
+nav ul li#emojis-anchor::before {
+    content: "😀";
+    margin-left: -1.4rem;
+    margin-right: 0.2rem;
+}
