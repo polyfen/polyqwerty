@@ -5,6 +5,9 @@
 :has(:target) {
     scroll-behavior: smooth;
 }
+section {
+	scroll-margin-top: 3rem;
+}
 
 body.light-theme {
     background:#f6f8fe;
@@ -103,6 +106,12 @@ section h2.heading-1 {
     margin-bottom: 0;
 }
 
+@media (min-width: 1280px) {
+    section h2.heading-1 {
+        margin-top: 200px;
+    }
+}
+
 p#confirm {
     display: none;
     position: fixed;
@@ -187,10 +196,20 @@ nav ul li::before {
     width: 1em; /* Also needed for space (tweak if needed) */
     margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
+nav ul li a.active {
+    color: #FFFFFF;
+}
 
 nav ul ul {
     display: none;
 }
+
+/* 
+nav ul li:has(a.active[href="#emojis"]) + ul {
+    display: block;
+}
+ */
+
 
 nav ul li#diacratics-anchor::before {
     content: "À";
