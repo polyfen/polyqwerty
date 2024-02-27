@@ -324,9 +324,18 @@
     </aside>
 
     <div class="container">
+
         <h1 class="heading-1 align-center">Your keyboard&#x2019;s assistant</h1>
         <h2 class="caption align-center"><span id="click">Click</span> on a character to copy it</h2>
 
+        <form class="search">
+            <input id="searchbar"
+                onkeyup="search_animal()"
+                type="search" name="search"
+                placeholder="Search for it..."
+                aria-label="Search through site content">
+            <button disabled><svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button>
+        </form>
 
         <section id="diacritics">
             <h2 class="heading-1">Diacritics</h2>
@@ -375,4 +384,40 @@
 
 </body>
 
+<!-- <script defer>
+function search_animal() {
+  let input = document.getElementById('searchbar').value
+  input = input.toLowerCase();
+  let x = document.getElementsByClassName('key');
+ 
+  for (i = 0; i < x.length; i++) {
+    if (!x[i].innerHTML.toLowerCase().includes(input)) {
+      x[i].style.display = "none";
+    }
+    else {
+      x[i].style.display = "block";
+    }
+  }
+}
+</script> -->
+<script defer>
+    function search_animal() {
+        let input = document.getElementById('searchbar').value.toLowerCase();
+        let x = document.getElementsByClassName('key');
+
+        for (let i = 0; i < x.length; i++) {
+            let buttonText = x[i].innerHTML.toLowerCase();
+
+            // Normalizar el texto para eliminar diacríticos
+            input = input.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+            buttonText = buttonText.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+            if (!buttonText.includes(input)) {
+                x[i].style.display = "none";
+            } else {
+                x[i].style.display = "block";
+            }
+        }
+    }
+</script>
 </html>
