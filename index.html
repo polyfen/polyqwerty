@@ -384,7 +384,7 @@
 
 </body>
 
-<!-- <script defer>
+<!-- <script defer> version 1, reconoce las letras del innerHTML
 function search_animal() {
   let input = document.getElementById('searchbar').value
   input = input.toLowerCase();
@@ -399,8 +399,8 @@ function search_animal() {
     }
   }
 }
-</script> -->
-<script defer>
+</script> --> 
+<!-- <script defer> version 2 reconoce las letras del innerHTML pero hace un normalize para eliminar diacríticos
     function search_animal() {
         let input = document.getElementById('searchbar').value.toLowerCase();
         let x = document.getElementsByClassName('key');
@@ -416,6 +416,58 @@ function search_animal() {
                 x[i].style.display = "none";
             } else {
                 x[i].style.display = "block";
+            }
+        }
+    }
+</script> -->
+
+<!-- <script defer> version 3 reconoce el title del botón
+    function search_animal() {
+        let input = document.getElementById('searchbar').value.toLowerCase();
+        let x = document.getElementsByClassName('key');
+
+        for (let i = 0; i < x.length; i++) {
+            let buttonTitle = x[i].getAttribute('title').toLowerCase();
+
+            // Normalizar el texto para eliminar diacríticos
+            input = input.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+            buttonTitle = buttonTitle.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+            if (!buttonTitle.includes(input)) {
+                x[i].style.display = "none";
+            } else {
+                x[i].style.display = "block";
+            }
+        }
+    }
+</script> -->
+
+<script defer>
+    /* version 4 reconoce el title del boton, pero en caso de haber un solo caracter reacciona a palabra completa */
+    function search_animal() {
+        let input = document.getElementById('searchbar').value.toLowerCase();
+        let x = document.getElementsByClassName('key');
+
+        // Verificar si la entrada es un solo carácter
+        let isSingleCharacter = input.length === 1;
+
+        for (let i = 0; i < x.length; i++) {
+            let buttonTitle = x[i].getAttribute('title').toLowerCase();
+
+            // Normalizar el texto para eliminar diacríticos
+            input = input.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+            buttonTitle = buttonTitle.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+            // Dividir el título en palabras
+            let titleWords = buttonTitle.split(' ');
+
+            // Verificar si alguna palabra completa del título es igual a la entrada
+            let match = titleWords.some(word => isSingleCharacter ? word === input : word.includes(input));
+
+            if (match) {
+                x[i].style.display = "block";
+            } else {
+                x[i].style.display = "none";
             }
         }
     }
