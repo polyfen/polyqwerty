@@ -246,7 +246,8 @@ form.search {
     flex-direction: row;
     align-items: center;
     text-align: center;
-    margin: 50px auto;
+    /* margin: 50px auto; */
+    margin-bottom: 3px;
 }
 
 .search input {
@@ -276,6 +277,12 @@ form.search {
     width: 24px;
     height: 24px;
     padding: 10px;
+}
+
+div#diacritics-heading {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
 }
 
 /* Quita el botón de limpiar en el input type: search  */
