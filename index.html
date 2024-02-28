@@ -405,16 +405,16 @@ function search_animal() {
 <script defer>
     function search_animal() {
         let input = document.getElementById('searchbar').value.toLowerCase();
-        let x = document.getElementById('diacritics').getElementsByClassName('key');
+        let x = document.getElementsByClassName('key');
 
         for (let i = 0; i < x.length; i++) {
-            let buttonText = x[i].innerHTML.toLowerCase();
+            let buttonTitle = x[i].getAttribute('title').toLowerCase();
 
             // Normalizar el texto para eliminar diacríticos
             input = input.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-            buttonText = buttonText.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+            buttonTitle = buttonTitle.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 
-            if (!buttonText.includes(input)) {
+            if (!buttonTitle.includes(input)) {
                 x[i].style.display = "none";
             } else {
                 x[i].style.display = "block";
