@@ -247,6 +247,8 @@ form.search {
     align-items: center;
     text-align: center;
     margin: 50px auto;
+    position: sticky;
+    top: 25px;
 }
 
 .search input {
@@ -284,11 +286,6 @@ form.search {
     -webkit-appearance: none;
     appearance: none;
     display: none;
-}
-
-/* Quita el botón de limpiar en el input type: search para Firefox */
-#searchbar {
-    -moz-appearance: textfield;
 }
 
 #searchbar::-moz-search-clear-button,
