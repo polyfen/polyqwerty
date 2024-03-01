@@ -27,7 +27,9 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://polynucleus.com/styles.css" type="text/css">
 
     <!-- PAGE-SPECIFIC META start -->
@@ -295,7 +297,8 @@
 
     <header>
         <img alt="Poly Qwerty" src="imgs/polyqwerty.svg" height="35">
-        <a id="github" href="https://github.com/polyfen/polyqwerty" target="_blank"><img alt="Github" src="imgs/github.svg" height="20px">open-source</a>
+        <a id="github" href="https://github.com/polyfen/polyqwerty" target="_blank"><img alt="Github"
+                src="imgs/github.svg" height="20px">open-source</a>
     </header>
 
     <aside>
@@ -329,12 +332,13 @@
         <h2 class="caption align-center"><span id="click">Click</span> on a character to copy it</h2>
 
         <form class="search">
-            <input id="searchbar"
-                onkeyup="search_animal()"
-                type="search" name="search"
-                placeholder="Search for it..."
+            <input id="searchbar" onkeyup="search_animal()" type="search" name="search" placeholder="Search for it..."
                 aria-label="Search through site content">
-            <button disabled><svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button>
+            <button disabled><svg viewBox="0 0 1024 1024">
+                    <path class="path1"
+                        d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z">
+                    </path>
+                </svg></button>
         </form>
 
         <section id="diacritics">
@@ -354,7 +358,7 @@
             <hr class="new align-center">
             <div class="key-section" id="math-buttons"></div>
         </section>
-        
+
         <section id="currencies">
             <h2 class="heading-1">Currency</h2>
             <hr class="new align-center">
@@ -383,64 +387,6 @@
     <p id="confirm">Copied!</p>
 
 </body>
-
-<!-- <script defer> version 1, reconoce las letras del innerHTML
-function search_animal() {
-  let input = document.getElementById('searchbar').value
-  input = input.toLowerCase();
-  let x = document.getElementsByClassName('key');
- 
-  for (i = 0; i < x.length; i++) {
-    if (!x[i].innerHTML.toLowerCase().includes(input)) {
-      x[i].style.display = "none";
-    }
-    else {
-      x[i].style.display = "block";
-    }
-  }
-}
-</script> --> 
-<!-- <script defer> version 2 reconoce las letras del innerHTML pero hace un normalize para eliminar diacríticos
-    function search_animal() {
-        let input = document.getElementById('searchbar').value.toLowerCase();
-        let x = document.getElementsByClassName('key');
-
-        for (let i = 0; i < x.length; i++) {
-            let buttonText = x[i].innerHTML.toLowerCase();
-
-            // Normalizar el texto para eliminar diacríticos
-            input = input.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-            buttonText = buttonText.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-
-            if (!buttonText.includes(input)) {
-                x[i].style.display = "none";
-            } else {
-                x[i].style.display = "block";
-            }
-        }
-    }
-</script> -->
-
-<!-- <script defer> version 3 reconoce el title del botón
-    function search_animal() {
-        let input = document.getElementById('searchbar').value.toLowerCase();
-        let x = document.getElementsByClassName('key');
-
-        for (let i = 0; i < x.length; i++) {
-            let buttonTitle = x[i].getAttribute('title').toLowerCase();
-
-            // Normalizar el texto para eliminar diacríticos
-            input = input.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-            buttonTitle = buttonTitle.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-
-            if (!buttonTitle.includes(input)) {
-                x[i].style.display = "none";
-            } else {
-                x[i].style.display = "block";
-            }
-        }
-    }
-</script> -->
 
 <script defer>
     /* version 4 reconoce el title del boton, pero en caso de haber un solo caracter reacciona a palabra completa */

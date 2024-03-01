@@ -294,3 +294,14 @@ form.search {
     appearance: none;
     display: none;
 }
+
+/* Oculta las secciones que no tienen ningun boton visibles */
+section:not(:has(button[style*="display: block"])) {
+    display: none;
+}
+/* en cascada, da como default display:block por que el selector lo toma al stylo inline*/
+section:not(:has(button[style*="display: none"])) {
+    display: block;
+}  
+
+  
