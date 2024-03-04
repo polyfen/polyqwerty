@@ -236,3 +236,72 @@ nav ul li#emojis-anchor::before {
     margin-left: -1.4rem;
     margin-right: 0.2rem;
 }
+
+/* search bar */
+form.search {
+    background-color: #fcb300;
+    width: 200px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: 50px auto;
+    position: sticky;
+    top: 25px;
+}
+
+.search input {
+    all: unset;
+    font: 16px system-ui;
+    color: black;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+
+::placeholder {
+    color: black;
+    opacity: 0.7; 
+}
+
+.search button {
+    all: unset;
+    cursor: default;
+    width: 44px;
+    height: 44px;
+}
+  
+ button svg {
+    color: #fff;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+}
+
+/* Quita el botón de limpiar en el input type: search  */
+#searchbar::-webkit-search-clear-button,
+#searchbar::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+
+#searchbar::-moz-search-clear-button,
+#searchbar::-moz-search-cancel-button {
+    -moz-appearance: none;
+    appearance: none;
+    display: none;
+}
+
+/* Oculta las secciones que no tienen ningun boton visibles */
+section:not(:has(button[style*="display: block"])) {
+    display: none;
+}
+/* en cascada, da como default display:block por que el selector lo toma al stylo inline*/
+section:not(:has(button[style*="display: none"])) {
+    display: block;
+}  
+
+  

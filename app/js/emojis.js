@@ -25,7 +25,7 @@ const emojis = [
     { text: "&#x1F615;", id: "confused-face", title: "Confused face" },
     { text: "&#x1F616;", id: "confounded-face", title: "Confounded face" },
     { text: "&#x1F617;", id: "kissing-face", title: "kissing face" },
-    { text: "&#x1F618;", id: "face-throwing-a-kiss", title: "Face throwing a kiss" },
+    { text: "&#x1F618;", id: "face-throwing-kiss", title: "Face throwing kiss" },
     { text: "&#x1F619;", id: "kissing-face-with-smiling-eyes", title: "kissing face with smiling eyes" },
     { text: "&#x1F61A;", id: "kissing-face-with-closed-eyes", title: "kissing face with closed eyes" },
     { text: "&#x1F61B;", id: "face-with-stuck-out-tongue", title: "Face with stuck-out tongue" },
