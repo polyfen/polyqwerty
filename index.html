@@ -156,15 +156,17 @@
             buttons.forEach(button => {
                 button.addEventListener('click', (e) => {
                     e.preventDefault();
-                    navigator.clipboard.writeText(button.innerText);
-                    confirmation();
-
+                    const copiedText = button.textContent;
+                    navigator.clipboard.writeText(copiedText);
+                    confirmation(copiedText);
                 });
             });
-            function confirmation() {
-                document.getElementById("confirm").classList.add("anime");
-                document.getElementById("confirm").addEventListener("animationend", () => {
-                    document.getElementById("confirm").classList.remove("anime");
+            function confirmation(copiedText) {
+                const confirmElement = document.getElementById("confirm");
+                confirmElement.textContent = `${copiedText} copied`;
+                confirmElement.classList.add("anime");
+                confirmElement.addEventListener("animationend", () => {
+                    confirmElement.classList.remove("anime");
                 });
             }
         });
@@ -177,15 +179,17 @@
             buttons.forEach(button => {
                 button.addEventListener('click', (e) => {
                     e.preventDefault();
-                    navigator.clipboard.writeText(button.innerText);
-                    confirmation();
-
+                    const copiedText = button.textContent;
+                    navigator.clipboard.writeText(copiedText);
+                    confirmation(copiedText);
                 });
             });
-            function confirmation() {
-                document.getElementById("confirm").classList.add("anime");
-                document.getElementById("confirm").addEventListener("animationend", () => {
-                    document.getElementById("confirm").classList.remove("anime");
+            function confirmation(copiedText) {
+                const confirmElement = document.getElementById("confirm");
+                confirmElement.textContent = `${copiedText} copied`;
+                confirmElement.classList.add("anime");
+                confirmElement.addEventListener("animationend", () => {
+                    confirmElement.classList.remove("anime");
                 });
             }
         });
@@ -198,15 +202,17 @@
             buttons.forEach(button => {
                 button.addEventListener('click', (e) => {
                     e.preventDefault();
-                    navigator.clipboard.writeText(button.innerText);
-                    confirmation();
-
+                    const copiedText = button.textContent;
+                    navigator.clipboard.writeText(copiedText);
+                    confirmation(copiedText);
                 });
             });
-            function confirmation() {
-                document.getElementById("confirm").classList.add("anime");
-                document.getElementById("confirm").addEventListener("animationend", () => {
-                    document.getElementById("confirm").classList.remove("anime");
+            function confirmation(copiedText) {
+                const confirmElement = document.getElementById("confirm");
+                confirmElement.textContent = `${copiedText} copied`;
+                confirmElement.classList.add("anime");
+                confirmElement.addEventListener("animationend", () => {
+                    confirmElement.classList.remove("anime");
                 });
             }
         });
@@ -219,15 +225,17 @@
             buttons.forEach(button => {
                 button.addEventListener('click', (e) => {
                     e.preventDefault();
-                    navigator.clipboard.writeText(button.innerText);
-                    confirmation();
-
+                    const copiedText = button.textContent;
+                    navigator.clipboard.writeText(copiedText);
+                    confirmation(copiedText);
                 });
             });
-            function confirmation() {
-                document.getElementById("confirm").classList.add("anime");
-                document.getElementById("confirm").addEventListener("animationend", () => {
-                    document.getElementById("confirm").classList.remove("anime");
+            function confirmation(copiedText) {
+                const confirmElement = document.getElementById("confirm");
+                confirmElement.textContent = `${copiedText} copied`;
+                confirmElement.classList.add("anime");
+                confirmElement.addEventListener("animationend", () => {
+                    confirmElement.classList.remove("anime");
                 });
             }
         });
@@ -239,15 +247,17 @@
             buttons.forEach(button => {
                 button.addEventListener('click', (e) => {
                     e.preventDefault();
-                    navigator.clipboard.writeText(button.innerText);
-                    confirmation();
-
+                    const copiedText = button.textContent;
+                    navigator.clipboard.writeText(copiedText);
+                    confirmation(copiedText);
                 });
             });
-            function confirmation() {
-                document.getElementById("confirm").classList.add("anime");
-                document.getElementById("confirm").addEventListener("animationend", () => {
-                    document.getElementById("confirm").classList.remove("anime");
+            function confirmation(copiedText) {
+                const confirmElement = document.getElementById("confirm");
+                confirmElement.textContent = `${copiedText} copied`;
+                confirmElement.classList.add("anime");
+                confirmElement.addEventListener("animationend", () => {
+                    confirmElement.classList.remove("anime");
                 });
             }
         });
@@ -259,15 +269,17 @@
             buttons.forEach(button => {
                 button.addEventListener('click', (e) => {
                     e.preventDefault();
-                    navigator.clipboard.writeText(button.innerText);
-                    confirmation();
-
+                    const copiedText = button.textContent;
+                    navigator.clipboard.writeText(copiedText);
+                    confirmation(copiedText);
                 });
             });
-            function confirmation() {
-                document.getElementById("confirm").classList.add("anime");
-                document.getElementById("confirm").addEventListener("animationend", () => {
-                    document.getElementById("confirm").classList.remove("anime");
+            function confirmation(copiedText) {
+                const confirmElement = document.getElementById("confirm");
+                confirmElement.textContent = `${copiedText} copied`;
+                confirmElement.classList.add("anime");
+                confirmElement.addEventListener("animationend", () => {
+                    confirmElement.classList.remove("anime");
                 });
             }
         });
@@ -383,7 +395,7 @@
         </a>
     </footer>
 
-    <p id="confirm">Copied!</p>
+    <p id="confirm">!</p>
 
 </body>
 

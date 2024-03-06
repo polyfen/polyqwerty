@@ -167,11 +167,6 @@ const punctuation = [
     text: "&#135;"
   },
   {
-    id: "left-pointing-double-angle-quotation-mark",
-    title: "Left-Pointing Double Angle Quotation Mark",
-    text: "&#171;"
-  },
-  {
     id: "single-left-pointing-angle-quotation-mark",
     title: "Single Left-Pointing Angle Quotation Mark",
     text: "&#139;"
@@ -180,6 +175,11 @@ const punctuation = [
     id: "single-right-pointing-angle-quotation-mark",
     title: "Single Right-Pointing Angle Quotation Mark",
     text: "&#155;"
+  },
+  {
+    id: "left-pointing-double-angle-quotation-mark",
+    title: "Left-Pointing Double Angle Quotation Mark",
+    text: "&#171;"
   },
   {
     id: "right-pointing-double-angle-quotation-mark",
