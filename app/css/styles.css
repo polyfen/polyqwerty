@@ -28,7 +28,8 @@ header {
 
 aside {
     float: left;
-    position: fixed;
+    position: sticky;
+    top: 25px;
 }
 
 aside ul {
