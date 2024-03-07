@@ -311,4 +311,11 @@ section:not(:has(button[style*="display: none"])) {
     display: block;
 }  
 
-  
+/* Oculta las secciones que no tienen ningun boton visibles */
+.sub:not(:has(button[style*="display: block"])) {
+    display: none;
+}
+/* en cascada, da como default display:block por que el selector lo toma al stylo inline*/
+.sub:not(:has(button[style*="display: none"])) {
+    display: block;
+}  
