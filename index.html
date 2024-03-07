@@ -132,159 +132,47 @@
     </script>
 
     <script type="module">
-        import emojis from './app/js/emojis.js'
+        import emojisData from './app/js/emojis.js'
 
-        const buttons6 = document.getElementById('emojis-buttons');
-        emojis.forEach(button => {
-            let btn = document.createElement('button');
+        for (const category in emojisData) {
+        const buttonsSection = document.getElementById(`${category}-buttons`);
+        emojisData[category].forEach(button => {
+        let btn = document.createElement('button');
 
-            btn.innerHTML = button.text;
-            btn.className = 'key';
-            btn.id = button.id;
-            btn.title = button.title;
+        btn.innerHTML = button.text;
+        btn.className = 'key';
+        btn.id = button.id;
+        btn.title = button.title;
 
-            buttons6.appendChild(btn);
-        });
+      buttonsSection.appendChild(btn);
+    });
+  }
     </script>
     <!-- Script-Create-Buttons-end -->
     <!-- Script addEventListener start -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const buttons = document.getElementsByClassName('key-section')[0].querySelectorAll('button');
-
-
-            buttons.forEach(button => {
-                button.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const copiedText = button.textContent;
-                    navigator.clipboard.writeText(copiedText);
-                    confirmation(copiedText);
-                });
-            });
-            function confirmation(copiedText) {
-                const confirmElement = document.getElementById("confirm");
-                confirmElement.textContent = `${copiedText} copied`;
-                confirmElement.classList.add("anime");
-                confirmElement.addEventListener("animationend", () => {
-                    confirmElement.classList.remove("anime");
-                });
-            }
+    document.addEventListener('DOMContentLoaded', function () {
+        const buttons = document.querySelectorAll('.key'); // Select all buttons with class .key
+      
+        buttons.forEach(button => {
+          button.addEventListener('click', (e) => {
+            e.preventDefault();
+            const copiedText = button.textContent;
+            navigator.clipboard.writeText(copiedText);
+            confirmation(copiedText);
+          });
         });
-
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const buttons = document.getElementsByClassName('key-section')[1].querySelectorAll('button');
-
-
-            buttons.forEach(button => {
-                button.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const copiedText = button.textContent;
-                    navigator.clipboard.writeText(copiedText);
-                    confirmation(copiedText);
-                });
-            });
-            function confirmation(copiedText) {
-                const confirmElement = document.getElementById("confirm");
-                confirmElement.textContent = `${copiedText} copied`;
-                confirmElement.classList.add("anime");
-                confirmElement.addEventListener("animationend", () => {
-                    confirmElement.classList.remove("anime");
-                });
-            }
-        });
-
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const buttons = document.getElementsByClassName('key-section')[2].querySelectorAll('button');
-
-
-            buttons.forEach(button => {
-                button.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const copiedText = button.textContent;
-                    navigator.clipboard.writeText(copiedText);
-                    confirmation(copiedText);
-                });
-            });
-            function confirmation(copiedText) {
-                const confirmElement = document.getElementById("confirm");
-                confirmElement.textContent = `${copiedText} copied`;
-                confirmElement.classList.add("anime");
-                confirmElement.addEventListener("animationend", () => {
-                    confirmElement.classList.remove("anime");
-                });
-            }
-        });
-
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const buttons = document.getElementsByClassName('key-section')[3].querySelectorAll('button');
-
-
-            buttons.forEach(button => {
-                button.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const copiedText = button.textContent;
-                    navigator.clipboard.writeText(copiedText);
-                    confirmation(copiedText);
-                });
-            });
-            function confirmation(copiedText) {
-                const confirmElement = document.getElementById("confirm");
-                confirmElement.textContent = `${copiedText} copied`;
-                confirmElement.classList.add("anime");
-                confirmElement.addEventListener("animationend", () => {
-                    confirmElement.classList.remove("anime");
-                });
-            }
-        });
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const buttons = document.getElementsByClassName('key-section')[4].querySelectorAll('button');
-
-
-            buttons.forEach(button => {
-                button.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const copiedText = button.textContent;
-                    navigator.clipboard.writeText(copiedText);
-                    confirmation(copiedText);
-                });
-            });
-            function confirmation(copiedText) {
-                const confirmElement = document.getElementById("confirm");
-                confirmElement.textContent = `${copiedText} copied`;
-                confirmElement.classList.add("anime");
-                confirmElement.addEventListener("animationend", () => {
-                    confirmElement.classList.remove("anime");
-                });
-            }
-        });
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const buttons = document.getElementsByClassName('key-section')[5].querySelectorAll('button');
-
-
-            buttons.forEach(button => {
-                button.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const copiedText = button.textContent;
-                    navigator.clipboard.writeText(copiedText);
-                    confirmation(copiedText);
-                });
-            });
-            function confirmation(copiedText) {
-                const confirmElement = document.getElementById("confirm");
-                confirmElement.textContent = `${copiedText} copied`;
-                confirmElement.classList.add("anime");
-                confirmElement.addEventListener("animationend", () => {
-                    confirmElement.classList.remove("anime");
-                });
-            }
-        });
-
-    </script>
+      
+        function confirmation(copiedText) {
+          const confirmElement = document.getElementById("confirm");
+          confirmElement.textContent = `${copiedText} copied`;
+          confirmElement.classList.add("anime");
+          confirmElement.addEventListener("animationend", () => {
+            confirmElement.classList.remove("anime");
+          });
+        }
+      });
+    </script>      
     <!-- Script addEventListener end-->
 
     <!-- Google Tag Manager -->
@@ -327,10 +215,9 @@
                     <li><a href="#smileys">Smileys</a></li>
                     <li><a href="#people">People</a></li>
                     <li><a href="#animals-and-nature">Animals &amp; Nature</a></li>
-                    <li><a href="#food-and-drink">Food &amp; Drink</a></li>
-                    <li><a href="#activity">Activity</a></li>
+                    <li><a href="#food-and-drinks">Food &amp; Drink</a></li>
+                    <li><a href="#activities">Activity</a></li>
                     <li><a href="#travel-and-places">Travel &amp; Places</a></li>
-                    <li><a href="#objects">Objects</a></li>
                     <li><a href="#symbols">Symbols</a></li>
                 </ul>
             </ul>
@@ -385,7 +272,20 @@
         <section id="emojis">
             <h2 class="heading-1">Emojis</h2>
             <hr class="new align-center">
-            <div class="key-section" id="emojis-buttons"></div>
+            <h3 id="smileys">Smileys</h3>
+            <div class="key-section" id="smileys-buttons"></div>
+            <h3 id="people">People</h3>
+            <div class="key-section" id="people-buttons"></div>
+            <h3 id="animals-and-nature">Animals &amp; Nature</h3>
+            <div class="key-section" id="animals_nature-buttons"></div>
+            <h3 id="food-and-drinks">Food &amp; Drinks</h3>
+            <div class="key-section" id="food_drinks-buttons"></div>
+            <h3 id="activities">Activities</h3>
+            <div class="key-section" id="activities-buttons"></div>
+            <h3 id="travel-and-places">Travel &amp; Places</h3>
+            <div class="key-section" id="travel_places-buttons"></div>
+            <h3 id="symbols">Symbols</h3>
+            <div class="key-section" id="symbols-buttons"></div>
         </section>
     </div><!--div-container-->
     <hr>

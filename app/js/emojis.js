@@ -1,6 +1,4 @@
-const emojis = [
-
-    /* smileys */
+const smileys = [
     { text: "&#x1F600;", id: "grinning-face", title: "Grinning Face" },
     { text: "&#x1F601;", id: "grinning-face-with-smiling-eyes", title: "grinning face with smiling eyes" },
     { text: "&#x1F602;", id: "face-with-tears-of-joy", title: "Face with tears of joy" },
@@ -96,7 +94,9 @@ const emojis = [
     { text: "&#x1F648;", id: "see-no-evil-monkey", title: "see-no-evil monkey" },
     { text: "&#x1F649;", id: "hear-no-evil-monkey", title: "hear-no-evil monkey" },
     { text: "&#x1F64A;", id: "speak-no-evil-monkey", title: "speak-no-evil monkey" },
-
+];
+const people = [
+    
     /* hands */
     { text: "&#x261d;", id: "white-up-pointing-index", title: "white up pointing index" },
     { text: "&#x270a;", id: "raised-fist", title: "raised fist" },
@@ -132,7 +132,8 @@ const emojis = [
     { text: "&#x1F485;", id: "nail-polish", title: "nail polish" },
     { text: "&#x1F933;", id: "selfie", title: "Selfie" },
 
-    /* other characters */
+    /* fantasy people */
+    
     { text: "&#x1F9D9;", id: "mage", title: "Mage" },
     { text: "&#x1F9DA;", id: "fairy", title: "Fairy" },
     { text: "&#x1F9DB;", id: "vampire", title: "Vampire" },
@@ -158,31 +159,38 @@ const emojis = [
     { text: "&#x1F47B;", id: "ghost", title: "Ghost" },
     { text: "&#x1F47D;", id: "extraterrestrial-alien", title: "Extraterrestrial Alien" },
     { text: "&#x1F47E;", id: "alien-monster", title: "Alien Monster / Space Invader" },
-    { text: "&#x1F47F;", id: "imp", title: "Imp" },
-    { text: "&#x1F383;", id: "jack-o-lantern", title: "Jack-O-Lantern" },
     { text: "&#x1F385;", id: "father-christmas", title: "Father Christmas" },
 
-    /*hearts*/
-    { text: "&#129505;", id: "orange-heart", title: "Orange Heart" },
-    { text: "&#128151;", id: "heart-with-ribbon", title: "Heart with Ribbon" },
-    { text: "&#128152;", id: "revolving-hearts", title: "Revolving Hearts" },
-    { text: "&#128153;", id: "heart-decoration", title: "Heart Decoration" },
-    { text: "&#x1F493;", id: "beating-heart", title: "Beating Heart" },
-    { text: "&#x1F494;", id: "broken-heart", title: "Broken Heart" },
-    { text: "&#x1F495;", id: "two-hearts", title: "Two Hearts" },
-    { text: "&#x1F496;", id: "sparkling-heart", title: "Sparkling Heart" },
-    { text: "&#x1F497;", id: "growing-heart", title: "Growing Heart" },
-    { text: "&#x1F498;", id: "heart-with-arrow", title: "Heart with Arrow" },
-    { text: "&#x1F499;", id: "blue-heart", title: "Blue Heart" },
-    { text: "&#x1F49A;", id: "green-heart", title: "Green Heart" },
-    { text: "&#x1F49B;", id: "yellow-heart", title: "Yellow Heart" },
-    { text: "&#x1F49C;", id: "purple-heart", title: "Purple Heart" },
-    { text: "&#x1F49D;", id: "heart-with-ribbon", title: "Heart with Ribbon" },
-    { text: "&#x1F49E;", id: "revolving-hearts", title: "Revolving Hearts" },
-    { text: "&#x1F49F;", id: "heart-decoration", title: "Heart Decoration" },
-    { text: "&#x1F48C;", id: "love-letter", title: "Love Letter" },
-    { text: "&#x1F48B;", id: "kiss-mark", title: "Kiss Mark" },
+        // Creatures
+        {
+          text: "&#x1F608;",
+          id: "smiling_imp",
+          title: "Smiling Imp"
+        },
+        {
+          text: "&#x1F47F;",
+          id: "imp",
+          title: "Imp"
+        },
+        {
+          text: "&#x1F480;",
+          id: "skull",
+          title: "Skull"
+        },
+        {
+          text: "&#x1F4A9;",
+          id: "poop_face",
+          title: "poop face"
+        },
+        {
+          text: "&#x1F921;",
+          id: "clown_face",
+          title: "Clown Face"
+        },
 
+];
+
+const animals_nature = [
     /* animals */
     { text: "&#x1F400;", id: "rat", title: "Rat" },
     { text: "&#x1F401;", id: "mouse", title: "Mouse" },
@@ -248,7 +256,81 @@ const emojis = [
     { text: "&#x1F43D;", id: "pig-nose", title: "Pig Nose" },
     { text: "&#x1F43E;", id: "paw-prints", title: "Paw Prints" },
 
+    /* plants */
+    { text: "&#x1F330;", id: "chestnut", title: "Chestnut" },
+    { text: "&#x1F331;", id: "seedling", title: "Seedling" },
+    { text: "&#x1F332;", id: "evergreen-tree", title: "Evergreen Tree" },
+    { text: "&#x1F333;", id: "deciduous-tree", title: "Deciduous Tree" },
+    { text: "&#x1F334;", id: "palm-tree", title: "Palm Tree" },
+    { text: "&#x1F335;", id: "cactus", title: "Cactus" },
+    { text: "&#x1F336;", id: "hot-pepper", title: "Hot Pepper" },
+    { text: "&#x1F337;", id: "tulip", title: "Tulip" },
+    { text: "&#x1F338;", id: "cherry-blossom", title: "Cherry Blossom" },
+    { text: "&#x1F339;", id: "rose", title: "Rose" },
+    { text: "&#x1F33A;", id: "hibiscus", title: "Hibiscus" },
+    { text: "&#x1F33B;", id: "sunflower", title: "Sunflower" },
+    { text: "&#x1F33C;", id: "blossom", title: "Blossom" },
+    { text: "&#x1F33D;", id: "ear-of-maize", title: "Ear of Maize" },
+    { text: "&#x1F33E;", id: "ear-of-rice", title: "Ear of Rice" },
+    { text: "&#x1F33F;", id: "herb", title: "Herb" },
+    { text: "&#x1F340;", id: "four-leaf-clover", title: "Four Leaf Clover" },
+    { text: "&#x1F341;", id: "maple-leaf", title: "Maple Leaf" },
+    { text: "&#x1F342;", id: "fallen-leaf", title: "Fallen Leaf" },
+    { text: "&#x1F343;", id: "leaf-fluttering-in-wind", title: "Leaf Fluttering in Wind" },
 
+    /* moon & sun */
+    { text: "&#x1F31F;", id: "glowing-star", title: "Glowing Star" },
+    { text: "&#x1F320;", id: "shooting-star", title: "Shooting Star" },
+    { text: "&#x1F311;", id: "new-moon-symbol", title: "New Moon Symbol" },
+    { text: "&#x1F312;", id: "waxing-crescent-moon-symbol", title: "Waxing Crescent Moon Symbol" },
+    { text: "&#x1F313;", id: "first-quarter-moon-symbol", title: "First Quarter Moon Symbol" },
+    { text: "&#x1F314;", id: "waxing-gibbous-moon-symbol", title: "Waxing Gibbous Moon Symbol" },
+    { text: "&#x1F315;", id: "full-moon-symbol", title: "Full Moon Symbol" },
+    { text: "&#x1F316;", id: "waning-gibbous-moon-symbol", title: "Waning Gibbous Moon Symbol" },
+    { text: "&#x1F317;", id: "last-quarter-moon-symbol", title: "Last Quarter Moon Symbol" },
+    { text: "&#x1F318;", id: "waning-crescent-moon-symbol", title: "Waning Crescent Moon Symbol" },
+    { text: "&#x1F319;", id: "crescent-moon", title: "Crescent Moon" },
+    { text: "&#x1F31A;", id: "new-moon-with-face", title: "New Moon with Face" },
+    { text: "&#x1F31B;", id: "first-quarter-moon-with-face", title: "First Quarter Moon with Face" },
+    { text: "&#x1F31C;", id: "last-quarter-moon-with-face", title: "Last Quarter Moon with Face" },
+    { text: "&#x1F31D;", id: "full-moon-with-face", title: "Full Moon with Face" },
+    { text: "&#x1F31E;", id: "sun-with-face", title: "Sun with Face" },
+    { text: "&#x1FA90;", id: "saturn", title: "Saturn" },
+
+    /* weather */
+    { text: "&#x26C5;", id: "sun-behind-cloud", title: "Sun behind cloud" },
+    { text: "&#x1f302;", id: "closed-umbrella", title: "Closed umbrella" },
+    { text: "&#x1f303;", id: "night-with-stars", title: "night with stars" },
+    { text: "&#x1f301;", id: "foggy", title: "Foggy" },
+    { text: "&#x1f304;", id: "sunrise-over-mountains", title: "Sunrise over mountains" },
+    { text: "&#x1f305;", id: "sunrise", title: "Sunrise" },
+    { text: "&#x1f306;", id: "cityscape-at-dusk", title: "Cityscape at dusk" },
+    { text: "&#x1f307;", id: "sunset-over-buildings", title: "Sunset over buildings" },
+    { text: "&#127754;", id: "water-wave", title: "Water wave" },
+    { text: "&#x2600;", id: "black-sun-with-rays", title: "Black sun with rays" },
+    { text: "&#x2601;", id: "cloud", title: "Cloud" },
+    { text: "&#x26C4;", id: "snowman", title: "Snowman" },
+
+    /* new weather */
+    { text: "&#x1F324;", id: "sun-behind-small-cloud", title: "Sun Behind Small Cloud" },
+    { text: "&#x1F325;", id: "sun-behind-large-cloud", title: "Sun Behind Large Cloud" },
+    { text: "&#x1F326;", id: "sun-behind-rain-cloud", title: "Sun Behind Rain Cloud" },
+    { text: "&#x1F327;", id: "cloud-with-rain", title: "Cloud with Rain" },
+    { text: "&#x1F328;", id: "cloud-with-snow", title: "Cloud with Snow" },
+    { text: "&#x26c8", id: "cloud-with-lightning-and-rain", title: "Cloud with Lightning and Rain" },
+    { text: "&#x1F329;", id: "cloud-with-lighting", title: "Cloud with Lightning" },
+    { text: "&#x1F32A;", id: "Tornado", title: "Tornado" },
+    { text: "&#x1F32B;", id: "fog", title: "Fog" },
+    { text: "&#x1F32C;", id: "wind-face", title: "Wind Face" },
+    { text: "&#x1F300;", id: "cyclone", title: "Cyclone" },
+    { text: "&#x1F308;", id: "rainbow", title: "Rainbow" },
+    { text: "&#x2602;", id: "umbrella", title: "Umbrella" },
+    { text: "&#x2614;", id: "umbrella-with-rain-drops", title: "Umbrella with Rain Drops" },
+    { text: "&#x2744;", id: "snowflake", title: "Snowflake" },
+    { text: "&#x2604;", id: "comet", title: "Comet" },
+];
+
+const food_drinks = [
     /* food & drinks*/
     { text: "&#x1F32D;", id: "hot-dog", title: "Hot Dog" },
     { text: "&#x1F32E;", id: "taco", title: "Taco" },
@@ -310,118 +392,71 @@ const emojis = [
     { text: "&#x1F37A;", id: "beer-mug", title: "Beer Mug" },
     { text: "&#x1F37B;", id: "clinking-beer-mugs", title: "Clinking Beer Mugs" },
     { text: "&#x1F37C;", id: "baby-bottle", title: "Baby Bottle" },
+];
 
-    /* plants */
-    { text: "&#x1F330;", id: "chestnut", title: "Chestnut" },
-    { text: "&#x1F331;", id: "seedling", title: "Seedling" },
-    { text: "&#x1F332;", id: "evergreen-tree", title: "Evergreen Tree" },
-    { text: "&#x1F333;", id: "deciduous-tree", title: "Deciduous Tree" },
-    { text: "&#x1F334;", id: "palm-tree", title: "Palm Tree" },
-    { text: "&#x1F335;", id: "cactus", title: "Cactus" },
-    { text: "&#x1F336;", id: "hot-pepper", title: "Hot Pepper" },
-    { text: "&#x1F337;", id: "tulip", title: "Tulip" },
-    { text: "&#x1F338;", id: "cherry-blossom", title: "Cherry Blossom" },
-    { text: "&#x1F339;", id: "rose", title: "Rose" },
-    { text: "&#x1F33A;", id: "hibiscus", title: "Hibiscus" },
-    { text: "&#x1F33B;", id: "sunflower", title: "Sunflower" },
-    { text: "&#x1F33C;", id: "blossom", title: "Blossom" },
-    { text: "&#x1F33D;", id: "ear-of-maize", title: "Ear of Maize" },
-    { text: "&#x1F33E;", id: "ear-of-rice", title: "Ear of Rice" },
-    { text: "&#x1F33F;", id: "herb", title: "Herb" },
-    { text: "&#x1F340;", id: "four-leaf-clover", title: "Four Leaf Clover" },
-    { text: "&#x1F341;", id: "maple-leaf", title: "Maple Leaf" },
-    { text: "&#x1F342;", id: "fallen-leaf", title: "Fallen Leaf" },
-    { text: "&#x1F343;", id: "leaf-fluttering-in-wind", title: "Leaf Fluttering in Wind" },
-
-    /* moon & sun */
-    { text: "&#x1F31F;", id: "glowing-star", title: "Glowing Star" },
-    { text: "&#x1F320;", id: "shooting-star", title: "Shooting Star" },
-    { text: "&#x1F311;", id: "new-moon-symbol", title: "New Moon Symbol" },
-    { text: "&#x1F312;", id: "waxing-crescent-moon-symbol", title: "Waxing Crescent Moon Symbol" },
-    { text: "&#x1F313;", id: "first-quarter-moon-symbol", title: "First Quarter Moon Symbol" },
-    { text: "&#x1F314;", id: "waxing-gibbous-moon-symbol", title: "Waxing Gibbous Moon Symbol" },
-    { text: "&#x1F315;", id: "full-moon-symbol", title: "Full Moon Symbol" },
-    { text: "&#x1F316;", id: "waning-gibbous-moon-symbol", title: "Waning Gibbous Moon Symbol" },
-    { text: "&#x1F317;", id: "last-quarter-moon-symbol", title: "Last Quarter Moon Symbol" },
-    { text: "&#x1F318;", id: "waning-crescent-moon-symbol", title: "Waning Crescent Moon Symbol" },
-    { text: "&#x1F319;", id: "crescent-moon", title: "Crescent Moon" },
-    { text: "&#x1F31A;", id: "new-moon-with-face", title: "New Moon with Face" },
-    { text: "&#x1F31B;", id: "first-quarter-moon-with-face", title: "First Quarter Moon with Face" },
-    { text: "&#x1F31C;", id: "last-quarter-moon-with-face", title: "Last Quarter Moon with Face" },
-    { text: "&#x1F31D;", id: "full-moon-with-face", title: "Full Moon with Face" },
-    { text: "&#x1F31E;", id: "sun-with-face", title: "Sun with Face" },
-    { text: "&#x1FA90;", id: "saturn", title: "Saturn" },
-
-
-    /* weather */
-    { text: "&#x26C5;", id: "sun-behind-cloud", title: "Sun behind cloud" },
-    { text: "&#x1f302;", id: "closed-umbrella", title: "Closed umbrella" },
-     { text: "&#x1f303;", id: "night-with-stars", title: "night with stars" },
-    { text: "&#x1f301;", id: "foggy", title: "Foggy" },
-    { text: "&#x1f304;", id: "sunrise-over-mountains", title: "Sunrise over mountains" },
-    { text: "&#x1f305;", id: "sunrise", title: "Sunrise" },
-    { text: "&#x1f306;", id: "cityscape-at-dusk", title: "Cityscape at dusk" },
-    { text: "&#x1f307;", id: "sunset-over-buildings", title: "Sunset over buildings" },
-    { text: "&#127754;", id: "water-wave", title: "Water wave" },
-    { text: "&#x2600;", id: "black-sun-with-rays", title: "Black sun with rays" },
-    { text: "&#x2601;", id: "cloud", title: "Cloud" },
-    { text: "&#x26C4;", id: "snowman", title: "Snowman" },
-/* new weather */
-    { text: "&#x1F324;", id: "sun-behind-small-cloud", title: "Sun Behind Small Cloud" },
-    { text: "&#x1F325;", id: "sun-behind-large-cloud", title: "Sun Behind Large Cloud" },
-    { text: "&#x1F326;", id: "sun-behind-rain-cloud", title: "Sun Behind Rain Cloud" },
-    { text: "&#x1F327;", id: "cloud-with-rain", title: "Cloud with Rain" },
-    { text: "&#x1F328;", id: "cloud-with-snow", title: "Cloud with Snow" },
-    { text: "&#x26c8", id: "cloud-with-lightning-and-rain", title: "Cloud with Lightning and Rain" },
-    { text: "&#x1F329;", id: "cloud-with-lighting", title: "Cloud with Lightning" },
-    { text: "&#x1F32A;", id: "Tornado", title: "Tornado" },
-    { text: "&#x1F32B;", id: "fog", title: "Fog" },
-    { text: "&#x1F32C;", id: "wind-face", title: "Wind Face" },
-    { text: "&#x1F300;", id: "cyclone", title: "Cyclone" },
-    { text: "&#x1F308;", id: "rainbow", title: "Rainbow" },
-    { text: "&#x2602;", id: "umbrella", title: "Umbrella" },
-    { text: "&#x2614;", id: "umbrella-with-rain-drops", title: "Umbrella with Rain Drops" },
-    { text: "&#x2744;", id: "snowflake", title: "Snowflake" },
-    { text: "&#x2604;", id: "comet", title: "Comet" },
-
-
-    /* others*/
-    { text: "&#x1F384;", id: "christmas-tree", title: "Christmas Tree" },
-    { text: "&#x1F386;", id: "fireworks", title: "Fireworks" },
-    { text: "&#x1F387;", id: "firework-sparkler", title: "Firework Sparkler" },
-    { text: "&#x1F9E8;", id: "yarn", title: "Yarn" },
-    { text: "&#128293;", id: "fire", title: "Fire" },
-    { text: "&#x1F388;", id: "balloon", title: "Balloon" },
-    { text: "&#x1F389;", id: "party-popper", title: "Party Popper" },
-    { text: "&#x1F38A;", id: "confetti-ball", title: "Confetti Ball" },
+const activities = [
+    /* events & celebrations */
+    {
+        text: "&#x1F383;",
+        id: "pumpkin",
+        title: "Pumpkin"
+    },
+    {
+        text: "&#x1F384;",
+        id: "christmas_tree",
+        title: "Christmas Tree"
+    },
+    {
+        text: "&#x1F386;",
+        id: "fireworks",
+        title: "Fireworks"
+    },
+    {
+        text: "&#x1F387;",
+        id: "sparkler",
+        title: "Sparker"
+    },
+    {
+        text: "&#x1F388;",
+        id: "firecracker",
+        title: "Firecracker"
+    },
+    {
+        text: "&#x1F389;",
+        id: "balloon",
+        title: "Balloon"
+    },
+    {
+        text: "&#x1F38A;",
+        id: "party_popper",
+        title: "Party Popper"
+    },
     { text: "&#x1F38B;", id: "tanabata-tree", title: "Tanabata Tree" },
     { text: "&#x1F38D;", id: "pine-decoration", title: "Pine Decoration" },
     { text: "&#x1F38E;", id: "japanese-dolls", title: "Japanese Dolls" },
     { text: "&#x1F38F;", id: "carp-streamer", title: "Carp Streamer" },
     { text: "&#x1F390;", id: "wind-chime", title: "Wind Chime" },
-    { text: "&#x2660;", id: "black-spade-suit", title: "Black spade suit" },
-    { text: "&#x2663;", id: "black-club-suit", title: "Black club suit" },
-    { text: "&#x2665;", id: "black-heart-suit", title: "Black heart suit" },
-    { text: "&#x2666;", id: "black-diamond-suit", title: "Black diamond suit" },
-    { text: "&#x2648;", id: "aries", title: "Aries" },
-    { text: "&#x2649;", id: "taurus", title: "Taurus" },
-    { text: "&#x264a;", id: "gemini", title: "gemini" },
-    { text: "&#x264b;", id: "cancer", title: "Cancer" },
-    { text: "&#x264c;", id: "leo", title: "Leo" },
-    { text: "&#x264d;", id: "virgo", title: "virgo" },
-    { text: "&#x264e;", id: "libra", title: "Libra" },
-    { text: "&#x264f;", id: "scorpius", title: "Scorpius" },
-    { text: "&#x2650;", id: "sagittarius", title: "Sagittarius" },
-    { text: "&#x2651;", id: "capricorn", title: "Capricorn" },
-    { text: "&#x2652;", id: "aquarius", title: "Aquarius" },
-    { text: "&#x2653;", id: "pisces", title: "Pisces" },
-    { text: "&#x26ce;", id: "ophiuchus", title: "ophiuchus" },
-    { text: "&#x1f500;", id: "twisted-rightwards-arrows", title: "Twisted rightwards arrows" },
-    { text: "&#x1f501;", id: "clockwise-rightwards-and-leftwards-open-circle-arrows", title: "Clockwise rightwards and leftwards open circle arrows" },
-    { text: "&#x1f502;", id: "clockwise-rightwards-and-leftwards-open-circle-arrows-with-circled-one-overlay", title: "Clockwise rightwards and leftwards open circle arrows with circled one overlay" },
-    { text: "&#x1f503;", id: "clockwise-downwards-and-upwards-open-circle-arrows", title: "Clockwise downwards and upwards open circle arrows" },
-    { text: "&#x1f504;", id: "anticlockwise-downwards-and-upwards-open-circle-arrows", title: "Anticlockwise downwards and upwards open circle arrows" },
+    { text: "&#x1F393;", id: "graduation_cap", title: "Graduation Cap" },
 
+    { text: "&#x1F9E8;", id: "firecracker", title: "Firecracker" },
+    { text: "&#128293;", id: "fire", title: "Fire" },
+    { text: "&#x1F388;", id: "balloon", title: "Balloon" },
+    { text: "&#x1F389;", id: "party-popper", title: "Party Popper" },
+    { text: "&#x1F38A;", id: "confetti-ball", title: "Confetti Ball" },
+
+
+    /* deportes */
+    { text: "&#x1F3C0;", id: "basketball-and-hoop", title: "Basketball and Hoop" },
+    { text: "&#x1F3C1;", id: "chequered-flag", title: "Chequered Flag" },
+    { text: "&#x1F3C2;", id: "snowboarder", title: "Snowboarder" },
+    { text: "&#x1F3C3;", id: "runner", title: "Runner" },
+    { text: "&#x1F3C4;", id: "surfer", title: "Surfer" },
+    { text: "&#x1F3C6;", id: "trophy", title: "Trophy" },
+    { text: "&#x1F3C8;", id: "american-football", title: "American Football" },
+    { text: "&#x1F3CA;", id: "swimmer", title: "Swimmer" },
+];
+
+const travel_places = [
     /* transportes */
     { text: "&#x1F680;", id: "rocket", title: "Rocket" },
     { text: "&#x1F681;", id: "helicopter", title: "Helicopter" },
@@ -482,48 +517,128 @@ const emojis = [
     { text: "&#x1F3ED;", id: "izakaya-lantern", title: "Izakaya Lantern" },
     { text: "&#127983;", id: "japanese-castle", title: "Japanese Castle" },
     { text: "&#127984;", id: "european-castle", title: "European Castle" }
+];
 
-    /* Flags
-    { text: "&#x1F1E6;&#x1F1E8;", id: "flag-for-Andorra", title: "Flag for Andorra" },
-    { text: "&#x1F1E6;&#x1F1E9;", id: "flag-for-United-Arab-Emirates", title: "Flag for United Arab Emirates" },
-    { text: "&#x1F1E6;&#x1F1EA;", id: "flag-for-Afghanistan", title: "Flag for Afghanistan" },
-    { text: "&#x1F1E6;&#x1F1EB;", id: "flag-for-Antigua-and-Barbuda", title: "Flag for Antigua and Barbuda" },
-    { text: "&#x1F1E6;&#x1F1EC;", id: "flag-for-Anguilla", title: "Flag for Anguilla" },
-    { text: "&#x1F1E6;&#x1F1EE;", id: "flag-for-Albania", title: "Flag for Albania" },
-    { text: "&#x1F1E6;&#x1F1F1;", id: "flag-for-Armenia", title: "Flag for Armenia" },
-    { text: "&#x1F1E6;&#x1F1F2;", id: "flag-for-Angola", title: "Flag for Angola" },
-    { text: "&#x1F1E6;&#x1F1F4;", id: "flag-for-Argentina", title: "Flag for Argentina" },
-    { text: "&#x1F1E6;&#x1F1F6;", id: "flag-for-American-Samoa", title: "Flag for American Samoa" },
-    { text: "&#x1F1E6;&#x1F1F7;", id: "flag-for-Austria", title: "Flag for Austria" },
-    { text: "&#x1F1E6;&#x1F1F8;", id: "flag-for-Australia", title: "Flag for Australia" },
-    { text: "&#x1F1E6;&#x1F1F9;", id: "flag-for-Aruba", title: "Flag for Aruba" },
-    { text: "&#x1F1E6;&#x1F1FA;", id: "flag-for-Åland-Islands", title: "Flag for Åland Islands" },
-    { text: "&#x1F1E6;&#x1F1FC;", id: "flag-for-Azerbaijan", title: "Flag for Azerbaijan" },
-    { text: "&#x1F1E6;&#x1F1FD;", id: "flag-for-Bosnia-and-Herzegovina", title: "Flag for Bosnia and Herzegovina" },
-    { text: "&#x1F1E6;&#x1F1FF;", id: "flag-for-Barbados", title: "Flag for Barbados" },
-    { text: "&#x1F1E7;&#x1F1E6;", id: "flag-for-Bangladesh", title: "Flag for Bangladesh" },
-    { text: "&#x1F1E7;&#x1F1E7;", id: "flag-for-Belgium", title: "Flag for Belgium" },
-    { text: "&#x1F1E7;&#x1F1E9;", id: "flag-for-Burkina-Faso", title: "Flag for Burkina Faso" },
-    { text: "&#x1F1E7;&#x1F1EA;", id: "flag-for-Bulgaria", title: "Flag for Bulgaria" },
-    { text: "&#x1F1E7;&#x1F1EB;", id: "flag-for-Bahrain", title: "Flag for Bahrain" }
-    */
+const symbols = [
+    /*hearts*/
+    { text: "&#129505;", id: "orange-heart", title: "Orange Heart" },
+    { text: "&#128151;", id: "heart-with-ribbon", title: "Heart with Ribbon" },
+    { text: "&#128152;", id: "revolving-hearts", title: "Revolving Hearts" },
+    { text: "&#128153;", id: "heart-decoration", title: "Heart Decoration" },
+    { text: "&#x1F493;", id: "beating-heart", title: "Beating Heart" },
+    { text: "&#x1F494;", id: "broken-heart", title: "Broken Heart" },
+    { text: "&#x1F495;", id: "two-hearts", title: "Two Hearts" },
+    { text: "&#x1F496;", id: "sparkling-heart", title: "Sparkling Heart" },
+    { text: "&#x1F497;", id: "growing-heart", title: "Growing Heart" },
+    { text: "&#x1F498;", id: "heart-with-arrow", title: "Heart with Arrow" },
+    { text: "&#x1F499;", id: "blue-heart", title: "Blue Heart" },
+    { text: "&#x1F49A;", id: "green-heart", title: "Green Heart" },
+    { text: "&#x1F49B;", id: "yellow-heart", title: "Yellow Heart" },
+    { text: "&#x1F49C;", id: "purple-heart", title: "Purple Heart" },
+    { text: "&#x1F49D;", id: "heart-with-ribbon", title: "Heart with Ribbon" },
+    { text: "&#x1F49E;", id: "revolving-hearts", title: "Revolving Hearts" },
+    { text: "&#x1F49F;", id: "heart-decoration", title: "Heart Decoration" },
+    { text: "&#x1F48C;", id: "love-letter", title: "Love Letter" },
+    { text: "&#x1F48B;", id: "kiss-mark", title: "Kiss Mark" },
 
-    /* 
-    deportes
-    { text: "&#x1F3C0;", id: "basketball-and-hoop", title: "Basketball and Hoop" },
-    { text: "&#x1F3C1;", id: "chequered-flag", title: "Chequered Flag" },
-    { text: "&#x1F3C2;", id: "snowboarder", title: "Snowboarder" },
-    { text: "&#x1F3C3;", id: "runner", title: "Runner" },
-    { text: "&#x1F3C4;", id: "surfer", title: "Surfer" },
-    { text: "&#x1F3C6;", id: "trophy", title: "Trophy" },
-    { text: "&#x1F3C8;", id: "american-football", title: "American Football" },
-    { text: "&#x1F3CA;", id: "swimmer", title: "Swimmer" },
-    */
+    { text: "&#x2660;", id: "black-spade-suit", title: "Black spade suit" },
+    { text: "&#x2663;", id: "black-club-suit", title: "Black club suit" },
+    { text: "&#x2665;", id: "black-heart-suit", title: "Black heart suit" },
+    { text: "&#x2666;", id: "black-diamond-suit", title: "Black diamond suit" },
+    { text: "&#x2648;", id: "aries", title: "Aries" },
+    { text: "&#x2649;", id: "taurus", title: "Taurus" },
+    { text: "&#x264a;", id: "gemini", title: "gemini" },
+    { text: "&#x264b;", id: "cancer", title: "Cancer" },
+    { text: "&#x264c;", id: "leo", title: "Leo" },
+    { text: "&#x264d;", id: "virgo", title: "virgo" },
+    { text: "&#x264e;", id: "libra", title: "Libra" },
+    { text: "&#x264f;", id: "scorpius", title: "Scorpius" },
+    { text: "&#x2650;", id: "sagittarius", title: "Sagittarius" },
+    { text: "&#x2651;", id: "capricorn", title: "Capricorn" },
+    { text: "&#x2652;", id: "aquarius", title: "Aquarius" },
+    { text: "&#x2653;", id: "pisces", title: "Pisces" },
+    { text: "&#x26ce;", id: "ophiuchus", title: "ophiuchus" },
+    { text: "&#x1f500;", id: "twisted-rightwards-arrows", title: "Twisted rightwards arrows" },
+    { text: "&#x1f501;", id: "clockwise-rightwards-and-leftwards-open-circle-arrows", title: "Clockwise rightwards and leftwards open circle arrows" },
+    { text: "&#x1f502;", id: "clockwise-rightwards-and-leftwards-open-circle-arrows-with-circled-one-overlay", title: "Clockwise rightwards and leftwards open circle arrows with circled one overlay" },
+    { text: "&#x1f503;", id: "clockwise-downwards-and-upwards-open-circle-arrows", title: "Clockwise downwards and upwards open circle arrows" },
+    { text: "&#x1f504;", id: "anticlockwise-downwards-and-upwards-open-circle-arrows", title: "Anticlockwise downwards and upwards open circle arrows" },
 
 
-]
+    {
+        text: "&#x26A0;",
+        id: "warning",
+        title: "Warning"
+      },
+      {
+        text: "&#x1F6B8;",
+        id: "children_crossing",
+        title: "Children Crossing"
+      },
+      {
+        text: "&#x26D4;",
+        id: "no_entry",
+        title: "No Entry"
+      },
+      {
+        text: "&#x1F6AD;",
+        id: "no_smoking",
+        title: "No Smoking"
+      },
+      {
+        text: "&#x1F6B1;",
+        id: "no_drinking",
+        title: "No Drinking"
+      },
+      {
+        text: "&#x1F4F5;",
+        id: "no_cell_phones",
+        title: "No Mobile Phones"
+      },
+      {
+        text: "&#x1F51E;",
+        id: "underage",
+        title: "Underage"
+      },
+      {
+        text: "&#x2622;",
+        id: "radioactive",
+        title: "Radioactive"
+      },
 
-export default emojis;
+];
+
+/* Flags
+{ text: "&#x1F1E6;&#x1F1E8;", id: "flag-for-Andorra", title: "Flag for Andorra" },
+{ text: "&#x1F1E6;&#x1F1E9;", id: "flag-for-United-Arab-Emirates", title: "Flag for United Arab Emirates" },
+{ text: "&#x1F1E6;&#x1F1EA;", id: "flag-for-Afghanistan", title: "Flag for Afghanistan" },
+{ text: "&#x1F1E6;&#x1F1EB;", id: "flag-for-Antigua-and-Barbuda", title: "Flag for Antigua and Barbuda" },
+{ text: "&#x1F1E6;&#x1F1EC;", id: "flag-for-Anguilla", title: "Flag for Anguilla" },
+{ text: "&#x1F1E6;&#x1F1EE;", id: "flag-for-Albania", title: "Flag for Albania" },
+{ text: "&#x1F1E6;&#x1F1F1;", id: "flag-for-Armenia", title: "Flag for Armenia" },
+{ text: "&#x1F1E6;&#x1F1F2;", id: "flag-for-Angola", title: "Flag for Angola" },
+{ text: "&#x1F1E6;&#x1F1F4;", id: "flag-for-Argentina", title: "Flag for Argentina" },
+{ text: "&#x1F1E6;&#x1F1F6;", id: "flag-for-American-Samoa", title: "Flag for American Samoa" },
+{ text: "&#x1F1E6;&#x1F1F7;", id: "flag-for-Austria", title: "Flag for Austria" },
+{ text: "&#x1F1E6;&#x1F1F8;", id: "flag-for-Australia", title: "Flag for Australia" },
+{ text: "&#x1F1E6;&#x1F1F9;", id: "flag-for-Aruba", title: "Flag for Aruba" },
+{ text: "&#x1F1E6;&#x1F1FA;", id: "flag-for-Åland-Islands", title: "Flag for Åland Islands" },
+{ text: "&#x1F1E6;&#x1F1FC;", id: "flag-for-Azerbaijan", title: "Flag for Azerbaijan" },
+{ text: "&#x1F1E6;&#x1F1FD;", id: "flag-for-Bosnia-and-Herzegovina", title: "Flag for Bosnia and Herzegovina" },
+{ text: "&#x1F1E6;&#x1F1FF;", id: "flag-for-Barbados", title: "Flag for Barbados" },
+{ text: "&#x1F1E7;&#x1F1E6;", id: "flag-for-Bangladesh", title: "Flag for Bangladesh" },
+{ text: "&#x1F1E7;&#x1F1E7;", id: "flag-for-Belgium", title: "Flag for Belgium" },
+{ text: "&#x1F1E7;&#x1F1E9;", id: "flag-for-Burkina-Faso", title: "Flag for Burkina Faso" },
+{ text: "&#x1F1E7;&#x1F1EA;", id: "flag-for-Bulgaria", title: "Flag for Bulgaria" },
+{ text: "&#x1F1E7;&#x1F1EB;", id: "flag-for-Bahrain", title: "Flag for Bahrain" }
+*/
+
+/* 
+
+*/
+
+
+export default { smileys, people, animals_nature, food_drinks, activities, travel_places, symbols };
 
 
 
