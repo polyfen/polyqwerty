@@ -137,7 +137,7 @@ p#confirm {
 .anime {
     display: block !important;
     animation-name: popUp;
-    animation-duration: 1.5s;
+    animation-duration: 1.2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
