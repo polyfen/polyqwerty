@@ -1,8 +1,23 @@
 const punctuation = [
   {
+    id: "inverted-exclamation-mark",
+    title: "Inverted Exclamation Mark",
+    text: "&#161;"
+  },
+  {
     id: "exclamation-point",
     title: "Exclamation Point",
     text: "&#33;"
+  },
+  {
+    id: "double-exclamation-mark",
+    title: "Double Exclamation Mark",
+    text: "&#8252;"
+  },
+  {
+    id: "single-quote",
+    title: "Single Quote",
+    text: "&#39;"
   },
   {
     id: "double-quote",
@@ -19,14 +34,6 @@ const punctuation = [
     title: "Ampersand",
     text: "&#38;"
   },
-  {
-    id: "single-quote",
-    title: "Single Quote",
-    text: "&#39;"
-  },
-
-
-
   {
     id: "left-parenthesis",
     title: "Left Parenthesis",
@@ -54,13 +61,6 @@ const punctuation = [
     title: "Reference Mark",
     text: "&#8251;"
   },
-
-  {
-    id: "inverted-undertie",
-    title: "Inverted Undertie",
-    text: "&#x2054;"
-  },
-
   {
     id: "wave-dash",
     title: "Wave Dash",
@@ -77,14 +77,14 @@ const punctuation = [
     text: "&#44;"
   },
   {
-    id: "hyphen",
-    title: "Hyphen",
-    text: "&#45;"
-  },
-  {
     id: "period",
     title: "Period",
     text: "&#46;"
+  },
+  {
+    id: "horizontal-ellipsis",
+    title: "Horizontal Ellipsis",
+    text: "&#133;"
   },
   {
     id: "slash",
@@ -112,6 +112,11 @@ const punctuation = [
     text: "&#59;"
   },
   {
+    id: "inverted-question-mark",
+    title: "Inverted Question Mark",
+    text: "&#191;"
+  },
+  {
     id: "question-mark",
     title: "Question Mark",
     text: "&#63;"
@@ -122,6 +127,11 @@ const punctuation = [
     text: "&#64;"
   },
   {
+    id: "caret",
+    title: "Caret",
+    text: "&#94;"
+  },
+  {
     id: "left-square-bracket",
     title: "Left Square Bracket",
     text: "&#91;"
@@ -130,16 +140,6 @@ const punctuation = [
     id: "right-square-bracket",
     title: "Right Square Bracket",
     text: "&#93;"
-  },
-  {
-    id: "caret",
-    title: "Caret",
-    text: "&#94;"
-  },
-  {
-    id: "underscore",
-    title: "Underscore",
-    text: "&#95;"
   },
   {
     id: "left-curly-brace",
@@ -157,21 +157,6 @@ const punctuation = [
     text: "&#126;"
   },
   {
-    id: "single-low-9-quotation-mark",
-    title: "Single Low-9 Quotation Mark",
-    text: "&#130;"
-  },
-  {
-    id: "double-low-9-quotation-mark",
-    title: "Double Low-9 Quotation Mark",
-    text: "&#132;"
-  },
-  {
-    id: "horizontal-ellipsis",
-    title: "Horizontal Ellipsis",
-    text: "&#133;"
-  },
-  {
     id: "dagger",
     title: "Dagger",
     text: "&#134;"
@@ -187,6 +172,31 @@ const punctuation = [
     text: "&#139;"
   },
   {
+    id: "single-right-pointing-angle-quotation-mark",
+    title: "Single Right-Pointing Angle Quotation Mark",
+    text: "&#155;"
+  },
+  {
+    id: "left-pointing-double-angle-quotation-mark",
+    title: "Left-Pointing Double Angle Quotation Mark",
+    text: "&#171;"
+  },
+  {
+    id: "right-pointing-double-angle-quotation-mark",
+    title: "Right-Pointing Double Angle Quotation Mark",
+    text: "&#187;"
+  },
+  {
+    id: "single-low-9-quotation-mark",
+    title: "Single Low-9 Quotation Mark",
+    text: "&#130;"
+  },
+  {
+    id: "double-low-9-quotation-mark",
+    title: "Double Low-9 Quotation Mark",
+    text: "&#132;"
+  },
+  {
     id: "left-single-quotation-mark",
     title: "Left Single Quotation Mark",
     text: "&#145;"
@@ -196,9 +206,6 @@ const punctuation = [
     title: "Right Single Quotation Mark",
     text: "&#146;"
   },
-
-
-
   {
     id: "left-double-quotation-mark",
     title: "Left Double Quotation Mark",
@@ -215,6 +222,21 @@ const punctuation = [
     text: "&#149;"
   },
   {
+    id: "underscore",
+    title: "Underscore",
+    text: "&#95;"
+  },
+  {
+    id: "overline",
+    title: "Overline",
+    text: "&#8254;"
+  },
+  {
+    id: "hyphen",
+    title: "Hyphen",
+    text: "&#45;"
+  },
+  {
     id: "en-dash",
     title: "En Dash",
     text: "&#150;"
@@ -225,19 +247,14 @@ const punctuation = [
     text: "&#151;"
   },
   {
+    id: "horizontal-bar",
+    title: "Horizontal Bar",
+    text: "&#8213;"
+  },
+  {
     id: "trademark-symbol",
     title: "Trademark Symbol",
     text: "&#153;"
-  },
-  {
-    id: "single-right-pointing-angle-quotation-mark",
-    title: "Single Right-Pointing Angle Quotation Mark",
-    text: "&#155;"
-  },
-  {
-    id: "inverted-exclamation-mark",
-    title: "Inverted Exclamation Mark",
-    text: "&#161;"
   },
   {
     id: "broken-bar",
@@ -253,11 +270,6 @@ const punctuation = [
     id: "feminine-ordinal-indicator",
     title: "Feminine Ordinal Indicator",
     text: "&#170;"
-  },
-  {
-    id: "left-pointing-double-angle-quotation-mark",
-    title: "Left-Pointing Double Angle Quotation Mark",
-    text: "&#171;"
   },
   {
     id: "not-sign",
@@ -315,16 +327,6 @@ const punctuation = [
     text: "&#186;"
   },
   {
-    id: "right-pointing-double-angle-quotation-mark",
-    title: "Right-Pointing Double Angle Quotation Mark",
-    text: "&#187;"
-  },
-  {
-    id: "inverted-question-mark",
-    title: "Inverted Question Mark",
-    text: "&#191;"
-  },
-  {
     id: "care-of",
     title: "Care Of",
     text: "&#8453;"
@@ -345,30 +347,21 @@ const punctuation = [
     text: "&#168;"
   },
   {
-    id: "horizontal-bar",
-    title: "Horizontal Bar",
-    text: "&#8213;"
-  },
-  {
     id: "triangular-bullet",
     title: "Triangular Bullet",
     text: "&#8227;"
   },
   {
-    id: "overline",
-    title: "Overline",
-    text: "&#8254;"
-  },
-  {
-    id: "double-exclamation-mark",
-    title: "Double Exclamation Mark",
-    text: "&#8252;"
-  },
-  {
     id: "numero-sign",
     title: "Numero Sign",
     text: "&#8470;"
+  },
+  {
+    id: "inverted-undertie",
+    title: "Inverted Undertie",
+    text: "&#x2054;"
   }
+
 
 
 
