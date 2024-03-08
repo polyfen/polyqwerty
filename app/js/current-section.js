@@ -1,6 +1,5 @@
 /* Mobile nav Scroll observer for nav-title active */
 const menuItems = document.querySelectorAll('aside nav > ul > li a');
-console.log(menuItems);
 const observer = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
 		const targetId = entry.target.getAttribute('id');
