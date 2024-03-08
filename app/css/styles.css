@@ -219,11 +219,11 @@ nav ul li a.active {
     color: #FFFFFF;
 }
 
-nav ul ul {
+nav .sub-ul {
     display: none;
 }
 
-nav ul li:has(a.active[href="#emojis"])+ul {
+nav ul li:has(a.active[href="#emojis"]) > ul {
     display: block;
 }
 
