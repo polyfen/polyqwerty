@@ -1,599 +1,599 @@
 const diacritics = [
     {
         id: "grave-capital-a",
-        title: "Grave A",
+        dataTitle: "Grave A",
         text: "&#192;"
     },
     {
         id: "grave-a",
-        title: "Grave a",
+        dataTitle: "Grave a",
         text: "&#224;"
     },
     {
         id: "acute-capital-a",
-        title: "Acute A",
+        dataTitle: "Acute A",
         text: "&#193;"
     },
     {
         id: "acute-a",
-        title: "Acute a",
+        dataTitle: "Acute a",
         text: "&#225;"
     },
     {
         id: "circumflex-capital-a",
-        title: "Circumflex A",
+        dataTitle: "Circumflex A",
         text: "&#194;"
     },
     {
         id: "circumflex-a",
-        title: "Circumflex a",
+        dataTitle: "Circumflex a",
         text: "&#226;"
     },
     {
         id: "diaeresis-capital-a",
-        title: "Diaeresis A",
+        dataTitle: "Diaeresis A",
         text: "&#196;"
     },
     {
         id: "diaeresis-a",
-        title: "Diaeresis a",
+        dataTitle: "Diaeresis a",
         text: "&#228;"
     },
     {
         id: "acute-capital-ae",
-        title: "Acute AE",
+        dataTitle: "Acute AE",
         text: "&#x01FC;"
     },
     {
         id: "acute-ae",
-        title: "Acute ae",
+        dataTitle: "Acute ae",
         text: "&#x01FD;"
     },
     {
         id: "tilde-capital-a",
-        title: "Tilde A",
+        dataTitle: "Tilde A",
         text: "&#195;"
     },
     {
         id: "tilde-a",
-        title: "Tilde a",
+        dataTitle: "Tilde a",
         text: "&#227;"
     },
     {
         id: "ring-capital-a",
-        title: "Ring A",
+        dataTitle: "Ring A",
         text: "&#197;"
     },
     {
         id: "ring-a",
-        title: "Ring a",
+        dataTitle: "Ring a",
         text: "&#229;"
     },
     {
         id: "macron-capital-a",
-        title: "Macron A",
+        dataTitle: "Macron A",
         text: "&#256;"
     },
     {
         id: "macron-a",
-        title: "Macron a",
+        dataTitle: "Macron a",
         text: "&#257;"
     },
     {
         id: "grave-capital-e",
-        title: "Grave E",
+        dataTitle: "Grave E",
         text: "&#200;"
     },
     {
         id: "grave-e",
-        title: "Grave e",
+        dataTitle: "Grave e",
         text: "&#232;"
     },
     {
         id: "acute-capital-e",
-        title: "Acute E",
+        dataTitle: "Acute E",
         text: "&#201;"
     },
     {
         id: "acute-e",
-        title: "Acute e",
+        dataTitle: "Acute e",
         text: "&#233;"
     },
     {
         id: "circumflex-capital-e",
-        title: "Circumflex E",
+        dataTitle: "Circumflex E",
         text: "&#202;"
     },
     {
         id: "circumflex-e",
-        title: "Circumflex e",
+        dataTitle: "Circumflex e",
         text: "&#234;"
     },
     {
         id: "diaeresis-capital-e",
-        title: "Diaeresis E",
+        dataTitle: "Diaeresis E",
         text: "&#203;"
     },
     {
         id: "diaeresis-e",
-        title: "Diaeresis e",
+        dataTitle: "Diaeresis e",
         text: "&#235;"
     },
     {
         id: "macron-capital-e",
-        title: "Macron E",
+        dataTitle: "Macron E",
         text: "&#274;"
     },
     {
         id: "macron-e",
-        title: "Macron e",
+        dataTitle: "Macron e",
         text: "&#275;"
     },
     {
         id: "dot-above-capital-e",
-        title: "Dot above E",
+        dataTitle: "Dot above E",
         text: "&#278;"
     },
     {
         id: "dot-above-e",
-        title: "Dot above e",
+        dataTitle: "Dot above e",
         text: "&#279;"
     },
     {
         id: "ogonek-capital-e",
-        title: "Ogonek E",
+        dataTitle: "Ogonek E",
         text: "&#280;"
     },
     {
         id: "ogonek-e",
-        title: "Ogonek e",
+        dataTitle: "Ogonek e",
         text: "&#281;"
     },
     {
         id: "circumflex-capital-i",
-        title: "Circumflex I",
+        dataTitle: "Circumflex I",
         text: "&#206;"
     },
     {
         id: "circumflex-i",
-        title: "Circumflex i",
+        dataTitle: "Circumflex i",
         text: "&#238;"
     },
     {
         id: "diaeresis-capital-i",
-        title: "Diaeresis I",
+        dataTitle: "Diaeresis I",
         text: "&#207;"
     },
     {
         id: "diaeresis-i",
-        title: "Diaeresis i",
+        dataTitle: "Diaeresis i",
         text: "&#239;"
     },
     {
         id: "acute-capital-i",
-        title: "Acute I",
+        dataTitle: "Acute I",
         text: "&#205;"
     },
     {
         id: "acute-i",
-        title: "Acute i",
+        dataTitle: "Acute i",
         text: "&#237;"
     },
     {
         id: "macron-capital-i",
-        title: "Macron I",
+        dataTitle: "Macron I",
         text: "&#298;"
     },
     {
         id: "macron-i",
-        title: "Macron i",
+        dataTitle: "Macron i",
         text: "&#299;"
     },
     {
         id: "ogon-capital-i",
-        title: "Ogon I",
+        dataTitle: "Ogon I",
         text: "&#302;"
     },
     {
         id: "ogon-i",
-        title: "Ogon i",
+        dataTitle: "Ogon i",
         text: "&#303;"
     },
     {
         id: "grave-capital-i",
-        title: "Grave I",
+        dataTitle: "Grave I",
         text: "&#204;"
     },
     {
         id: "grave-i",
-        title: "Grave i",
+        dataTitle: "Grave i",
         text: "&#236;"
     },
     {
         id: "circumflex-capital-o",
-        title: "Circumflex O",
+        dataTitle: "Circumflex O",
         text: "&#212;"
     },
     {
         id: "circumflex-o",
-        title: "Circumflex o",
+        dataTitle: "Circumflex o",
         text: "&#244;"
     },
     {
         id: "diaeresis-capital-o",
-        title: "Diaeresis O",
+        dataTitle: "Diaeresis O",
         text: "&#214;"
     },
     {
         id: "diaeresis-o",
-        title: "Diaeresis o",
+        dataTitle: "Diaeresis o",
         text: "&#246;"
     },
     {
         id: "grave-capital-o",
-        title: "Grave O",
+        dataTitle: "Grave O",
         text: "&#210;"
     },
     {
         id: "grave-o",
-        title: "Grave o",
+        dataTitle: "Grave o",
         text: "&#242;"
     },
     {
         id: "acute-capital-o",
-        title: "Acute O",
+        dataTitle: "Acute O",
         text: "&#211;"
     },
     {
         id: "acute-o",
-        title: "Acute o",
+        dataTitle: "Acute o",
         text: "&#243;"
     },
     {
         id: "slash-capital-o",
-        title: "slash O",
+        dataTitle: "slash O",
         text: "&#216;"
     },
     {
         id: "slash-o",
-        title: "slash o",
+        dataTitle: "slash o",
         text: "&#248;"
     },
     {
         id: "macron-capital-o",
-        title: "Macron O",
+        dataTitle: "Macron O",
         text: "&#332;"
     },
     {
         id: "macron-o",
-        title: "Macron o",
+        dataTitle: "Macron o",
         text: "&#333;"
     },
     {
         id: "tilde-capital-o",
-        title: "Tilde O",
+        dataTitle: "Tilde O",
         text: "&#213;"
     },
     {
         id: "tilde-o",
-        title: "Tilde o",
+        dataTitle: "Tilde o",
         text: "&#245;"
     },
     {
         id: "circumflex-capital-u",
-        title: "Circumflex Capital U",
+        dataTitle: "Circumflex Capital U",
         text: "&#219;"
     },
     {
         id: "circumflex-u",
-        title: "Circumflex u",
+        dataTitle: "Circumflex u",
         text: "&#251;"
     }, {
         id: "diaeresis-capital-u",
-        title: "Diaeresis U",
+        dataTitle: "Diaeresis U",
         text: "&#220;"
     },
     {
         id: "diaeresis-u",
-        title: "Diaeresis u",
+        dataTitle: "Diaeresis u",
         text: "&#252;"
     }, {
         id: "grave-capital-u",
-        title: "Grave U",
+        dataTitle: "Grave U",
         text: "&#217;"
     },
     {
         id: "grave-u",
-        title: "Grave u",
+        dataTitle: "Grave u",
         text: "&#249;"
     }, {
         id: "acute-capital-u",
-        title: "Acute U",
+        dataTitle: "Acute U",
         text: "&#218;"
     },
     {
         id: "acute-u",
-        title: "Acute u",
+        dataTitle: "Acute u",
         text: "&#250;"
     }, {
         id: "macron-capital-u",
-        title: "Macron U",
+        dataTitle: "Macron U",
         text: "&#362;"
     },
     {
         id: "macron-u",
-        title: "Macron u",
+        dataTitle: "Macron u",
         text: "&#363;"
     }, {
         id: "dot-above-capital-b",
-        title: "Dot above B",
+        dataTitle: "Dot above B",
         text: "&#7682;"
     },
     {
         id: "dot-above-b",
-        title: "Dot above b",
+        dataTitle: "Dot above b",
         text: "&#7683;"
     }, {
         id: "dot-below-capital-b",
-        title: "Dot below B",
+        dataTitle: "Dot below B",
         text: "&#7684;"
     },
     {
         id: "dot-below-b",
-        title: "Dot below b",
+        dataTitle: "Dot below b",
         text: "&#7685;"
     }, {
         id: "line-below-capital-b",
-        title: "Line below B",
+        dataTitle: "Line below B",
         text: "&#7686;"
     },
     {
         id: "line-below-b",
-        title: "Line below b",
+        dataTitle: "Line below b",
         text: "&#7687;"
     }, {
         id: "acute-capital-c",
-        title: "Acute C",
+        dataTitle: "Acute C",
         text: "&#262;"
     },
     {
         id: "acute-c",
-        title: "Acute c",
+        dataTitle: "Acute c",
         text: "&#263;"
     }, {
         id: "caron-capital-c",
-        title: "Caron C",
+        dataTitle: "Caron C",
         text: "&#268;"
     },
     {
         id: "caron-c",
-        title: "Caron c",
+        dataTitle: "Caron c",
         text: "&#269;"
     }, {
         id: "cedilla-capital-c",
-        title: "Cedilla C",
+        dataTitle: "Cedilla C",
         text: "&#199;"
     },
     {
         id: "cedilla-c",
-        title: "Cedilla c",
+        dataTitle: "Cedilla c",
         text: "&#231;"
     }, {
         id: "cedilla-acute-capital-c",
-        title: "Cedilla Acute C",
+        dataTitle: "Cedilla Acute C",
         text: "&#7688;"
     },
     {
         id: "cedilla-acute-c",
-        title: "Cedilla Acute c",
+        dataTitle: "Cedilla Acute c",
         text: "&#7689;"
     }, {
         id: "circumflex-capital-c",
-        title: "Circumflex C",
+        dataTitle: "Circumflex C",
         text: "&#264;"
     }, {
         id: "circumflex-c",
-        title: "Circumflex c",
+        dataTitle: "Circumflex c",
         text: "&#265;"
     }, {
         id: "dot-above-capital-c",
-        title: "Dot above C",
+        dataTitle: "Dot above C",
         text: "&#266;"
     }, {
         id: "dot-above-c",
-        title: "Dot above c",
+        dataTitle: "Dot above c",
         text: "&#267;"
     }, {
         id: "caron-capital-d",
-        title: "Caron D",
+        dataTitle: "Caron D",
         text: "&#270;"
     }, {
         id: "caron-d",
-        title: "Caron d",
+        dataTitle: "Caron d",
         text: "&#271;"
     }, {
         id: "cedilla-capital-d",
-        title: "Cedilla below D",
+        dataTitle: "Cedilla below D",
         text: "&#7696;"
     }, {
         id: "cedilla-d",
-        title: "Cedilla d",
+        dataTitle: "Cedilla d",
         text: "&#7697;"
     }, {
         id: "circumflex-below-capital-d",
-        title: "circumflex below D",
+        dataTitle: "circumflex below D",
         text: "&#7698;"
     }, {
         id: "circumflex-below-d",
-        title: "circumflex below d",
+        dataTitle: "circumflex below d",
         text: "&#7699;"
     }, {
         id: "dot-above-capital-d",
-        title: "Dot above D",
+        dataTitle: "Dot above D",
         text: "&#7690;"
     }, {
         id: "dot-above-d",
-        title: "Dot above d",
+        dataTitle: "Dot above d",
         text: "&#7691;"
     }, {
         id: "dot-below-capital-d",
-        title: "Dot below D",
+        dataTitle: "Dot below D",
         text: "&#7692;"
     },
     {
         id: "dot-below-d",
-        title: "Dot below d",
+        dataTitle: "Dot below d",
         text: "&#7693;"
     }, {
         id: "line-below-capital-d",
-        title: "Line below D",
+        dataTitle: "Line below D",
         text: "&#7694;"
     }, {
         id: "line-below-d",
-        title: "Line below d",
+        dataTitle: "Line below d",
         text: "&#7695;"
     }, {
         id: "stroke-capital-d",
-        title: "Stroke D",
+        dataTitle: "Stroke D",
         text: "&#272;"
     }, {
         id: "stroke-d",
-        title: "Stroke d",
+        dataTitle: "Stroke d",
         text: "&#273;"
     },{
         id: "caron-capital-d",
-        title: "Caron D",
+        dataTitle: "Caron D",
         text: "&#270;"
     },{
         id: "caron-d",
-        title: "Caron d",
+        dataTitle: "Caron d",
         text: "&#271;"
     }, {
         id: "acute-capital-g",
-        title: "Acute G",
+        dataTitle: "Acute G",
         text: "&#500;"
     }, {
         id: "acute-g",
-        title: "Acute g",
+        dataTitle: "Acute g",
         text: "&#501;"
     }, {
         id: "breve-capital-g",
-        title: "Breve G",
+        dataTitle: "Breve G",
         text: "&#286;"
     },
     {
         id: "breve-g",
-        title: "Breve g",
+        dataTitle: "Breve g",
         text: "&#287;"
     }, {
         id: "caron-capital-g",
-        title: "Caron G",
+        dataTitle: "Caron G",
         text: "&#486;"
     },
     {
         id: "caron-g",
-        title: "Caron g",
+        dataTitle: "Caron g",
         text: "&#487;"
     }, {
         id: "cedilla-capital-g",
-        title: "Cedilla G",
+        dataTitle: "Cedilla G",
         text: "&#290;"
     },
     {
         id: "cedilla-g",
-        title: "Cedilla g",
+        dataTitle: "Cedilla g",
         text: "&#291;"
     }, {
         id: "circumflex-capital-g",
-        title: "Circumflex G",
+        dataTitle: "Circumflex G",
         text: "&#284;"
     },
     {
         id: "circumflex-g",
-        title: "Circumflex g",
+        dataTitle: "Circumflex g",
         text: "&#285;"
     }, {
         id: "dot-above-capital-g",
-        title: "Dot G",
+        dataTitle: "Dot G",
         text: "&#288;"
     },
     {
         id: "dot-above-g",
-        title: "Dot g",
+        dataTitle: "Dot g",
         text: "&#289;"
     }, {
         id: "macron-capital-g",
-        title: "Macron G",
+        dataTitle: "Macron G",
         text: "&#7712;"
     },
     {
         id: "macron-g",
-        title: "Macron g",
+        dataTitle: "Macron g",
         text: "&#7713;"
     }, {
         id: "breve-below-capital-h",
-        title: "Breve H",
+        dataTitle: "Breve H",
         text: "&#x1E2A;"
     }, {
         id: "breve-below-h",
-        title: "Breve h",
+        dataTitle: "Breve h",
         text: "&#x1E2B;"
     }, {
         id: "caron-capital-h",
-        title: "Caron H",
+        dataTitle: "Caron H",
         text: "&#x021E;"
     },
     {
         id: "caron-h",
-        title: "Caron h",
+        dataTitle: "Caron h",
         text: "&#x021F;"
     }, {
         id: "cedilla-capital-h",
-        title: "Cedilla H",
+        dataTitle: "Cedilla H",
         text: "&#x1E28;"
     },
     {
         id: "cedilla-h",
-        title: "Cedilla h",
+        dataTitle: "Cedilla h",
         text: "&#x1E29;"
     }, {
         id: "circumflex-capital-h",
-        title: "Circumflex H",
+        dataTitle: "Circumflex H",
         text: "&#x0124;"
     },
     {
         id: "circumflex-h",
-        title: "Circumflex h",
+        dataTitle: "Circumflex h",
         text: "&#x0125;"
     },
     {
         id: "diaeresis-capital-h",
-        title: "Diaeresis H",
+        dataTitle: "Diaeresis H",
         text: "&#x1E26;"
     },
     {
         id: "diaeresis-h",
-        title: "Diaeresis h",
+        dataTitle: "Diaeresis h",
         text: "&#x1E27;"
     },
     {
         id: "dot-below-capital-h",
-        title: "Dot below H",
+        dataTitle: "Dot below H",
         text: "&#x1E24;"
     },
     {
         id: "dot-below-h",
-        title: "Dot below h",
+        dataTitle: "Dot below h",
         text: "&#x1E25;"
     },
     {
         id: "dot-above-capital-h",
-        title: "Dot above H",
+        dataTitle: "Dot above H",
         text: "&#x1E22;"
     },
     {
         id: "dot-above-h",
-        title: "Dot above h",
+        dataTitle: "Dot above h",
         text: "&#x1E23;"
     },
 
@@ -601,817 +601,817 @@ const diacritics = [
 
     {
         id: "line-below-h",
-        title: "Line below h",
+        dataTitle: "Line below h",
         text: "&#x1E96"
     },
     {
         id: "caron-j",
-        title: "Caron j",
+        dataTitle: "Caron j",
         text: "&#x01F0"
     },
     {
         id: "circumflex-capital-j",
-        title: "Circumflex J",
+        dataTitle: "Circumflex J",
         text: "&#x0134"
     },
     {
         id: "circumflex-j",
-        title: "Circumflex j",
+        dataTitle: "Circumflex j",
         text: "&#x0135"
     },
     {
         text: "&#x1E30;",
-        title: "Acute Capital K",
+        dataTitle: "Acute Capital K",
         id: "acute-capital-k"
     },
     {
         text: "&#x01E8;",
-        title: "Caron Capital K",
+        dataTitle: "Caron Capital K",
         id: "caron-capital-k"
     },
     {
         text: "&#x01E9;",
-        title: "Caron k",
+        dataTitle: "Caron k",
         id: "caron-k"
     },
     {
         text: "&#x0136;",
-        title: "Cedilla Capital K",
+        dataTitle: "Cedilla Capital K",
         id: "cedilla-capital-k"
     },
     {
         text: "&#x0137;",
-        title: "Cedilla k",
+        dataTitle: "Cedilla k",
         id: "cedilla-k"
     },
     {
         text: "&#x1E32;",
-        title: "Dot below Capital K",
+        dataTitle: "Dot below Capital K",
         id: "dot-below-capital-k"
     },
     {
         text: "&#x1E33;",
-        title: "Dot below k",
+        dataTitle: "Dot below k",
         id: "dot-below-k"
     },
     {
         text: "&#x1E34;",
-        title: "Line below Capital K",
+        dataTitle: "Line below Capital K",
         id: "line-below-capital-k"
     },
     {
         text: "&#x1E35;",
-        title: "Line below k",
+        dataTitle: "Line below k",
         id: "line-below-k"
     },
     {
         text: "&#x0139;",
-        title: "Acute Capital L",
+        dataTitle: "Acute Capital L",
         id: "acute-capital-l"
     },
     {
         text: "&#x013A;",
-        title: "Acute l",
+        dataTitle: "Acute l",
         id: "acute-l"
     },
     {
         text: "&#x013D;",
-        title: "Caron Capital L",
+        dataTitle: "Caron Capital L",
         id: "caron-capital-l"
     },
     {
         text: "&#x013E;",
-        title: "Caron l",
+        dataTitle: "Caron l",
         id: "caron-l"
     },
     {
         text: "&#x013B;",
-        title: "Cedilla Capital L",
+        dataTitle: "Cedilla Capital L",
         id: "cedilla-capital-l"
     },
     {
         text: "&#x013C;",
-        title: "Cedilla l",
+        dataTitle: "Cedilla l",
         id: "cedilla-l"
     },
     {
         text: "&#x1E3C;",
-        title: "Circumflex below Capital L",
+        dataTitle: "Circumflex below Capital L",
         id: "circumflex-below-capital-l"
     },
     {
         text: "&#x1E3D;",
-        title: "Circumflex below l",
+        dataTitle: "Circumflex below l",
         id: "circumflex-below-l"
     },
     {
         text: "&#x1E36;",
-        title: "Dot below Capital L",
+        dataTitle: "Dot below Capital L",
         id: "dot-below-capital-l"
     },
     {
         text: "&#x1E37;",
-        title: "Dot below l",
+        dataTitle: "Dot below l",
         id: "dot-below-l"
     },
     {
         text: "&#x1E38;",
-        title: "Dow below Macron Capital L",
+        dataTitle: "Dow below Macron Capital L",
         id: "dot-below-macron-capital-l"
     },
     {
         text: "&#x1E39;",
-        title: "Dot below Macron l",
+        dataTitle: "Dot below Macron l",
         id: "dot-below-macron-l"
     },
     {
         text: "&#x1E3A;",
-        title: "line below Capital L",
+        dataTitle: "line below Capital L",
         id: "line-below-capital-l"
     },
     {
         text: "&#x1E3B;",
-        title: "line below l",
+        dataTitle: "line below l",
         id: "line-below-l"
     },
     {
         text: "&#x1E3E;",
-        title: "Acute Capital M",
+        dataTitle: "Acute Capital M",
         id: "acute-capital-m"
     },
     {
         text: "&#x1E3F;",
-        title: "Acute m",
+        dataTitle: "Acute m",
         id: "acute-m"
     },
     {
         text: "&#x1E40;",
-        title: "Dot above Capital M",
+        dataTitle: "Dot above Capital M",
         id: "dot-above-capital-m"
     },
     {
         text: "&#x1E41;",
-        title: "Dot above m",
+        dataTitle: "Dot above m",
         id: "dot-above-m"
     },
     {
         text: "&#x1E42;",
-        title: "Dot below Capital M",
+        dataTitle: "Dot below Capital M",
         id: "dot-below-capital-m"
     },
     {
         text: "&#x1E43;",
-        title: "Dot below m",
+        dataTitle: "Dot below m",
         id: "dot-below-m"
     },
     {
         text: "&#x0143;",
-        title: "Acute Capital N",
+        dataTitle: "Acute Capital N",
         id: "acute-capital-n"
     },
     {
         text: "&#x0144;",
-        title: "Acute n",
+        dataTitle: "Acute n",
         id: "acute-n"
     },
     {
         text: "&#x0147;",
-        title: "Caron Capital N",
+        dataTitle: "Caron Capital N",
         id: "caron-capital-n"
     },
     {
         text: "&#x0148;",
-        title: "Caron n",
+        dataTitle: "Caron n",
         id: "caron-n"
     },
     {
         text: "&#x0145;",
-        title: "Cedilla Capital N",
+        dataTitle: "Cedilla Capital N",
         id: "cedilla-capital-n"
     },
     {
         text: "&#x0146;",
-        title: "Cedilla n",
+        dataTitle: "Cedilla n",
         id: "cedilla-n"
     },
     {
         text: "&#x1E4A;",
-        title: "Circumflex below Capital N",
+        dataTitle: "Circumflex below Capital N",
         id: "circumflex-below-capital-n"
     },
     {
         text: "&#x1E4B;",
-        title: "Circumflex below n",
+        dataTitle: "Circumflex below n",
         id: "circumflex-below-n"
     },
     {
         text: "&#x1E44;",
-        title: "Dot above Capital N",
+        dataTitle: "Dot above Capital N",
         id: "dot-above-capital-n"
     },
     {
         text: "&#x1E45;",
-        title: "Dot above n",
+        dataTitle: "Dot above n",
         id: "dot-above-n"
     },
     {
         text: "&#x1E46;",
-        title: "Dot below Capital N",
+        dataTitle: "Dot below Capital N",
         id: "dot-below-capital-n"
     },
     {
         text: "&#x1E47;",
-        title: "Dot below n",
+        dataTitle: "Dot below n",
         id: "dot-below-n"
     },
     {
         text: "&#x01F8;",
-        title: "Grave Capital N",
+        dataTitle: "Grave Capital N",
         id: "grave-capital-n"
     },
     {
         text: "&#x01F9;",
-        title: "Grave n",
+        dataTitle: "Grave n",
         id: "grave-n"
     },
     {
         text: "&#x1E48;",
-        title: "Line below Capital N",
+        dataTitle: "Line below Capital N",
         id: "line-below-capital-n"
     },
     {
         text: "&#x1E49;",
-        title: "Line below n",
+        dataTitle: "Line below n",
         id: "line-below-n"
     },
     {
         text: "&#x00D1;",
-        title: "Tilde Capital N",
+        dataTitle: "Tilde Capital N",
         id: "tilde-capital-n"
     },
     {
         text: "&#x00F1;",
-        title: "Tilde n",
+        dataTitle: "Tilde n",
         id: "tilde-n"
     },
     {
         text: "&#x1E54;",
-        title: "Acute Capital P",
+        dataTitle: "Acute Capital P",
         id: "acute-capital-p"
     },
     {
         text: "&#x1E55;",
-        title: "Acute p",
+        dataTitle: "Acute p",
         id: "acute-p"
     },
     {
         text: "&#x1E56;",
-        title: "Dot above Capital P",
+        dataTitle: "Dot above Capital P",
         id: "dot-above-capital-p"
     },
     {
         text: "&#x1E57;",
-        title: "Dot above p",
+        dataTitle: "Dot above p",
         id: "dot-above-p"
     },
     {
         text: "&#x0154;",
-        title: "Acute Capital R",
+        dataTitle: "Acute Capital R",
         id: "acute-capital-r"
     },
     {
         text: "&#x0155;",
-        title: "Acute r",
+        dataTitle: "Acute r",
         id: "acute-r"
     },
     {
         text: "&#x0158;",
-        title: "Caron Capital R",
+        dataTitle: "Caron Capital R",
         id: "caron-capital-r"
     },
     {
         text: "&#x0159;",
-        title: "Caron r",
+        dataTitle: "Caron r",
         id: "caron-r"
     },
     {
         text: "&#x0156;",
-        title: "Cedilla Capital R",
+        dataTitle: "Cedilla Capital R",
         id: "cedilla-capital-r"
     },
     {
         text: "&#x0157;",
-        title: "Cedilla r",
+        dataTitle: "Cedilla r",
         id: "cedilla-r"
     },
     {
         text: "&#x1E58;",
-        title: "Dot above Capital R",
+        dataTitle: "Dot above Capital R",
         id: "dot-above-capital-r"
     },
     {
         text: "&#x1E59;",
-        title: "Dot above r",
+        dataTitle: "Dot above r",
         id: "dot-above-r"
     },
     {
         text: "&#x1E5A;",
-        title: "Dot below Capital R",
+        dataTitle: "Dot below Capital R",
         id: "dot-below-capital-r"
     },
     {
         text: "&#x1E5B;",
-        title: "Dot below r",
+        dataTitle: "Dot below r",
         id: "dot-below-r"
     },
     {
         text: "&#x1E5C;",
-        title: "Dot below Macron Capital R",
+        dataTitle: "Dot below Macron Capital R",
         id: "dot-below-macron-capital-r"
     },
     {
         text: "&#x1E5D;",
-        title: "Dot below Macron r",
+        dataTitle: "Dot below Macron r",
         id: "dot-below-macron-r"
     },
     {
         text: "&#x0210;",
-        title: "double grave Capital R",
+        dataTitle: "double grave Capital R",
         id: "double-grave-capital-r"
     },
     {
         text: "&#x0211;",
-        title: "double grave r",
+        dataTitle: "double grave r",
         id: "double-grave-r"
     },
     {
         text: "&#x0212;",
-        title: "Inverted Breve Capital R",
+        dataTitle: "Inverted Breve Capital R",
         id: "inverted-breve-capital-r"
     },
     {
         text: "&#x0213;",
-        title: "Inverted Breve r",
+        dataTitle: "Inverted Breve r",
         id: "inverted-breve-r"
     },
     {
         text: "&#x1E5E;",
-        title: "Line below Capital R",
+        dataTitle: "Line below Capital R",
         id: "line-below-capital-r"
     },
     {
         text: "&#x1E5F;",
-        title: "Line below r",
+        dataTitle: "Line below r",
         id: "line-below-r"
     },
     {
         text: "&#x015A;",
-        title: "Acute Capital S",
+        dataTitle: "Acute Capital S",
         id: "acute-capital-s"
     },
     {
         text: "&#x015B;",
-        title: "Acute s",
+        dataTitle: "Acute s",
         id: "acute-s"
     },
     {
         text: "&#x015A;",
-        title: "Acute Capital S",
+        dataTitle: "Acute Capital S",
         id: "acute-capital-s"
     },
     {
         text: "&#x015B;",
-        title: "Acute s",
+        dataTitle: "Acute s",
         id: "acute-s"
     },
     {
         text: "&#x1E64;",
-        title: "Dot above Acute Capital S",
+        dataTitle: "Dot above Acute Capital S",
         id: "dot-above-acute-capital-s"
     },
     {
         text: "&#x1E65;",
-        title: "Dot above Acute s",
+        dataTitle: "Dot above Acute s",
         id: "dot-above-acute-s"
     },
     {
         id: "caron-capital-s",
-        title: "Caron Capital S",
+        dataTitle: "Caron Capital S",
         text: "&#x0160;"
     },
     {
         id: "caron-s",
-        title: "Caron s",
+        dataTitle: "Caron s",
         text: "&#x0161;"
     },
     {
         id: "dot-above-caron-capital-s",
-        title: "Dot above Caron Capital S",
+        dataTitle: "Dot above Caron Capital S",
         text: "&#x1E66;"
     },
     {
         id: "dot-above-caron-s",
-        title: "Dot above Caron s",
+        dataTitle: "Dot above Caron s",
         text: "&#x1E67;"
     },
     {
         id: "cedilla-capital-s",
-        title: "Cedilla Capital S",
+        dataTitle: "Cedilla Capital S",
         text: "&#x015E;"
     },
     {
         id: "cedilla-s",
-        title: "Cedilla s",
+        dataTitle: "Cedilla s",
         text: "&#x015F;"
     },
     {
         id: "circumflex-capital-s",
-        title: "Circumflex Capital S",
+        dataTitle: "Circumflex Capital S",
         text: "&#x015C;"
     },
     {
         id: "circumflex-s",
-        title: "Circumflex s",
+        dataTitle: "Circumflex s",
         text: "&#x015D;"
     },
     {
         id: "comma-below-capital-s",
-        title: "Comma below Capital S",
+        dataTitle: "Comma below Capital S",
         text: "&#x0218;"
     },
     {
         id: "comma-below-s",
-        title: "Comma below s",
+        dataTitle: "Comma below s",
         text: "&#x0219;"
     },
     {
         id: "dot-above-capital-s",
-        title: "Dot above Capital S",
+        dataTitle: "Dot above Capital S",
         text: "&#x1E60;"
     },
     {
         id: "dot-above-s",
-        title: "Dot above s",
+        dataTitle: "Dot above s",
         text: "&#x1E61;"
     },
     {
         id: "dot-above-long-s",
-        title: "Dot above Long s",
+        dataTitle: "Dot above Long s",
         text: "&#x1E9B;"
     },
     {
         id: "dot-below-capital-s",
-        title: "Dot below Capital S",
+        dataTitle: "Dot below Capital S",
         text: "&#x1E62;"
     },
     {
         id: "dot-below-s",
-        title: "Dot below s",
+        dataTitle: "Dot below s",
         text: "&#x1E63;"
     },
     {
         id: "dot-below-above-capital-s",
-        title: "Dot below above Capital S",
+        dataTitle: "Dot below above Capital S",
         text: "&#x1E68;"
     },
     {
         id: "dot-below-above-s",
-        title: "Dot below above s",
+        dataTitle: "Dot below above s",
         text: "&#x1E69;"
     },
     {
         id: "caron-capital-t",
-        title: "Caron Capital T",
+        dataTitle: "Caron Capital T",
         text: "&#x0164;"
     },
     {
         id: "caron-t",
-        title: "Caron t",
+        dataTitle: "Caron t",
         text: "&#x0165;"
     },
     {
         id: "cedilla-capital-t",
-        title: "Cedilla Capital T",
+        dataTitle: "Cedilla Capital T",
         text: "&#x0162;"
     },
     {
         id: "cedilla-t",
-        title: "Cedilla t",
+        dataTitle: "Cedilla t",
         text: "&#x0163;"
     },
     {
         id: "circumflex-capital-t",
-        title: "Circumflex Capital T",
+        dataTitle: "Circumflex Capital T",
         text: "&#x1E70;"
     },
     {
         id: "circumflex-t",
-        title: "Circumflex t",
+        dataTitle: "Circumflex t",
         text: "&#x1E71;"
     },
     {
         id: "comma-below-capital-t",
-        title: "Comma below Capital T",
+        dataTitle: "Comma below Capital T",
         text: "&#x021A;"
     },
     {
         id: "comma-below-t",
-        title: "Comma below t",
+        dataTitle: "Comma below t",
         text: "&#x021B;"
     },
     {
         id: "diaeresis-t",
-        title: "Diaeresis t",
+        dataTitle: "Diaeresis t",
         text: "&#x1E97;"
     },
     {
         id: "dot-above-capital-t",
-        title: "Dot above Capital T",
+        dataTitle: "Dot above Capital T",
         text: "&#x1E6A;"
     },
     {
         id: "dot-above-t",
-        title: "Dot above t",
+        dataTitle: "Dot above t",
         text: "&#x1E6B;"
     },
     {
         id: "dot-below-capital-t",
-        title: "Dot below Capital T",
+        dataTitle: "Dot below Capital T",
         text: "&#x1E6C;"
     },
     {
         id: "dot-below-t",
-        title: "Dot below t",
+        dataTitle: "Dot below t",
         text: "&#x1E6D;"
     },
     {
         id: "line-below-capital-t",
-        title: "Line below Capital T",
+        dataTitle: "Line below Capital T",
         text: "&#x1E6E;"
     },
     {
         id: "line-below-t",
-        title: "Line below t",
+        dataTitle: "Line below t",
         text: "&#x1E6F;"
     },
     {
         id: "dot-below-capital-v",
-        title: "Dot below V",
+        dataTitle: "Dot below V",
         text: "&#x1E7E;"
     },
     {
         id: "dot-below-v",
-        title: "Dot below v",
+        dataTitle: "Dot below v",
         text: "&#x1E7F;"
     },
     {
         id: "tilde-capital-v",
-        title: "Tilde V",
+        dataTitle: "Tilde V",
         text: "&#x1E7C;"
     },
     {
         id: "tilde-v",
-        title: "Tilde v",
+        dataTitle: "Tilde v",
         text: "&#x1E7D;"
     },
     {
         id: "acute-capital-w",
-        title: "Acute W",
+        dataTitle: "Acute W",
         text: "&#x1E82;"
     },
     {
         id: "acute-w",
-        title: "Acute w",
+        dataTitle: "Acute w",
         text: "&#x1E83;"
     },
     {
         id: "circumflex-capital-w",
-        title: "Circumflex W",
+        dataTitle: "Circumflex W",
         text: "&#x0174;"
     },
     {
         id: "circumflex-w",
-        title: "Circumflex w",
+        dataTitle: "Circumflex w",
         text: "&#x0175;"
     },
     {
         id: "diaeresis-capital-w",
-        title: "Diaeresis W",
+        dataTitle: "Diaeresis W",
         text: "&#x1E84;"
     },
     {
         id: "diaeresis-w",
-        title: "Diaeresis w",
+        dataTitle: "Diaeresis w",
         text: "&#x1E85;"
     },
     {
         id: "dot-above-capital-w",
-        title: "Dot above W",
+        dataTitle: "Dot above W",
         text: "&#x1E86;"
     },
     {
         id: "dot-above-w",
-        title: "Dot above w",
+        dataTitle: "Dot above w",
         text: "&#x1E87;"
     },
     {
         id: "dot-below-capital-w",
-        title: "Dot below W",
+        dataTitle: "Dot below W",
         text: "&#x1E88;"
     },
     {
         id: "dot-below-w",
-        title: "Dot below w",
+        dataTitle: "Dot below w",
         text: "&#x1E89;"
     },
     {
         id: "grave-capital-w",
-        title: "Grave W",
+        dataTitle: "Grave W",
         text: "&#x1E80;"
     },
     {
         id: "grave-w",
-        title: "Grave w",
+        dataTitle: "Grave w",
         text: "&#x1E81;"
     },
     {
         id: "ring-w",
-        title: "Ring w",
+        dataTitle: "Ring w",
         text: "&#x1E98;"
     },
     {
         id: "diaeresis-capital-x",
-        title: "Diaeresis X",
+        dataTitle: "Diaeresis X",
         text: "&#x1E8C;"
     },
     {
         id: "diaeresis-x",
-        title: "Diaeresis x",
+        dataTitle: "Diaeresis x",
         text: "&#x1E8D;"
     },
     {
         id: "dot-above-capital-x",
-        title: "Dot above X",
+        dataTitle: "Dot above X",
         text: "&#x1E8A;"
     },
     {
         id: "dot-above-x",
-        title: "Dot above x",
+        dataTitle: "Dot above x",
         text: "&#x1E8B;"
     },
     {
         id: "acute-capital-y",
-        title: "Acute Y",
+        dataTitle: "Acute Y",
         text: "&#x00DD;"
     },
     {
         id: "acute-y",
-        title: "Acute y",
+        dataTitle: "Acute y",
         text: "&#x00FD;"
     },
     {
         id: "circumflex-capital-y",
-        title: "Circumflex Y",
+        dataTitle: "Circumflex Y",
         text: "&#x0176;"
     },
     {
         id: "circumflex-y",
-        title: "Circumflex y",
+        dataTitle: "Circumflex y",
         text: "&#x0177;"
     },
     {
         id: "diaeresis-capital-y",
-        title: "Diaeresis Y",
+        dataTitle: "Diaeresis Y",
         text: "&#x0178;"
     },
     {
         id: "diaeresis-y",
-        title: "Diaeresis y",
+        dataTitle: "Diaeresis y",
         text: "&#x00FF;"
     },
     {
         id: "dot-above-capital-y",
-        title: "Dot above Y",
+        dataTitle: "Dot above Y",
         text: "&#x1E8E;"
     },
     {
         id: "dot-above-y",
-        title: "Dot above y",
+        dataTitle: "Dot above y",
         text: "&#x1E8F;"
     },
     {
         id: "dot-below-capital-y",
-        title: "Dot below Y",
+        dataTitle: "Dot below Y",
         text: "&#x1EF4;"
     },
     {
         id: "dot-below-y",
-        title: "Dot below y",
+        dataTitle: "Dot below y",
         text: "&#x1EF5;"
     },
     {
         id: "grave-capital-y",
-        title: "Grave Y",
+        dataTitle: "Grave Y",
         text: "&#x1EF2;"
     },
     {
         id: "grave-y",
-        title: "Grave y",
+        dataTitle: "Grave y",
         text: "&#x1EF3;"
     },
     {
         id: "hook-above-capital-y",
-        title: "Hook above Y",
+        dataTitle: "Hook above Y",
         text: "&#x1EF6;"
     },
     {
         id: "hook-above-y",
-        title: "Hook above y",
+        dataTitle: "Hook above y",
         text: "&#x1EF7;"
     },
     {
         id: "macron-capital-y",
-        title: "Macron Y",
+        dataTitle: "Macron Y",
         text: "&#x0232;"
     },
     {
         id: "macron-y",
-        title: "Macron y",
+        dataTitle: "Macron y",
         text: "&#x0233;"
     },
     {
         id: "ring-y",
-        title: "Ring y",
+        dataTitle: "Ring y",
         text: "&#x1EF8;"
     },
     {
         id: "tilde-capital-y",
-        title: "Tilde Y",
+        dataTitle: "Tilde Y",
         text: "&#x1EF8;"
     },
     {
         id: "tilde-y",
-        title: "Tilde y",
+        dataTitle: "Tilde y",
         text: "&#x1EF9;"
     },
     {
         id: "acute-capital-z",
-        title: "Acute Z",
+        dataTitle: "Acute Z",
         text: "&#x0179;"
     },
     {
         id: "acute-z",
-        title: "Acute z",
+        dataTitle: "Acute z",
         text: "&#x017A;"
     },
     {
         id: "caron-capital-z",
-        title: "Caron Z",
+        dataTitle: "Caron Z",
         text: "&#x017D;"
     },
     {
         id: "caron-z",
-        title: "Caron z",
+        dataTitle: "Caron z",
         text: "&#x017E;"
     },
     {
         id: "circumflex-capital-z",
-        title: "Circumflex Z",
+        dataTitle: "Circumflex Z",
         text: "&#x1E90;"
     },
     {
         id: "circumflex-z",
-        title: "Circumflex z",
+        dataTitle: "Circumflex z",
         text: "&#x1E91;"
     },
     {
         id: "dot-above-capital-z",
-        title: "Dot above Z",
+        dataTitle: "Dot above Z",
         text: "&#x017B;"
     },
     {
         id: "dot-above-z",
-        title: "Dot above z",
+        dataTitle: "Dot above z",
         text: "&#x017C;"
     },
     {
         id: "dot-below-capital-z",
-        title: "Dot below Z",
+        dataTitle: "Dot below Z",
         text: "&#x1E92;"
     },
     {
         id: "dot-below-z",
-        title: "Dot below z",
+        dataTitle: "Dot below z",
         text: "&#x1E93;"
     },
     {
         id: "line-below-capital-z",
-        title: "Line below Z",
+        dataTitle: "Line below Z",
         text: "&#x1E94;"
     },
     {
         id: "line-below-z",
-        title: "Line below z",
+        dataTitle: "Line below z",
         text: "&#x1E95;"
     }
 ]
