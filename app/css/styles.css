@@ -1,16 +1,17 @@
 * {
     font-family: "Figtree", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
 }
-  
+
 :has(:target) {
     scroll-behavior: smooth;
 }
+
 section {
-	scroll-margin-top: 3rem;
+    scroll-margin-top: 3rem;
 }
 
 body.light-theme {
-    background:#f6f8fe;
+    background: #f6f8fe;
 }
 
 body.dark-mode {
@@ -72,6 +73,7 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+
 footer {
     justify-content: center !important;
     margin-bottom: 20px;
@@ -98,7 +100,7 @@ div.key-section {
     display: grid;
     justify-items: center;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit , 66px);
+    grid-template-columns: repeat(auto-fit, 66px);
     grid-gap: 10px;
 }
 
@@ -121,7 +123,7 @@ p#confirm {
     display: none;
     position: fixed;
     top: 80vh;
-    left:44vw;
+    left: 44vw;
     z-index: 100;
     color: #fcb300;
     font-size: 32px;
@@ -142,17 +144,19 @@ p#confirm {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
-   }
+}
 
 @keyframes popUp {
-    0%  {
+    0% {
         display: block;
         opacity: 1;
     }
+
     70% {
         display: block;
         opacity: 1;
     }
+
     100% {
         display: none;
         opacity: 0;
@@ -164,6 +168,7 @@ p#confirm {
     div.key-section {
         grid-gap: 8px;
     }
+
     p#confirm {
         left: 32vw;
     }
@@ -191,16 +196,25 @@ p#confirm {
 
 
 nav ul {
-    list-style: none; /* Remove default bullets */
+    list-style: none;
+    /* Remove default bullets */
 }
+
 nav ul li::before {
-    content: "•"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: hsl(0, 0%, 100%); /* Change the color */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    content: "•";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: hsl(0, 0%, 100%);
+    /* Change the color */
+    font-weight: bold;
+    /* If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+    /* Also needed for space (tweak if needed) */
 }
+
 nav ul li a.active {
     color: #FFFFFF;
 }
@@ -209,7 +223,7 @@ nav ul ul {
     display: none;
 }
 
-nav ul li:has(a.active[href="#emojis"]) + ul {
+nav ul li:has(a.active[href="#emojis"])+ul {
     display: block;
 }
 
@@ -269,7 +283,7 @@ form.search {
 
 ::placeholder {
     color: black;
-    opacity: 0.7; 
+    opacity: 0.7;
 }
 
 .search button {
@@ -278,8 +292,8 @@ form.search {
     width: 44px;
     height: 44px;
 }
-  
- button svg {
+
+button svg {
     color: #fff;
     fill: currentColor;
     width: 24px;
@@ -306,16 +320,73 @@ form.search {
 section:not(:has(button[style*="display: block"])) {
     display: none;
 }
+
 /* en cascada, da como default display:block por que el selector lo toma al stylo inline*/
 section:not(:has(button[style*="display: none"])) {
     display: block;
-}  
+}
 
 /* Oculta las secciones que no tienen ningun boton visibles */
 .sub:not(:has(button[style*="display: block"])) {
     display: none;
 }
+
 /* en cascada, da como default display:block por que el selector lo toma al stylo inline*/
 .sub:not(:has(button[style*="display: none"])) {
     display: block;
-}  
+}
+
+/* END search bar */
+
+/* tooltip */
+
+#tooltip {
+    background: #333;
+    width: fit-content;
+    color: white;
+    font-weight: bold;
+    padding: 4px 8px;
+    font-size: 13px;
+    border-radius: 4px;
+    display: none;
+}
+
+#tooltip[data-show] {
+    display: block;
+}
+
+#arrow,
+#arrow::before {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: inherit;
+}
+
+#arrow {
+    visibility: hidden;
+}
+
+#arrow::before {
+    visibility: visible;
+    content: '';
+    transform: rotate(45deg);
+}
+
+#tooltip[data-popper-placement^='top']>#arrow {
+    bottom: -4px;
+}
+
+#tooltip[data-popper-placement^='bottom']>#arrow {
+    top: -4px;
+}
+
+#tooltip[data-popper-placement^='left']>#arrow {
+    right: -4px;
+}
+
+#tooltip[data-popper-placement^='right']>#arrow {
+    left: -4px;
+}
+
+/* END tooltip */

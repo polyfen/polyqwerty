@@ -56,78 +56,78 @@
     <script type="module">
         import currencies from './app/js/currencies.js';
 
-        const buttons = document.getElementById('currencies-buttons');
+        const currenciesDiv = document.getElementById('currencies-buttons');
         currencies.forEach(button => {
             let btn = document.createElement('button');
 
             btn.innerHTML = button.text;
             btn.className = 'key';
             btn.id = button.id;
-            btn.title = button.title;
+            btn.dataset.title = button.dataTitle;
 
-            buttons.appendChild(btn);
+            currenciesDiv.appendChild(btn);
         });
     </script>
     <script type="module">
         import punctuation from './app/js/punctuation.js';
 
-        const buttons2 = document.getElementById('punctuation-buttons');
+        const punctuationDiv = document.getElementById('punctuation-buttons');
         punctuation.forEach(button => {
             let btn = document.createElement('button');
 
             btn.innerHTML = button.text;
             btn.className = 'key';
             btn.id = button.id;
-            btn.title = button.title;
+            btn.dataset.title = button.dataTitle;
 
-            buttons2.appendChild(btn);
+            punctuationDiv.appendChild(btn);
         });
     </script>
     <script type="module">
         import diacritics from './app/js/diacritics.js';
 
-        const buttons3 = document.getElementById('diacritics-buttons');
+        const diacriticsDiv = document.getElementById('diacritics-buttons');
         diacritics.forEach(button => {
             let btn = document.createElement('button');
 
             btn.innerHTML = button.text;
             btn.className = 'key';
             btn.id = button.id;
-            btn.title = button.title;
+            btn.dataset.title = button.dataTitle;
 
-            buttons3.appendChild(btn);
+            diacriticsDiv.appendChild(btn);
         });
     </script>
 
     <script type="module">
         import math from './app/js/math.js';
 
-        const buttons4 = document.getElementById('math-buttons');
+        const mathDiv = document.getElementById('math-buttons');
         math.forEach(button => {
             let btn = document.createElement('button');
 
             btn.innerHTML = button.text;
             btn.className = 'key';
             btn.id = button.id;
-            btn.title = button.title;
+            btn.dataset.title = button.dataTitle;
 
-            buttons4.appendChild(btn);
+            mathDiv.appendChild(btn);
         });
     </script>
 
     <script type="module">
         import arrows from './app/js/arrows.js';
 
-        const buttons5 = document.getElementById('arrows-buttons');
+        const arrowsDiv = document.getElementById('arrows-buttons');
         arrows.forEach(button => {
             let btn = document.createElement('button');
 
             btn.innerHTML = button.text;
             btn.className = 'key';
             btn.id = button.id;
-            btn.title = button.title;
+            btn.dataset.title = button.dataTitle;
 
-            buttons5.appendChild(btn);
+            arrowsDiv.appendChild(btn);
         });
     </script>
 
@@ -135,16 +135,16 @@
         import emojisData from './app/js/emojis.js'
 
         for (const category in emojisData) {
-            const buttonsSection = document.getElementById(`${category}-buttons`);
+            const emojisDiv = document.getElementById(`${category}-buttons`);
             emojisData[category].forEach(button => {
                 let btn = document.createElement('button');
 
                 btn.innerHTML = button.text;
                 btn.className = 'key';
                 btn.id = button.id;
-                btn.title = button.title;
+                btn.dataset.title = button.dataTitle;
 
-                buttonsSection.appendChild(btn);
+                emojisDiv.appendChild(btn);
             });
         }
     </script>
@@ -185,56 +185,7 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-PW37KVP');</script>
     <!-- End Google Tag Manager -->
-    <style>
-        #tooltip {
-            background: #333;
-            width: fit-content;
-            color: white;
-            font-weight: bold;
-            padding: 4px 8px;
-            font-size: 13px;
-            border-radius: 4px;
-            display: none;
-        }
-
-        #tooltip[data-show] {
-            display: block;
-        }
-
-        #arrow,
-        #arrow::before {
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            background: inherit;
-        }
-
-        #arrow {
-            visibility: hidden;
-        }
-
-        #arrow::before {
-            visibility: visible;
-            content: '';
-            transform: rotate(45deg);
-        }
-
-        #tooltip[data-popper-placement^='top']> #arrow {
-            bottom: -4px;
-        }
-
-        #tooltip[data-popper-placement^='bottom']> #arrow {
-            top: -4px;
-        }
-
-        #tooltip[data-popper-placement^='left']> #arrow {
-            right: -4px;
-        }
-
-        #tooltip[data-popper-placement^='right']> #arrow {
-            left: -4px;
-        }
-    </style>
+    
 </head>
 
 <body class="dark-mode">
@@ -375,7 +326,7 @@
         let isSingleCharacter = input.length === 1;
 
         for (let i = 0; i < x.length; i++) {
-            let buttonTitle = x[i].getAttribute('title').toLowerCase();
+            let buttonTitle = x[i].getAttribute('data-title').toLowerCase();
 
             // Normalizar el texto para eliminar diacríticos
             input = input.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -405,10 +356,10 @@
         const tooltip = document.getElementById('tooltip');
         const tooltipContent = document.getElementById('tooltip-content');
 
-        let popperInstance = null;
+       let popperInstance = null;
 
         function show(button) {
-            tooltipContent.textContent = button.getAttribute('title');
+            tooltipContent.textContent = button.getAttribute('data-title');
             tooltip.setAttribute('data-show', '');
 
             popperInstance = Popper.createPopper(button, tooltip, {
