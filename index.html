@@ -185,7 +185,56 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-PW37KVP');</script>
     <!-- End Google Tag Manager -->
+    <style>
+        #tooltip {
+            background: #333;
+            width: fit-content;
+            color: white;
+            font-weight: bold;
+            padding: 4px 8px;
+            font-size: 13px;
+            border-radius: 4px;
+            display: none;
+        }
 
+        #tooltip[data-show] {
+            display: block;
+        }
+
+        #arrow,
+        #arrow::before {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: inherit;
+        }
+
+        #arrow {
+            visibility: hidden;
+        }
+
+        #arrow::before {
+            visibility: visible;
+            content: '';
+            transform: rotate(45deg);
+        }
+
+        #tooltip[data-popper-placement^='top']> #arrow {
+            bottom: -4px;
+        }
+
+        #tooltip[data-popper-placement^='bottom']> #arrow {
+            top: -4px;
+        }
+
+        #tooltip[data-popper-placement^='left']> #arrow {
+            right: -4px;
+        }
+
+        #tooltip[data-popper-placement^='right']> #arrow {
+            left: -4px;
+        }
+    </style>
 </head>
 
 <body class="dark-mode">
@@ -310,7 +359,10 @@
     </footer>
 
     <p id="confirm">!</p>
-
+    <div id="tooltip" role="tooltip">
+        <div id="arrow" data-popper-arrow></div>
+        <span id="tooltip-content"></span>
+    </div>
 </body>
 
 <script defer>
@@ -345,4 +397,56 @@
     console.log('WebApp orgullosamente Argentina! 🇦🇷');
 </script>
 
+
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const buttons = document.querySelectorAll('.key');
+        const tooltip = document.getElementById('tooltip');
+        const tooltipContent = document.getElementById('tooltip-content');
+
+        let popperInstance = null;
+
+        function show(button) {
+            tooltipContent.textContent = button.getAttribute('title');
+            tooltip.setAttribute('data-show', '');
+
+            popperInstance = Popper.createPopper(button, tooltip, {
+                placement: 'top',
+                modifiers: [
+                    {
+                        name: 'offset',
+                        options: {
+                            offset: [0, 8],
+                        },
+                    },
+                ],
+            });
+
+            popperInstance.update();
+        }
+
+        function hide() {
+            tooltip.removeAttribute('data-show');
+
+            if (popperInstance) {
+                popperInstance.destroy();
+                popperInstance = null;
+            }
+        }
+
+        buttons.forEach((button) => {
+            const showEvents = ['mouseenter', 'focus'];
+            const hideEvents = ['mouseleave', 'blur'];
+
+            showEvents.forEach((event) => {
+                button.addEventListener(event, () => show(button));
+            });
+
+            hideEvents.forEach((event) => {
+                button.addEventListener(event, hide);
+            });
+        });
+    });
+</script>
 </html>
