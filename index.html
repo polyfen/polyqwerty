@@ -57,13 +57,13 @@
         import currencies from './app/js/currencies.js';
 
         const currenciesDiv = document.getElementById('currencies-buttons');
-        currencies.forEach(button => {
+        currencies.forEach(array => {
             let btn = document.createElement('button');
 
-            btn.innerHTML = button.text;
+            btn.innerHTML = array.text;
             btn.className = 'key';
-            btn.id = button.id;
-            btn.dataset.title = button.dataTitle;
+            btn.id = array.id;
+            btn.dataset.title = array.dataTitle;
 
             currenciesDiv.appendChild(btn);
         });
@@ -72,13 +72,13 @@
         import punctuation from './app/js/punctuation.js';
 
         const punctuationDiv = document.getElementById('punctuation-buttons');
-        punctuation.forEach(button => {
+        punctuation.forEach(array => {
             let btn = document.createElement('button');
 
-            btn.innerHTML = button.text;
+            btn.innerHTML = array.text;
             btn.className = 'key';
-            btn.id = button.id;
-            btn.dataset.title = button.dataTitle;
+            btn.id = array.id;
+            btn.dataset.title = array.dataTitle;
 
             punctuationDiv.appendChild(btn);
         });
@@ -87,13 +87,13 @@
         import diacritics from './app/js/diacritics.js';
 
         const diacriticsDiv = document.getElementById('diacritics-buttons');
-        diacritics.forEach(button => {
+        diacritics.forEach(array => {
             let btn = document.createElement('button');
 
-            btn.innerHTML = button.text;
+            btn.innerHTML = array.text;
             btn.className = 'key';
-            btn.id = button.id;
-            btn.dataset.title = button.dataTitle;
+            btn.id = array.id;
+            btn.dataset.title = array.dataTitle;
 
             diacriticsDiv.appendChild(btn);
         });
@@ -103,13 +103,13 @@
         import math from './app/js/math.js';
 
         const mathDiv = document.getElementById('math-buttons');
-        math.forEach(button => {
+        math.forEach(array => {
             let btn = document.createElement('button');
 
-            btn.innerHTML = button.text;
+            btn.innerHTML = array.text;
             btn.className = 'key';
-            btn.id = button.id;
-            btn.dataset.title = button.dataTitle;
+            btn.id = array.id;
+            btn.dataset.title = array.dataTitle;
 
             mathDiv.appendChild(btn);
         });
@@ -119,13 +119,13 @@
         import arrows from './app/js/arrows.js';
 
         const arrowsDiv = document.getElementById('arrows-buttons');
-        arrows.forEach(button => {
+        arrows.forEach(array => {
             let btn = document.createElement('button');
 
-            btn.innerHTML = button.text;
+            btn.innerHTML = array.text;
             btn.className = 'key';
-            btn.id = button.id;
-            btn.dataset.title = button.dataTitle;
+            btn.id = array.id;
+            btn.dataset.title = array.dataTitle;
 
             arrowsDiv.appendChild(btn);
         });
@@ -136,13 +136,13 @@
 
         for (const category in emojisData) {
             const emojisDiv = document.getElementById(`${category}-buttons`);
-            emojisData[category].forEach(button => {
+            emojisData[category].forEach(array => {
                 let btn = document.createElement('button');
 
-                btn.innerHTML = button.text;
+                btn.innerHTML = array.text;
                 btn.className = 'key';
-                btn.id = button.id;
-                btn.dataset.title = button.dataTitle;
+                btn.id = array.id;
+                btn.dataset.title = array.dataTitle;
 
                 emojisDiv.appendChild(btn);
             });
