@@ -56,78 +56,78 @@
     <script type="module">
         import currencies from './app/js/currencies.js';
 
-        const buttons = document.getElementById('currencies-buttons');
-        currencies.forEach(button => {
+        const currenciesDiv = document.getElementById('currencies-buttons');
+        currencies.forEach(array => {
             let btn = document.createElement('button');
 
-            btn.innerHTML = button.text;
+            btn.innerHTML = array.text;
             btn.className = 'key';
-            btn.id = button.id;
-            btn.title = button.title;
+            btn.id = array.id;
+            btn.dataset.title = array.dataTitle;
 
-            buttons.appendChild(btn);
+            currenciesDiv.appendChild(btn);
         });
     </script>
     <script type="module">
         import punctuation from './app/js/punctuation.js';
 
-        const buttons2 = document.getElementById('punctuation-buttons');
-        punctuation.forEach(button => {
+        const punctuationDiv = document.getElementById('punctuation-buttons');
+        punctuation.forEach(array => {
             let btn = document.createElement('button');
 
-            btn.innerHTML = button.text;
+            btn.innerHTML = array.text;
             btn.className = 'key';
-            btn.id = button.id;
-            btn.title = button.title;
+            btn.id = array.id;
+            btn.dataset.title = array.dataTitle;
 
-            buttons2.appendChild(btn);
+            punctuationDiv.appendChild(btn);
         });
     </script>
     <script type="module">
         import diacritics from './app/js/diacritics.js';
 
-        const buttons3 = document.getElementById('diacritics-buttons');
-        diacritics.forEach(button => {
+        const diacriticsDiv = document.getElementById('diacritics-buttons');
+        diacritics.forEach(array => {
             let btn = document.createElement('button');
 
-            btn.innerHTML = button.text;
+            btn.innerHTML = array.text;
             btn.className = 'key';
-            btn.id = button.id;
-            btn.title = button.title;
+            btn.id = array.id;
+            btn.dataset.title = array.dataTitle;
 
-            buttons3.appendChild(btn);
+            diacriticsDiv.appendChild(btn);
         });
     </script>
 
     <script type="module">
         import math from './app/js/math.js';
 
-        const buttons4 = document.getElementById('math-buttons');
-        math.forEach(button => {
+        const mathDiv = document.getElementById('math-buttons');
+        math.forEach(array => {
             let btn = document.createElement('button');
 
-            btn.innerHTML = button.text;
+            btn.innerHTML = array.text;
             btn.className = 'key';
-            btn.id = button.id;
-            btn.title = button.title;
+            btn.id = array.id;
+            btn.dataset.title = array.dataTitle;
 
-            buttons4.appendChild(btn);
+            mathDiv.appendChild(btn);
         });
     </script>
 
     <script type="module">
         import arrows from './app/js/arrows.js';
 
-        const buttons5 = document.getElementById('arrows-buttons');
-        arrows.forEach(button => {
+        const arrowsDiv = document.getElementById('arrows-buttons');
+        arrows.forEach(array => {
             let btn = document.createElement('button');
 
-            btn.innerHTML = button.text;
+            btn.innerHTML = array.text;
             btn.className = 'key';
-            btn.id = button.id;
-            btn.title = button.title;
+            btn.id = array.id;
+            btn.dataset.title = array.dataTitle;
 
-            buttons5.appendChild(btn);
+            arrowsDiv.appendChild(btn);
         });
     </script>
 
@@ -135,16 +135,16 @@
         import emojisData from './app/js/emojis.js'
 
         for (const category in emojisData) {
-            const buttonsSection = document.getElementById(`${category}-buttons`);
-            emojisData[category].forEach(button => {
+            const emojisDiv = document.getElementById(`${category}-buttons`);
+            emojisData[category].forEach(array => {
                 let btn = document.createElement('button');
 
-                btn.innerHTML = button.text;
+                btn.innerHTML = array.text;
                 btn.className = 'key';
-                btn.id = button.id;
-                btn.title = button.title;
+                btn.id = array.id;
+                btn.dataset.title = array.dataTitle;
 
-                buttonsSection.appendChild(btn);
+                emojisDiv.appendChild(btn);
             });
         }
     </script>
@@ -198,7 +198,7 @@
     <header>
         <img alt="Poly Qwerty" src="imgs/polyqwerty.svg" height="35">
         <a id="github" href="https://github.com/polyfen/polyqwerty" target="_blank"><img alt="Github"
-                src="imgs/github.svg" height="20px">open-source</a>
+                src="imgs/github.svg" height="20">open-source</a>
     </header>
 
     <aside>
@@ -210,16 +210,17 @@
                 <li id="currency-anchor"><a href="#currencies">Currency</a></li>
 
                 <li id="arrows-anchor"><a href="#arrows">Arrows</a></li>
-                <li id="emojis-anchor"><a href="#emojis">Emojis</a></li>
-                <ul>
-                    <li><a href="#smileys">Smileys</a></li>
-                    <li><a href="#people">People</a></li>
-                    <li><a href="#animals-and-nature">Animals &amp; Nature</a></li>
-                    <li><a href="#food-and-drinks">Food &amp; Drink</a></li>
-                    <li><a href="#activities">Activity</a></li>
-                    <li><a href="#travel-and-places">Travel &amp; Places</a></li>
-                    <li><a href="#symbols">Symbols</a></li>
-                </ul>
+                <li id="emojis-anchor"><a href="#emojis">Emojis</a>
+                    <ul class="sub-ul">
+                        <li><a href="#smileys">Smileys</a></li>
+                        <li><a href="#people">People</a></li>
+                        <li><a href="#animals-and-nature">Animals &amp; Nature</a></li>
+                        <li><a href="#food-and-drinks">Food &amp; Drink</a></li>
+                        <li><a href="#activities">Activity</a></li>
+                        <li><a href="#travel-and-places">Travel &amp; Places</a></li>
+                        <li><a href="#symbols">Symbols</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </aside>
@@ -305,44 +306,103 @@
     <hr>
     <footer>
         <a href="https://thepolyfengroup.com" target="_blank">
-            <img src="imgs/the-polyfen-group-black-bg.svg" width="80px" height="auto">
+            <img src="imgs/the-polyfen-group-black-bg.svg" width="80" alt="The polyfen Group logo">
         </a>
     </footer>
 
+    <!-- elements position absolute -->
+
     <p id="confirm">!</p>
+    <div id="tooltip" role="tooltip">
+        <div id="arrow" data-popper-arrow></div>
+        <span id="tooltip-content"></span>
+    </div>
 
-</body>
+    <!-- scripts area -->
+    <script>
+        /* version 4 reconoce el title del boton, pero en caso de haber un solo caracter reacciona a palabra completa */
+        function search_animal() {
+            let input = document.getElementById('searchbar').value.toLowerCase();
+            let x = document.getElementsByClassName('key');
 
-<script defer>
-    /* version 4 reconoce el title del boton, pero en caso de haber un solo caracter reacciona a palabra completa */
-    function search_animal() {
-        let input = document.getElementById('searchbar').value.toLowerCase();
-        let x = document.getElementsByClassName('key');
+            // Verificar si la entrada es un solo carácter
+            let isSingleCharacter = input.length === 1;
 
-        // Verificar si la entrada es un solo carácter
-        let isSingleCharacter = input.length === 1;
+            for (let i = 0; i < x.length; i++) {
+                let buttonTitle = x[i].getAttribute('data-title').toLowerCase();
 
-        for (let i = 0; i < x.length; i++) {
-            let buttonTitle = x[i].getAttribute('title').toLowerCase();
+                // Normalizar el texto para eliminar diacríticos
+                input = input.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+                buttonTitle = buttonTitle.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 
-            // Normalizar el texto para eliminar diacríticos
-            input = input.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-            buttonTitle = buttonTitle.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+                // Dividir el título en palabras
+                let titleWords = buttonTitle.split(' ');
 
-            // Dividir el título en palabras
-            let titleWords = buttonTitle.split(' ');
+                // Verificar si alguna palabra completa del título es igual a la entrada
+                let match = titleWords.some(word => isSingleCharacter ? word === input : word.includes(input));
 
-            // Verificar si alguna palabra completa del título es igual a la entrada
-            let match = titleWords.some(word => isSingleCharacter ? word === input : word.includes(input));
-
-            if (match) {
-                x[i].style.display = "block";
-            } else {
-                x[i].style.display = "none";
+                if (match) {
+                    x[i].style.display = "block";
+                } else {
+                    x[i].style.display = "none";
+                }
             }
         }
-    }
-    console.log('WebApp orgullosamente Argentina! 🇦🇷');
-</script>
+        console.log('WebApp orgullosamente Argentina! 🇦🇷');
+    </script>
+
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttons = document.querySelectorAll('.key');
+            const tooltip = document.getElementById('tooltip');
+            const tooltipContent = document.getElementById('tooltip-content');
+
+            let popperInstance = null;
+
+            function show(button) {
+                tooltipContent.textContent = button.getAttribute('data-title');
+                tooltip.setAttribute('data-show', '');
+
+                popperInstance = Popper.createPopper(button, tooltip, {
+                    placement: 'top',
+                    modifiers: [
+                        {
+                            name: 'offset',
+                            options: {
+                                offset: [0, 8],
+                            },
+                        },
+                    ],
+                });
+
+                popperInstance.update();
+            }
+
+            function hide() {
+                tooltip.removeAttribute('data-show');
+
+                if (popperInstance) {
+                    popperInstance.destroy();
+                    popperInstance = null;
+                }
+            }
+
+            buttons.forEach((button) => {
+                const showEvents = ['mouseenter', 'focus'];
+                const hideEvents = ['mouseleave', 'blur'];
+
+                showEvents.forEach((event) => {
+                    button.addEventListener(event, () => show(button));
+                });
+
+                hideEvents.forEach((event) => {
+                    button.addEventListener(event, hide);
+                });
+            });
+        });
+    </script>
+</body>
 
 </html>
