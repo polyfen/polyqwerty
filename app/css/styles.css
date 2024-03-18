@@ -138,25 +138,9 @@ p#confirm {
 
 .anime {
     display: block !important;
-    animation-name: popUp;
-    animation-duration: .8s;
-    animation-timing-function:linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-
 }
 
-@keyframes popUp {
-    0% {
-        display: block;
-        opacity: 1;
-    }
 
-    100% {
-        display: block;
-        opacity: 1;
-    }
-}
 
 /* break points */
 @media (max-width: 890px) {

@@ -153,12 +153,14 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const buttons = document.querySelectorAll('.key'); // Select all buttons with class .key
+            let confirmationTimeout;
 
             buttons.forEach(button => {
                 button.addEventListener('click', (e) => {
                     e.preventDefault();
                     const copiedText = button.textContent;
                     navigator.clipboard.writeText(copiedText);
+                    clearTimeout(confirmationTimeout);
                     confirmation(copiedText);
                 });
             });
@@ -167,11 +169,11 @@
                 const confirmElement = document.getElementById("confirm");
                 confirmElement.textContent = `${copiedText} copied`;
                 confirmElement.classList.add("anime");
-                confirmElement.addEventListener("animationend", () => {
+                confirmationTimeout = setTimeout(() => {
                     confirmElement.classList.remove("anime");
-                });
-            }
-        });
+                }, 800);
+                }
+            });
     </script>
     <!-- Script addEventListener end-->
 
