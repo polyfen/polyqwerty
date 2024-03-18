@@ -139,8 +139,8 @@ p#confirm {
 .anime {
     display: block !important;
     animation-name: popUp;
-    animation-duration: 1.2s;
-    animation-timing-function: ease-in-out;
+    animation-duration: .8s;
+    animation-timing-function:linear;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
@@ -152,14 +152,9 @@ p#confirm {
         opacity: 1;
     }
 
-    70% {
+    100% {
         display: block;
         opacity: 1;
-    }
-
-    100% {
-        display: none;
-        opacity: 0;
     }
 }
 
