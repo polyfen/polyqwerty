@@ -373,3 +373,7 @@ section:not(:has(button[style*="display: none"])) {
 body {
     border-top: 8px solid #fcb402;
 }
+
+body.dark-mode hr {
+    border-color: #ffffff21 !important;
+}
