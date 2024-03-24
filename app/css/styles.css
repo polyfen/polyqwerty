@@ -369,3 +369,7 @@ section:not(:has(button[style*="display: none"])) {
 }
 
 /* END tooltip */
+
+body {
+    border-top: 8px solid #fcb402;
+}
