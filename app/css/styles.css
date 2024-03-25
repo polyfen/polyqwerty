@@ -95,6 +95,36 @@ header a#github {
     display: flex;
     justify-content: flex-end;
 }
+header #chrome-store {
+    display: none;
+    gap: 11px 
+}
+#chrome-store img {
+width: 39px;
+height: 33px;
+}
+
+#chrome-store span {
+    max-width: 80px;
+}
+
+#chrome-store span {
+    font-family: Biotif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    text-align: left;
+
+}
+
+@media (min-width: 768px) { 
+    header {
+        grid-template-columns: auto auto auto;
+    }
+    header #chrome-store {
+        display: flex;
+    }
+}
 
 div.key-section {
     display: grid;
