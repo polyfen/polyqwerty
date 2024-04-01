@@ -196,13 +196,13 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <header>
-        <img alt="Poly Qwerty" src="imgs/polyqwerty.svg" height="35">
+        <img alt="Poly Qwerty" src="./assets/imgs/polyqwerty.svg" height="35">
         <a id="github" href="https://github.com/polyfen/polyqwerty" target="_blank"><img alt="Github"
-                src="imgs/github.svg" height="20">open-source</a>
-                <div id="chrome-store">
-                    <img src="./assets/imgs/chrome-store-2.svg" alt="Chrome Store icon">
-                    <span>Coming Soon for Chrome</span>
-                </div>
+                src="./assets/imgs/github.svg" height="20">open-source</a>
+        <div id="chrome-store">
+            <img src="./assets/imgs/chrome-store-2.svg" alt="Chrome Store icon">
+            <span>Coming Soon for Chrome</span>
+        </div>
     </header>
 
     <aside>
@@ -235,12 +235,18 @@
         <h2 class="caption align-center"><span id="click">Click</span> on a character to copy it</h2>
 
         <form class="search">
-            <input id="searchbar" onkeyup="search_animal()" type="search" name="search" placeholder="Search for it..."
-                aria-label="Search through site content">
-            <button disabled><svg viewBox="0 0 1024 1024">
+            <input id="searchbar" onkeyup="search_character()" type="search" name="search"
+                placeholder="Search for it..." aria-label="Search through site content">
+            <button class="" id="lupa" disable><svg
+                    viewBox="0 0 1024 1024">
                     <path class="path1"
                         d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z">
                     </path>
+                </svg></button>
+            <button id="borrador" onclick="document.getElementById('searchbar').value = '';"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="72"
+                    viewBox="0 0 24 24">
+                    <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m16 16l-4-4m0 0L8 8m4 4l4-4m-4 4l-4 4"></path>
                 </svg></button>
         </form>
 
@@ -310,7 +316,7 @@
     <hr>
     <footer>
         <a href="https://thepolyfengroup.com" target="_blank">
-            <img src="imgs/the-polyfen-group-black-bg.svg" width="80" alt="The polyfen Group logo">
+            <img src="./assets/imgs/the-polyfen-group-black-bg.svg" width="80" alt="The polyfen Group logo">
         </a>
     </footer>
 
@@ -325,12 +331,26 @@
     <!-- scripts area -->
     <script>
         /* version 4 reconoce el title del boton, pero en caso de haber un solo caracter reacciona a palabra completa */
-        function search_animal() {
+        function search_character() {
             let input = document.getElementById('searchbar').value.toLowerCase();
             let x = document.getElementsByClassName('key');
 
             // Verificar si la entrada es un solo carácter
             let isSingleCharacter = input.length === 1;
+
+            // Obtener referencia a los botones
+            let lupaButton = document.getElementById('lupa');
+            let borradorButton = document.getElementById('borrador');
+
+            // Verificar si se ingresó al menos una letra
+            if (input.length > 0) {
+                lupaButton.style.display = 'none';
+                borradorButton.style.display = 'inline-block';
+            } else {
+                // Mostrar el botón lupa y ocultar el botón borrador
+                lupaButton.style.display = 'inline-block';
+                borradorButton.style.display = 'none';
+            }
 
             for (let i = 0; i < x.length; i++) {
                 let buttonTitle = x[i].getAttribute('data-title').toLowerCase();
@@ -355,7 +375,7 @@
         console.log('WebApp orgullosamente Argentina! 🇦🇷');
     </script>
 
-
+    <!-- get poppers for the tooltip -->
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {

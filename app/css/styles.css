@@ -407,3 +407,9 @@ body {
 body.dark-mode hr {
     border-color: #ffffff21 !important;
 }
+
+#borrador {
+    display: none;
+    cursor: pointer;
+    
+}
