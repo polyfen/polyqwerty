@@ -237,14 +237,13 @@
         <form class="search">
             <input id="searchbar" onkeyup="search_character()" type="search" name="search"
                 placeholder="Search for it..." aria-label="Search through site content">
-            <button class="" id="lupa" disable><svg
-                    viewBox="0 0 1024 1024">
+            <button class="" id="lupa" type="button" disabled><svg viewBox="0 0 1024 1024">
                     <path class="path1"
                         d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z">
                     </path>
                 </svg></button>
-            <button id="borrador" onclick="document.getElementById('searchbar').value = '';"><svg xmlns="http://www.w3.org/2000/svg" width="72" height="72"
-                    viewBox="0 0 24 24">
+            <button id="borrador" onclick="limpiarBusqueda();"><svg xmlns="http://www.w3.org/2000/svg" width="72"
+                    height="72" viewBox="0 0 24 24">
                     <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="m16 16l-4-4m0 0L8 8m4 4l4-4m-4 4l-4 4"></path>
                 </svg></button>
@@ -330,6 +329,12 @@
 
     <!-- scripts area -->
     <script>
+        function limpiarBusqueda() {
+            event.preventDefault();
+            document.getElementById('searchbar').value = '';
+            search_character();
+        }
+
         /* version 4 reconoce el title del boton, pero en caso de haber un solo caracter reacciona a palabra completa */
         function search_character() {
             let input = document.getElementById('searchbar').value.toLowerCase();
