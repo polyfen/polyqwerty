@@ -191,7 +191,14 @@ p#confirm {
 
 @media (max-width: 1280px) {
     aside {
-        display: none;
+        float: none;
+        margin-bottom: 4rem;
+        margin-top: 0;
+        position: relative !important;
+    }
+
+    aside li {
+        margin-bottom: 8px !important;
     }
 }
 
