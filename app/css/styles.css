@@ -468,5 +468,6 @@ h1 {
     form.search {
         margin-bottom: -40px !important;
         width: 370px;
+        max-width: 100%;
     }
 }
