@@ -87,10 +87,6 @@ span#click {
     color: #fcb300;
 }
 
-section#diacritics {
-    margin-top: 80px;
-}
-
 header a img {
     margin-right: 8px;
 }
@@ -296,7 +292,7 @@ form.search {
     flex-direction: row;
     align-items: center;
     text-align: center;
-    margin: 50px auto;
+    margin: 24px auto 50px;
     position: sticky;
     top: 25px;
 }
@@ -436,4 +432,13 @@ body.dark-mode hr {
 
 form.search:has(#searchbar:active), form.search:has(#searchbar:focus) {
     background: #fcb300;
+}
+
+@media (min-width: 768px) {
+}
+
+h1 {
+    margin-bottom: 1.5rem !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }
