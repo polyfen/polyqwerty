@@ -309,6 +309,7 @@ form.search {
     margin: 24px auto 50px;
     position: sticky;
     top: 25px;
+    box-shadow: 0 8px 6px -2px black;
 }
 
 .search input {
