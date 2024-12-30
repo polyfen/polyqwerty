@@ -200,6 +200,13 @@ p#confirm {
     aside li {
         margin-bottom: 8px !important;
     }
+
+    aside ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 8px;
+    }
 }
 
 
@@ -448,4 +455,18 @@ h1 {
     margin-bottom: 1.5rem !important;
     margin-top: 0 !important;
     padding-top: 0 !important;
+}
+
+@media (max-width: 1200px) {
+    nav ul li::before {
+        background: #fcb300;
+        color: #000000;
+    }
+
+    .cover {display: none;}
+
+    form.search {
+        margin-bottom: -40px !important;
+        width: 370px;
+    }
 }
